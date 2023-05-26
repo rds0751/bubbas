@@ -21,12 +21,10 @@ PROFILE_STATUS = (
 )
 
 class Agency(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone = models.CharField(max_length=15)
-    whatsapp = models.CharField(max_length=15)
-    telegram = models.CharField(max_length=15)
-    skype = models.CharField(max_length=15)
-    profile_picture = models.ImageField()
+    name = models.CharField(max_length=100, null=True, blank=True)
+    phone = models.CharField(max_length=15, null=True, blank=True)
+    whatsapp = models.CharField(max_length=15, null=True, blank=True)
+    profile_picture = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.user.username
