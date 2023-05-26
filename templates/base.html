@@ -1,0 +1,578 @@
+{% load thumbnail %}{% load compress %}{% load static %}{% load cache %}<!DOCTYPE html>
+<html>
+  <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# Bubbas: https://ogp.me/ns/fb/Bubbas#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11720509-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11720509-7');
+</script>
+    {% comment %} <link rel="icon" type="image/x-icon" href="{{logo}}" /> {% endcomment %}
+    <meta property="fb:app_id" content="469881999753251" />
+    <meta property="og:type"   content="Bubbas:job" />
+    <meta charset="utf-8">
+    {% block block_title %}
+      {% include 'meta_data/home.html' %}
+    {% endblock %}
+    {% block robot_tag %}
+    <meta name="ROBOTS" content="index, follow, ALL"/>
+    {% endblock %}
+    <meta name="copyright" content="Copyright (c) Bubbas, All rights reserved"/>
+    {% block meta_tags %}
+    {% endblock %}
+    {% block block_canonical_tag %}
+    {% endblock %}
+    {% block css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    {% comment %} <link rel="shortcut icon" href="{{favicon}}"> {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/introjs.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui-slider-pips.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feedback.min.css' %}">
+    {% endcompress %}
+    {% endblock %}
+
+  </head>
+  <body>
+    <a href="#0" class="cd-top">Top</a>
+    <button type="button" id="feedback-btn" class="btn btn-info vertical-right-aligned">Feedback <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></button>
+    {% if not request.user.is_authenticated %}
+    <button type="button" id="register-btn" class="btn btn-info register-verical-aligned new_account">Register <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></button>
+    {% endif %}
+    <div id="wrapper" >
+      <section class="header_banner">
+        <div class="icon_banner">
+         <div class="header_panel">
+          <nav class="navbar navbar-expand-lg megamenu py-3">
+            <div class="container">
+               <a class="navbar-brand" href="/">Bubbas</a>
+
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav main_menu">
+                {% cache 604800 latest_jobs_menu %}
+{% comment %}         
+                  {% get_skills as total_skills %}
+                  {% get_industries as total_industries %}
+                  {% get_locations as total_locations %}
+                  {% get_government_jobs as all_government_jobs %}
+                  {% get_internships as all_internship_jobs %} {% endcomment %}
+                  
+                  <li class="dropdown megamenu-fw">
+                    <a href=" url 'jobs:index' %}" class="dropdown-toggle latest-jobs" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Latest call girls<span class="caret"></span></a>
+        
+                    <ul class="dropdown-menu megamenu-content" role="menu">
+                    <li>
+                      <ul class="col-md-2 information" style="width:19.99%">
+                        <li><a href=" url 'jobs_by_skill' %}">Verified call girls</a></li>
+                        <li><a href=" skill.get_job_url }}"> skill.name|truncatewords:2 call girls</a></li>
+                      </ul>
+                      <ul class="col-md-2 information industries_parts">
+                        <li><a href=" url 'jobs_by_industry' %}">New Joined</a></li>
+                        <li><a href=""> industry.name|get_industry_name  call girls</a></li>
+                      </ul>
+                      <ul class="col-md-2 information location_parts">
+                        <li><a href=" url 'jobs_by_location' 'jobs' %}">Location</a></li>
+                            <li><a href=" location.get_job_url ">call girls in location.name </a></li>
+                      </ul>
+                      <ul class="col-md-3 information fresher-jobs-part">
+                        <li><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">Fresher</a></li>
+                        <li><a href="/skill.slug}}-fresher-jobs/"> skill.name|truncatewords:2 Fresher call girls</a></li>
+                      </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  {% endcache %}
+                  <li {% if request.path == '/fresher-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">New call girls <span class="sr-only">(current)</span></a></li>
+                   <li {% if request.path == '/walkin-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'walkin' %}">Verified call girls <span class="sr-only">(current)</span></a></li>
+                  {% if request.user.user_type == 'JS' %}
+                  <li><a href=" url 'jobs:jobs_applied' %}">Contacted call girls</a></li>
+                  {% endif %}
+                  <li {% if request.path == '/internship-jobs/' %}class="active"{% endif %}>
+                    <a href=" url 'internship_jobs'%}">New in Town</a>
+                  </li>
+                  <li><a href=" url 'my:alerts_list'%}">Profile Alerts</a></li>
+                </ul>
+                {% if not request.user.is_authenticated %}
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
+                  <li class="jobseeker_auth">
+                    <div class="dropdown">
+                      <button class="item dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seekers
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="#" class="login_modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                        <li><a href="#" class="new_account" data-bs-toggle="modal" data-bs-target="#register-div">Register</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+
+                 
+
+                  <li class="log"><a href=" url 'post_job' %}">Recruiter Login | register</a></li>
+                </ul>
+                {% endif %}
+              </div>
+              
+            </div>
+        </nav>
+       
+        {% block page_search_block %}
+        {% endblock %}
+         </div>
+
+          <!-- search_login starts here -->
+          {% block search_block %}
+          {% endblock %}
+          <!-- search_login ends here -->
+        </div>
+      </section>
+     
+      {% block base %}
+      {% endblock %}
+      <!-- banner ends here -->
+      <!-- job_types_links starts here -->
+      {% cache 604800 footer_links %}
+
+      <section class="job_types_links mar_lr_0">
+        <div class="container">
+          <div class="row  d-flex justify-content-center  mar_lr_0">
+            <div class="col-md-3 col-sm-4 job_types_link_col">
+              <ul>
+                <li><a href=" url 'jobs_by_skill' %}">Verified</a></li>
+                <li><a href=" skill.get_job_url }}">call girls for  skill.name|truncatewords:2  }}</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-4  job_types_link_col">
+              <ul>
+                <li><a href=" url 'jobs_by_industry' %}">New call girls</a></li>
+                <li><a href=" industry.get_job_url }}"> industry.name|get_industry_name }} call girls</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-4  job_types_link_col">
+              <ul>
+                <li><a href=" url 'jobs_by_location' 'jobs' %}">Location</a></li
+                <li><a href=" location.get_job_url }}">call girls near location.name }}</a></li>
+              </ul>
+            </div>
+           <div class="col-md-3 col-sm-4  job_types_link_col">
+              <ul>
+                <li><a href="/fresher-jobs/">Hot</a></li>
+                <li><a href="/skill.slug}}-fresher-jobs/"> skill.name|truncatewords:2 }} Hot call girls</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endcache %}
+      <!-- job_types_links ends here -->
+      <div id="WaitDialog"   class="hidden" style="text-align: center">
+        <div style="margin-top: 10px; color: white">
+          <b>Please wait</b>
+        </div>
+      </div>
+      <!-- footer starts here -->
+        <section>
+          <footer>
+            <div class="container">
+              <div class="row mar_lr_0">
+                {% block pj_info %}
+                  <div class="col-md-4 col-sm-12 col-xs-12 about">
+                    <strong class="logo">Bubbas</strong>
+                    <p>Bubbas is a platform to connect recruiters and job seekers from all over India. The features which make us stand out amongst the many available job portals is our uniqueness and the ease of use of our platform. We have many free of cost services in the platter, to offer to Job-seekers as well as to the recruiters.</p>
+                  </div>
+                {% endblock %}
+                <div class="col-md-5 col-sm-12 col-xs-12 links">
+                  <ul class="footer_links">
+                    <li class="text-uppercase">About Us</li>
+                    <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
+                    <li><a href=" url 'sitemap' %}" target="_blank">Sitemap</a></li>
+                    <li><a href=" url 'pages' 'terms-conditions' %}" target="_blank">Terms &amp; Conditions</a></li>
+                    <li><a href=" url 'pages' 'privacy-policy' %}" target="_blank">Privacy Policy</a></li>
+                    <li><a href=" url 'contact' %}" target="_blank">Contact Us</a></li>
+                  </ul>
+                  <ul class="footer_links">
+                    <li class="text-uppercase">call girls</li>
+                    <li><a href=" url 'recruiter:new_user' %}" target="_blank">Registration</a></li>
+                    <li><a href=" url 'pages' 'recruiter-faq' %}" target="_blank">FAQs</a></li>
+                    <li><a href=" url 'post_job' %}" target="_blank">Post Job For Free</a></li>
+                  </ul>
+                  <ul class="footer_links">
+                    <li class="text-uppercase">Find call girls</li>
+                    {% if request.user.is_authenticated %}                  
+                    <li style="display: none;"><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
+                    {%else%}
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
+                    {%endif%}
+                    <li><a href="/" target="_blank">Search call girls</a></li>
+                    <li><a href=" url 'jobs:index' %}" target="_blank">View All call girls</a></li>
+                    <li><a href=" url 'pages' 'faq' %}" target="_blank">FAQs</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
+                {% if not request.user.is_authenticated %}
+                  <form name="BaseSubscribeform" id="BaseSubscribeform" method="POST">
+                    <div class="subscribe">
+                      <div class="input-group">
+                        <input type="text" class="form-control text-capitalize" placeholder="Subscribe to get updates" name='email' id="subscribe_email" value="{{request.user.email}}">
+                        <input type="hidden" name="subscribe_from" id="subscribe_from" value="All">
+                        <span class="input-group-btn">
+                        <button class="btn btn-secondary text-uppercase" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </span>
+                      </div>
+                        <p id="subscribe_response_message"></p>
+                    </div>
+                  </form>
+                  {% endif %}
+  
+                  {% cache 604800 social_footer_links %}
+                  <div class="social_links text-center">
+                    <ul>
+                      <li><a target="_blank" href="https://facebook.com/Bubbas/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a target="_blank" href="https://www.linkedin.com/company/Bubbas?trk=top_nav_home"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li ><a href=" url 'social:google_login' %}"><strong>G</strong></a></li>
+                      <li><a target="_blank" href="https://twitter.com/Bubbas"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="copy_right text-center">Copyright &copy; {% now "Y" %} Bubbas.com<br><a href="https://micropyramid.com" title="MicroPyramid Informatics Private Ltd" target="_blank">Development + SEO by Blockitsy</a>
+                  </div>
+                  {% endcache %}
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      <!-- footer ends here -->
+    </div>
+    <div class="modal_loading">
+      <!-- Place at bottom of page -->
+    </div>
+<!-- Modal -->
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade modal-dialog-scrollable" id="register-div" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+            <h3 id="modal_head" class="my-2">Not A Member? Register</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+        </div>
+        <div class="modal-body">
+          
+
+          <div class="row g-3 align-items-center">
+            <div class="col-md-12">
+              <div class="form_panel form">
+                <form id="ApplicantFormRegister" name="ApplicantFormRegister" class="form-horizontal ApplicantForm" method="POST" enctype="multipart/form-data">
+                  <div class="row">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Email ID<span class="important">*</span></label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="user_register_email" placeholder="Enter valid email address" name="email">
+                      <p id="user_register_response_message"></p>
+                      <input type="hidden" name="register_from" id='register_from' value="Email">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Password<span class="important">*</span></label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" id="user_register_password" placeholder="Enter Password minimum of 7 characters" name="password">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Mobile Number<span class="important">*</span></label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="user_register_mobile" placeholder="Recruiters will reach you on this number" name="mobile">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Current Location<span class="important">*</span></label>
+                    <div class="col-sm-8">
+                      <select class="form-select select2" name="current_city" id="user_register_current_city">
+                        <option value="">Choose required location</option>
+                            <option value=" city.id }}"> city.name }}</option>
+                      </select>
+                      <span class="city_err"></span>
+                      <input type="text" class="form-control pb-1" id="user_register_other_location" placeholder="Enter your Location" name="other_location" style="display:none">
+                      <input class="form-check-input" type="checkbox" name="other_loc" id="other_location"> <span class="text">Other Location</span>
+                    </div>
+                  </div>
+                  <div class="row  mb-3">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Skills<span class="important">*</span></label>
+                    <div class="col-sm-8">
+                      <select class="form-select select2" name="technical_skills" id="user_register_technical_skills">
+                            <option value=" skill.id }}"> skill.name }}</option>
+                      </select>
+                      <span class="reg_skill_err"></span>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-4 control-label">Experience</label>
+                    <div class="col-sm-8">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <select class="form-select" name="year" id="user_register_year">
+                              <option value=''>Year</option>
+                              <option value='i.0}}'>i.1}}</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <select class="form-select" name="month" id="user_register_month">
+                              <option value=''>Month</option>
+                              <option value='k.0}}'>k.1}}</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-7 d-flex">
+                      <button for="colFormLabelSm" type="submit" class="btn  register_form_button">
+                        <span class='load_register'>
+                          <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...
+                        </span>
+                        <span class='register_click'>Create Account</span>
+                      </button>
+                      <p><a id="login_but">Already a Member? Login</a></p>
+                    </div>
+                  </div>
+                </form>
+              
+                <div class="alternate_login">
+                  <span class="or_reg">
+                    <span class="text">Or Register With</span>
+                  </span>
+                  <div class="social_reg_logins">
+                    <ul>
+                      <li><a href=" url 'social:facebook_login' %}" class="facebook" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                      <li><a href=" url 'social:linkedin_login' %}" class="linkedin" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-linkedin-in in"></i></a></li>
+                      <li><a href=" url 'social:github_login' %}" class="github" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-github git"></i></a></li>
+                      <li><a href=" url 'social:google_login' %}" class="gplus" style="line-height: 32px; padding: 0; padding-left: 7px;"><i style="color: white; font-style: normal; font-size: larger;"><strong>G</strong></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal ends-->
+
+
+  <div class="modal fade modal-dialog-scrollable" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" name="login_reg" id="is_show_popup" value="False">
+          <input type="hidden" name="logged_usser" id="logged_user" value="{{request.user}}">
+          <div class="row marl" id="login_div">
+            <div class="social_panel">
+              <div class="icons_list">
+                <ul class="other_options clearfix">
+                  <li class="active" id="login_li"><a class="sign_in_li" target="_blank">Login</a></li>
+                  <li id="sign_up_li"><a class="sign_up_li" target="_blank">Create Account</a></li>
+                </ul>
+                <div class="or"><span>Or</span></div>
+                <ul>
+                  <li class="facebook_li" style="padding-left: 5px;"><a href=" url 'social:facebook_login' %}" target="_blank"><i class="fa-brands fa-facebook-f fb"></i><span>Sign in with <span>FaceBook</span></span></a></li>
+                  <li class="linkedin_li" style="padding-left: 5px;"><a href=" url 'social:linkedin_login' %}" target="_blank"><i class="fa-brands fa-linkedin-in in"></i><span>Sign in with <span>LinkedIn</span></span></a></li>
+                  <li class="github_li" style="padding-left: 5px;"><a href=" url 'social:github_login' %}" target="_blank"><i class="fa-brands fa-github git"></i><span>Sign in with <span>GitHub</span></span></a></li>
+                </ul>
+                <div class="customGPlusSignIn" data-href=" url 'social:google_login' %}">
+                  <span class="icon"></span>
+                  <span class="buttonText">Sign in With Google</span>
+                </div>
+              </div>
+            </div>
+            <div class="form_panel form">
+              <div class="login_box">
+                <h3 id="pop_up_header">Already a Member? Login</h3>
+                <form id="ApplicantForm" name="ApplicantForm" class="ApplicantForm" method="POST" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="userlogin_email" placeholder="Enter Email ID" name="email">
+                    <p id="userlogin_response_message"></p>
+                    <input type="hidden" name="register_type" id='user_register_type' value="login">
+                    <input type="hidden" name="next" value="{{request.GET.next}}">
+                    <input type="password" class="form-control" id="userlogin_password" placeholder="Enter Password" name="password">
+                    <button type="submit" class="btn btn-default login_form_button" id="button_value">Sign In</button>
+                    <div id="forgot_pass"><a>Forgot Password?</a></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="block_question" style="display:none;"></div>
+
+    <!--/ select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% comment %} <script type="text/javascript" src="{% static 'js/select2.min.js' %}"></script> {% endcomment %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    {% compress js %}
+    <script type="text/javascript" src="{% static 'js/jquery-ui.js' %}"></script>
+    <script type="text/javascript" src="{% static 'tellme_js/feedback.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.form.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.blockUI.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/circle-progress.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
+    {% comment %} <script type="text/javascript" src="{% static 'js/captcha.js' %}"></script> {% endcomment %}
+    <script type="text/javascript" src="{% static 'r1/js/jquery.plainmodal.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui-slider-pips.js' %}" ></script>
+    <script type="text/javascript" src="{% static 'js/masonry.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/intro.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/highlight.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/userinfo.js' %}"></script>
+
+
+    <!-- pip slider -->
+    <script>
+  {% if request.GET.referer == 'gmail' and not request.user.is_authenticated  %}
+    $('p.hint').remove();
+     $("#login_div").show()
+      $("#register_div").hide()
+    $('#login_register').modal('show');
+  {% endif %}
+  {% if show_pop_up and not request.user.is_authenticated %}
+    $('p.hint').remove();
+    $('#login_register').modal('show');
+    $("#login_div").hide()
+    $("#register_div").show()
+    $('#ApplicantFormRegister').trigger("reset");
+    $("#modal_head").show()
+  {% endif %}
+  {% if request.GET.verification == 'success' %}
+    open_dialog('You have Successfully Verified', 'Success!')
+  {% elif request.GET.verification == 'verified' %}
+    open_dialog('You have Already Subscribed', 'Success!')
+  {% elif request.GET.verification == 'error' %}
+    open_dialog('Sorry, No {{ request.GET.type }} Found', 'Warning!')
+  {% endif %}
+  jQuery(document).ready(function($){
+
+  $('#circle').circleProgress({
+            value: "{{ request.user.profile_completion_percentage }}"/100,
+            size: 100,
+            startAngle: -Math.PI / 2,
+            fill: {gradient: [['#0681c4', .5], ['#4ac5f8', .5]], gradientAngle: Math.PI / 4}
+            // fill: {
+            //   color: "#fff",
+            //   background: "white"
+            // }
+        });
+    });
+      function popop(){
+      var user_status = "{{request.user.is_authenticated}}"
+      current_date = new Date();
+      var diff =  Math.abs(new Date(current_date) - new Date($.cookie("login_popup")));
+      var seconds = Math.floor(diff/1000); //ignore any left over units smaller than a second +977 981-0330647
+      var minutes = Math.floor(seconds/60);
+      if (minutes == 5 && ($.cookie("show_popup")=='False')){
+        if (user_status == 'False') {
+           $("#login_div").show()
+          $("#register_div").hide()
+          $('#login_register').modal('show');
+          $.cookie('show_popup', 'True');
+        }
+      }
+      }
+
+      // The path parameter is needed to make this cookie valid across the whole page
+      if(! $.cookie("login_popup")){
+      current_date = new Date()
+      $.cookie('login_popup', current_date);
+      $.cookie('show_popup', 'False');
+
+      setInterval(popop, 1000);
+      }
+      else{
+       setInterval(popop, 1000);
+      }
+      $('.subscribe').click(function(e){
+      {% if job %}
+      id= {{job.id}}
+      $('#jobpost_id').val(id);
+      {% endif %}
+      $('p.hint').text('');
+      $('#email').val('')
+      $('#subscribe').plainModal('open');
+      })
+
+      $('.latest-jobs').click(function(e){
+        window.location = '/jobs/';
+      });
+    </script>
+    {% endcompress %}
+
+    {% compress js %}
+    <!--{% block custom_javascript %}
+    {% endblock custom_javascript %}-->
+    {% block 'extra_js' %}
+    {% endblock %}
+    {% endcompress %}
+
+    <script>
+    var initOpts = {
+      projectKey: "HqNqwbmBQwy4gFRWtkOc",
+      ingestPoint: "https://replay.micropyramid.com/ingest",
+      defaultInputMode: 0,
+      obscureTextNumbers: false,
+      obscureTextEmails: true,
+    };
+    var startOpts = { userID: "" };
+    (function(A,s,a,y,e,r){
+      r=window.OpenReplay=[e,r,y,[s-1, e]];
+      s=document.createElement('script');s.src=A;s.async=!a;
+      document.getElementsByTagName('head')[0].appendChild(s);
+      r.start=function(v){r.push([0])};
+      r.stop=function(v){r.push([1])};
+      r.setUserID=function(id){r.push([2,id])};
+      r.setUserAnonymousID=function(id){r.push([3,id])};
+      r.setMetadata=function(k,v){r.push([4,k,v])};
+      r.event=function(k,p,i){r.push([5,k,p,i])};
+      r.issue=function(k,p){r.push([6,k,p])};
+      r.isActive=function(){return false};
+      r.getSessionToken=function(){};
+    })("//static.openreplay.com/3.5.10/openreplay.js",1,0,initOpts,startOpts);
+  </script>
+  </body>
+</html>

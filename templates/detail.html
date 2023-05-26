@@ -1,0 +1,38 @@
+{% load thumbnail %}
+{% load tz %}
+{% load thumbnail %}
+
+<div class="job_detail_section">
+  <!-- job_item starts here -->
+  <div class="job_item">
+  <div class="job"> 
+    <div class="logo_apply">
+        <span class="pull-right apply_btn">
+        <a href="{{ job.slug }}" class="latest_job_type">Featured</a>
+        </span>
+    </div>
+    <!-- job item starts -->
+    <!-- job item ends -->
+    <!-- description rowssss starts -->
+    <div class="description row">
+        <br><br>
+        {{ post.content|safe }}
+    </div>
+    <!-- description rowssss ends -->
+    <!-- job_description_section row starts-->
+    <div class="job_description_section" id="job_detail_id">
+      <!-- row division starts-->
+      <div class="row">
+        <!-- description_block division starts-->
+        <div class="description_block" {% if recruiter %}{% else %} style="padding-left:21px" {% endif %}>
+        
+        <!-- job_detail_options division starts-->
+      </div>
+      <!-- description_block division ends-->
+    </div>
+    <!-- row division starts-->
+  </div>
+  <!-- job_description_section row ends-->
+</div></div>
+<!-- job_item ends here -->
+<div id="block_job_apply" style="display: none;"></div>

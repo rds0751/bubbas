@@ -1,0 +1,532 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% load static %}
+{% load cache %}
+{% block block_canonical_tag %}
+<link rel="canonical" href="https://Bubbas.com{{ request.path }}"/>
+{% endblock %}
+{% block meta_tags %}
+<meta name="google-site-verification" content="YRAH49iQBxqqgGD-ogtwLY3t39VcM_7NrhX0hyzirPY" />
+<meta name="msvalidate.01" content="7748852145A5ECD3CF9FD6D8EAA04EDE" />
+{% endblock %}
+{% block base %}
+<!-- main_container starts here -->
+<section class="inner_search_section" id='search_div'>
+    <div class="container">
+        <div class="row">
+            <form autocomplete="off" name="job-search-form" class="autocomplete-me search-form" id="elastic-search" method="POST">
+                <div class="search_div_form" style="margin-top: 78px;">
+                    <div class="form_element">
+                        <select class="form-select" name="job_type" id="job_type">
+                            {{ request.session.formdata }}
+                            <option value="">Select A JobType</option>
+                            {% for job_type in job_types %}
+                            <option value="{{ job_type.0 }}" {% if searched_job_type == job_type.0 %} selected {% endif %}>{{ job_type.1 }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <input type="text" class="form-control" id="q" name="q" placeholder="Enter Any Skills, Qualifications" value="{% for text in searched_text %}{{ text }}, {% empty %}{% for skill in searched_skills %}{{ skill }}, {% endfor %}{% for edu in searched_edu %}{{ edu }}, {% endfor %}{% endfor %}">
+                    </div>
+                    <div class="form_element">
+                        <input type="text" class="form-control" id="location" name="location" placeholder="Enter Any Locations, States" value="{% for loc in searched_locations %}{{ loc }}, {% endfor %}{% for state in searched_states %}{{ state }}, {% endfor %}">
+                    </div>
+                    <div class="form_element">
+                        <select class="form-select" name="experience">
+                            <option value="">Experience(Y)</option>
+                            {% for i in "xxxxxxxxxxxxx" %}
+                            <option value="{{ forloop.counter0 }}" {% ifequal forloop.counter0|add:"0" searched_experience|add:'0' %}selected{% endifequal %}>{{ forloop.counter0 }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="search_form_element">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="main_container">
+    <div class="container">
+        <div class="row mar_lr_0">
+            <div class="col-md-12 left_container">
+                <!-- register_block starts here -->
+                <div class="row mar_lr_0 register_block">
+                    <div class="col-md-12 register_point border redirect_link" data-href=" 'my:alerts_list'%}">
+                        <div class="text-center register_col">
+                        </div>
+                    </div>
+                </div>
+                <!-- register_block ends here -->
+                <!-- skills_companies starts here -->
+                <div class="row mar_lr_0 skills_locations">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="profile">
+                            <div class="row d-flex justify-content-center align-items-center image_row">
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/micropyramid-informatics-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn1.kommons.com/ez58PytDWTKKLODQ/ez58PytDWTKKLODQ.1.thumbnail.jpg" alt="Micropyramid Informatics Private Ltd."/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/ibm-india-pvt-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn2.kommons.com/OsK4L5Qw9Ym8kAWE/OsK4L5Qw9Ym8kAWE.1.thumbnail.jpg?im_hs=70d0f8f0f2b06171" alt="ibm-india-pvt-limited" style="max-width:80%;" /></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/infosys-multinational-private-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn2.kommons.com/YLnXxuXyP9k5yhKJ/YLnXxuXyP9k5yhKJ.1.thumbnail.jpg?im_hs=461d03cbcbe3e3e8" alt="infosys-multinational-private-limited" style="max-width:80%;" /></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/tcs-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn3.kommons.com/5LAglIfgB6u9d4lf/5LAglIfgB6u9d4lf.1.thumbnail.jpg?im_hs=b898d0bb1352d1d" alt="tcs-pvt-ltd"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/dell-private-limited-job-openings/" class='company_logo'>
+                                    <img style="max-width:86%;"  src="https://cdn4.kommons.com/oiek5xzANUxQhpsj/oiek5xzANUxQhpsj.1.thumbnail.jpg?im_hs=8aaa0296860f1f0e" alt="dell-private-limited"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/accenture-job-openings/" class='company_logo'>
+                                    <img src="https://cdn4.kommons.com/srOWc2KG3Zlhzv38/srOWc2KG3Zlhzv38.1.thumbnail.jpg?im_hs=92983c3b63428383" alt="accenture"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/tech-mahindra-private-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn2.kommons.com/Wp6iLAy4XWAjp5rU/Wp6iLAy4XWAjp5rU.1.thumbnail.jpg?im_hs=d8d05ac2b0a1a1e1" alt="tech-mahindra-private-limited"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/cognizant-technology-solutions-india-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn3.kommons.com/mH0Yj4zl7SctmEdw/mH0Yj4zl7SctmEdw.1.thumbnail.jpg?im_hs=f4f4ee5e2936b4cc" alt="cognizant-technology-solutions-india-ltd" /></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/ravsoft-solutions-india-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn3.kommons.com/8W8InaSv9K0yq4Uj/8W8InaSv9K0yq4Uj.1.thumbnail.jpg?im_hs=6d6961da525c5540" alt="RAVSoft Solutions India Pvt Ltd"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/3dplm-software-solutions-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn3.kommons.com/Wwdm5Q4cpFzkopG8/Wwdm5Q4cpFzkopG8.1.thumbnail.jpg?im_hs=314b6b5ecec746cc" alt="3DPLM Software Solutions Limited"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/ace-group-private-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn5.kommons.com/iNUaly0oPAQvyXVK/iNUaly0oPAQvyXVK.1.thumbnail.jpg?im_hs=ecfa1e5cc4f474fa" alt="ACE Group Private Limited"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/readmind-info-services-job-openings/" class='company_logo'>
+                                    <img src="https://cdn5.kommons.com/3ZMeeL4s2ON3mrhK/3ZMeeL4s2ON3mrhK.1.thumbnail.jpg?im_hs=5a1969e8311c0d0c" alt="ReadMind Info Services"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/grape-services-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn4.kommons.com/IGSmPRRJvJCeSKN8/IGSmPRRJvJCeSKN8.1.thumbnail.jpg?im_hs=c4246464646464cd" alt="Grape Services Pvt. Ltd"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/haileo-technologies-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn1.kommons.com/FXYFLsOYxOwsHjBn/FXYFLsOYxOwsHjBn.1.thumbnail.jpg?im_hs=c3999170d5c42a2e" alt="Haileo Technologies Pvt Ltd"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/nitor-infotech-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn5.kommons.com/Khwped2OsMiFkTOZ/Khwped2OsMiFkTOZ.1.thumbnail.jpg?im_hs=9f9f1a196672fc7f" alt="Nitor Infotech Pvt. Ltd"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/cms-computers-limited-job-openings/" class='company_logo'>
+                                    <img src="https://cdn2.kommons.com/PXuzdq2UrHOzMERB/PXuzdq2UrHOzMERB.1.thumbnail.jpg?im_hs=6059288920098d83" alt="CMS Computers Limited"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/capgemini-india-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn5.kommons.com/fh8vUGH0C1nrpu4j/fh8vUGH0C1nrpu4j.1.thumbnail.jpg?im_hs=f079f8e8f8d2c951" alt="CAPGEMINI INDIA PVT LTD"/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="background: blanchedalmond; border: 10px solid white;">
+                                    <a href="/peoplestrong-hr-services-pvt-ltd-job-openings/" class='company_logo'>
+                                    <img src="https://cdn3.kommons.com/5Jrn6sVTTEyw4Mj6/5Jrn6sVTTEyw4Mj6.1.thumbnail.jpg?im_hs=a5b7b5195b51515b" alt="PeopleStrong HR Services Pvt. Ltd."/></a>
+                                    <div class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                <div class="result-title">
+                                                    Evelina  🇬🇷 🔝 - 24
+                                                </div>
+                                                <div class="result-subtitle">Greek</div>
+                                            </div>
+                                            <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Bond Street W1 (London), Baker Street W1 (London), Marylebone NW1 (London)
+                                            </div>
+                                            <div class="result-phone">
+                                                07563239647
+                                            </div>
+                                            <div class="result-content">
+                                                <div class="result-content-header result-content-uk">
+                                                    SEXY GREEK MODEL
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="pull-right view-more" href="/companies/">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- skills_companies ends here -->
+                <!-- top_locations edns here -->
+            </div>
+        </div>
+    </div>
+</section>
+<div id="block_job_apply" style="display: none;"></div>
+<!-- help_options_row ends here -->
+{% endblock base %}
+{% block 'extra_js' %}
+<script type="text/javascript">
+    $('span.user_search').click(function(e){
+        $(window).scrollTop($('#banner').offset().top-$('.page-top').height()-100);
+    });
+    $(document).ready(function() {
+      $('#myCarousel').carousel({
+        interval: 10000
+    })
+        $(".latest_jobs_class").click(function(){
+          window.location = $(this).attr('id')
+        })
+      $(".latest_jobs a").click(function(e){
+        e.stopPropagation()
+      })
+      });
+</script>
+{% endblock %}
