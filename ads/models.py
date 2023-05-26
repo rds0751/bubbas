@@ -16,8 +16,8 @@ STATUS_TYPES = (
 )
 
 PROFILE_STATUS = (
-    ("Call Girl", "Call Girl"),
-    ("Escort", "Escort"),
+    ("Call Girls", "Call Girls"),
+    ("Escorts", "Escorts"),
 )
 
 class Agency(models.Model):
