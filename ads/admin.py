@@ -8,6 +8,7 @@ class imageAdmin(admin.ModelAdmin):
 
 class AdAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title", "id")}
+    filter_horizontal = ('categories', 'images',)
     exclude = ('views', 'likes')
 
 admin.site.register(Image, imageAdmin)

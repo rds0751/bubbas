@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import Q, Count, F, JSONField
+from django.db.models import Q, Count, F
 from django.contrib.auth import get_user_model
 
 from ckeditor.fields import RichTextField
