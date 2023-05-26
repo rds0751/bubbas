@@ -15,6 +15,11 @@ STATUS_TYPES = (
     ("Disabled", "Disabled"),
 )
 
+PROFILE_STATUS = (
+    ("Call Girl", "Call Girl"),
+    ("Escort", "Escort"),
+)
+
 class Agency(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phone = models.CharField(max_length=15)
@@ -118,6 +123,7 @@ class Ad(models.Model):
     id = models.CharField(unique=True, default=res, max_length=15, primary_key=True)
     title = models.CharField(max_length=100)
     slug = models.SlugField()
+    profile_status = models.CharField(choices=PROFILE_STATUS, max_length=25, default="Enabled")
     overview = RichTextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     content = RichTextField()
