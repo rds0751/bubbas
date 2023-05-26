@@ -12,7 +12,6 @@ class AdAdmin(admin.ModelAdmin):
 
 admin.site.register(Image, imageAdmin)
 admin.site.register(Ad, AdAdmin)
-admin.site.register(Locality)
 admin.site.register(City)
 admin.site.register(State)
 admin.site.register(Country)

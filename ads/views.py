@@ -1,15 +1,20 @@
 from django.shortcuts import render
 
 # Create your views here.
-from .models import Image, Ad
+from .models import Image, Ad, City, Category
 
 # Create your views here.
 def home(request):
-    # post = Ad.objects.get(id='UN0BRKCTHM')
-    # context = {
-    #     'post': post,
-    # }
-    return render(request, 'home.html')
+    c = City.objects.all().order_by('?')
+    ca = Category.objects.all().order_by('?')[:50]
+    p = Ad.objects.all()[:20]
+    context = {
+        'cities': c,
+        'categories': ca,
+        'ads': p
+    }
+    print(context)
+    return render(request, 'home.html', context)
 
 
 # Create your views here.

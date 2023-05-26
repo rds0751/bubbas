@@ -112,18 +112,6 @@ class City(models.Model):
     class Meta:
         verbose_name_plural = "Cities"
     
-class Locality(models.Model):
-    name = models.CharField(max_length=500)
-    status = models.CharField(choices=STATUS_TYPES, max_length=10, default="Enabled")
-    city = models.ForeignKey(City, on_delete=models.CASCADE)
-    slug = models.SlugField(max_length=500, default="")
-
-    def __str__(self):
-        return self.name
-    
-    class Meta: 
-        verbose_name_plural = "Localities"
-    
 class Ad(models.Model):
     res = ''.join(random.choices(string.ascii_uppercase +
 							string.digits, k=10))
@@ -141,7 +129,6 @@ class Ad(models.Model):
     images = models.ManyToManyField(Image)
     likes = models.IntegerField(default=0)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
-    locality = models.ForeignKey(Locality, on_delete=models.CASCADE)
     meta_title = models.TextField(default="")
     meta_description = models.TextField(default="")
 
