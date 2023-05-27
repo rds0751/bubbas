@@ -22,8 +22,6 @@ PROFILE_STATUS = (
 
 class Agency(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
-    phone = models.CharField(max_length=15, null=True, blank=True)
-    whatsapp = models.CharField(max_length=15, null=True, blank=True)
     profile_picture = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -119,13 +117,14 @@ class Ad(models.Model):
     res = ''.join(random.choices(string.ascii_uppercase +
 							string.digits, k=10))
     id = models.CharField(unique=True, default=res, max_length=15, primary_key=True)
-    title = models.CharField(max_length=100, null=True, blank=True)
+    title = models.CharField(max_length=1000, null=True, blank=True)
     slug = models.SlugField(null=True, blank=True)
     profile_status = models.CharField(choices=PROFILE_STATUS, max_length=25, default="Enabled", null=True, blank=True)
     overview = RichTextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     content = RichTextField(null=True, blank=True)
-    agent = models.ForeignKey(Agency, on_delete=models.CASCADE, null=True, blank=True)
+    phone = models.CharField(max_length=15, null=True, blank=True)
+    whatsapp = models.CharField(max_length=15, null=True, blank=True)
     thumbnail = models.ImageField(null=True, blank=True)
     categories = models.ManyToManyField(Category, null=True, blank=True)
     featured = models.BooleanField(null=True, blank=True)
