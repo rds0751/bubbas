@@ -117,7 +117,7 @@ class Ad(models.Model):
     res = ''.join(random.choices(string.ascii_uppercase +
 							string.digits, k=10))
     id = models.CharField(unique=True, default=res, max_length=15, primary_key=True)
-    title = models.CharField(max_length=1000, null=True, blank=True)
+    title = models.CharField(max_length=10000, null=True, blank=True)
     slug = models.SlugField(null=True, blank=True)
     profile_status = models.CharField(choices=PROFILE_STATUS, max_length=25, default="Enabled", null=True, blank=True)
     overview = RichTextField(null=True, blank=True)
