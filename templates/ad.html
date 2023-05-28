@@ -21,13 +21,13 @@
             </a>
           </li>
           <li>
-            <a href="/">
-              <span class="name">{{ post.city }} Profiles</span>
+            <a href="/call-girls/{{post.city}}">
+              <span class="name">{{ post.city }} Call Girls</span>
             </a>
           </li>
           <li class="current">
             <a href="/">
-              <span class="name">Profiles in {{ post.locality }}</span>
+              <span class="name">{{ post.title }}</span>
             </a>
           </li>
         </ol>
@@ -35,7 +35,55 @@
     </div>
     <!-- breadcrumb_section ends here -->
     <div class="row mar_lr_0">
-      <div class="col-md-9 left_container">
+    <h1>{{ post.title }}</h1>
+      <div class="col-md-3 left_container">
+        <!-- upload_btn_block starts here -->
+        <div class="similar_job_posts" style="margin-bottom:10px;">
+          <img style="width: -webkit-fill-available;" src={{ post.thumbnail.url }} alt-text="{{ post.meta_title }}" />
+          {% for x in post.categories.all %}
+              <strong style="
+              background-color: #ffff90;
+              cursor: inherit;
+              margin-top: 4px;
+              font-weight: 300;
+              margin-bottom: 4px;
+              margin-right: 4px;
+              font-size: 16px;
+              white-space: nowrap;" class="title"><a>{{ x.title }}</a> </strong>
+            {% endfor %}
+            <div class="row">
+              <div style="margin-top: 1rem;" class="col-sm-6 padding-1-right">
+                <a style="color: #000;
+                z-index: 2;
+                background-color: #7ac0c7;
+                font-size: 16px;
+                overflow: hidden;
+                height: 40px;
+                line-height: 4px;" class="btn col-xs-12 call-sponsored-escort-btn" href="tel:{{post.phone}}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
+                    <img style="height: 24px;
+                    display: inline-block;
+                    vertical-align: middle;" src="https://kommons.com/assets/images/call-icon.png?28052023100335"> <span>Call Me</span>
+                </a>
+            </div>
+                                    <div style="margin-top: 1rem;" class="col-sm-6 no-padding-right">
+                <a style="background-color: #35b548;
+                color: #fff;
+                font-size: 16px;
+                line-height: 4px;
+                z-index: 2;
+                height: 40px;" class="btn col-xs-12 whatsapp-sponsored-escort-btn" href="https://wa.me/{{ post.whatsapp }}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
+                    <img style="height: 24px;
+                    display: inline-block;
+                    vertical-align: middle;" src="https://kommons.com/assets/images/whatsapp-logo.svg?28052023100335">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="col-md-9 right_container">
         <!-- side_filter_section starts here -->
         <div class="row">
           <!-- job_list_section starts here -->
@@ -45,11 +93,143 @@
 
               {% include 'detail.html' %}
               <!-- job_item ends here -->
-              <!-- similar_jobs starts here -->
               
+              <!-- similar_jobs starts here -->
+              <div class="similar_jobs_section">
+                <p class="head text-uppercase">Recommended Profiles</p>
+                <div id="recommended_jobs_carousel" class="carousel slide">
+                  <ol class="carousel-indicators">
+                    <li data-target="#recommended_jobs_carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#recommended_jobs_carousel" data-slide-to="1"></li>
+                    <li data-target="#recommended_jobs_carousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        {% for postr in posts %}
+                            <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
+                              <div class="job_col redirect_job_click">
+                                <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>
+                                  <img style="width: -webkit-fill-available;" src="{{ postr.thumbnail.url }}" alt="Micropyramid Informatics Private Ltd."/>
+                              </a>
+                                  <div class="result-data">
+                                      <div class="result-data-description">
+                                          <div class="result-header">
+                                              <div class="result-title">
+                                                  <br>
+                                                  <h2 style="font-size: 1rem">{{ postr.title|truncatechars:50 }}<h2>
+                                              </div>
+                                              <div class="result-subtitle">{{ postr.overview|safe|truncatechars:40 }}</div>
+                                          </div>
+                                          <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                              {{ postr.content|safe|truncatechars:40 }}
+                                          </div>
+                                          <div class="result-phone">
+                                              <a href="tel:{{ postr.phone }}"><img style="width: 70px;" src="https://static.vecteezy.com/system/resources/previews/009/380/444/original/call-us-buttons-clipart-design-illustration-free-png.png"></img></a>
+                                          </div>
+                                          <div class="result-content">
+                                              <div class="result-content-header result-content-uk">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            {% if forloop.counter|divisibleby:4 %}
+                              </div>
+                              <div class="row">
+                            {% endif %}
+                        {% endfor %}
+                      </div>
+                      <!--/item-->
+                    </div>
+                    <div class="item ">
+                      <div class="row">
+                        
+                        {% for postr in posts2 %}
+                            <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
+                              <div class="job_col redirect_job_click">
+                                <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>
+                                  <img style="width: -webkit-fill-available;" src="{{ postr.thumbnail.url }}" alt="Micropyramid Informatics Private Ltd."/>
+                              </a>
+                                  <div class="result-data">
+                                      <div class="result-data-description">
+                                          <div class="result-header">
+                                              <div class="result-title">
+                                                  <br>
+                                                  <h2 style="font-size: 1rem">{{ postr.title|truncatechars:50 }}<h2>
+                                              </div>
+                                              <div class="result-subtitle">{{ postr.overview|safe|truncatechars:40 }}</div>
+                                          </div>
+                                          <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                              {{ postr.content|safe|truncatechars:40 }}
+                                          </div>
+                                          <div class="result-phone">
+                                              <a href="tel:{{ postr.phone }}"><img style="width: 70px;" src="https://static.vecteezy.com/system/resources/previews/009/380/444/original/call-us-buttons-clipart-design-illustration-free-png.png"></img></a>
+                                          </div>
+                                          <div class="result-content">
+                                              <div class="result-content-header result-content-uk">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            {% if forloop.counter|divisibleby:4 %}
+                              </div>
+                              <div class="row">
+                            {% endif %}
+                        {% endfor %}
+                      </div>
+                      <!--/item-->
+                    </div>
+                    <div class="item ">
+                      <div class="row">
+                        
+                        {% for postr in posts3 %}
+                            <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
+                              <div class="job_col redirect_job_click">
+                                <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>
+                                  <img style="width: -webkit-fill-available;" src="{{ postr.thumbnail.url }}" alt="Micropyramid Informatics Private Ltd."/>
+                              </a>
+                                  <div class="result-data">
+                                      <div class="result-data-description">
+                                          <div class="result-header">
+                                              <div class="result-title">
+                                                  <br>
+                                                  <h2 style="font-size: 1rem">{{ postr.title|truncatechars:50 }}<h2>
+                                              </div>
+                                              <div class="result-subtitle">{{ postr.overview|safe|truncatechars:40 }}</div>
+                                          </div>
+                                          <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                              {{ postr.content|safe|truncatechars:40 }}
+                                          </div>
+                                          <div class="result-phone">
+                                              <a href="tel:{{ postr.phone }}"><img style="width: 70px;" src="https://static.vecteezy.com/system/resources/previews/009/380/444/original/call-us-buttons-clipart-design-illustration-free-png.png"></img></a>
+                                          </div>
+                                          <div class="result-content">
+                                              <div class="result-content-header result-content-uk">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            {% if forloop.counter|divisibleby:4 %}
+                              </div>
+                              <div class="row">
+                            {% endif %}
+                        {% endfor %}
+                      </div>
+                      <!--/item-->
+                    </div>
+                    <!--/carousel-inner-->
+                  </div>
+                  <!--/myCarousel-->
+                </div>
+              </div>
               <!-- similar_jobs ends here -->
-
-          <!-- Similar Links ends -->
 
             </div>
           </div>
@@ -60,29 +240,6 @@
       </div>
       <!-- Left menu starts here-->
 <!-- walkin_jobs starts here -->
-<div class="col-md-3 right_container">
-  <!-- upload_btn_block starts here -->
-  <div class="similar_job_posts" style="margin-bottom:10px;">
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBubbas%2F&width=300&height=150&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=892560280818752" width="300" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-  </div>
-  <!--register_login form ends here -->
-  <div class="top_recruiters">
-    <div class="heading text-uppercase">Similar Profiles</div>
-    <ul class="recruiter_blocks">
-      <li class="recruiter_block" id="/ibm-india-pvt-limited-job-openings/">
-        <div class="img_part">
-          <img src="{% thumbnail 'https://cdn.Bubbas.com/companies1/ibm.png' "70x70" %}" alt="IBM-India-pvt-limited"/>
-        </div>
-        <div class="content">
-          <strong class="title"><a>Rashmi</a></strong>
-          <p class="redirect"><a>View Profile</a></p>
-        </div>
-      </li>
-      <a href=" 'companies' %}" target="_blank"><span class="view_all">See More</span></a>
-    </ul>
-  </div>
-
-</div>
       <!-- Left menu ends here-->
     </div>
   </div>

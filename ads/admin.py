@@ -6,10 +6,12 @@ class imageAdmin(admin.ModelAdmin):
     list_display = ["title", "photo"]
 
 
+
 class AdAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     filter_horizontal = ('categories', 'images',)
     exclude = ('views', 'likes')
+    list_display = ["title", "city"]
 
 admin.site.register(Image, imageAdmin)
 admin.site.register(Ad, AdAdmin)

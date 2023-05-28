@@ -22,10 +22,11 @@
             Bubbas<br> It’s time to live your life fully</p>
           <div class="tabs_block">
             <ul class="tabs">
-              <li><button class="job_type active_button" id="full-time">New girls</button></li>
+              <li><button class="job_type active_button" id="full-time">Escorts</button></li>
               <li><button class='job_type' id="internship">Verified Call Girls</button></li>
-              <li><button class='job_type' id="walk-in">Meet nearby</button></li>
-              <li><button class='job_type' id="Fresher">Sex Cam</button></li>
+              <li><button class='job_type' id="walk-in">Verified Escorts</button></li>
+              <li><button class='job_type' id="Fresher">Call Girls Online</button></li>
+              <li><button class='job_type' id="Fresher">Chat Girls</button></li>
             </ul>
             <div class="search_location_other_block">
               <div class="job-location_other">
@@ -35,13 +36,14 @@
                       <label class="sr-only"></label>
                       <select class="form-select form-control_opt" name="location" id="job_location ">
                         <option value="">Location</option>
-                          <option value=" city.name }}"> city.name }}</option>
-                          <option value=" state.name }}"> state.name }}</option>
+                        {% for city in cities %}
+                          <option value="{{ city.id }}">{{ city.name }}</option>
+                        {% endfor %}
                       </select>
                     
                     
                       <label class="sr-only"></label>
-                      <input type="text" class="form-control form-control_opt content_wrap_list" id ="q-field" name="q" placeholder="Enter Any Skills, Qualifications" autocomplete="off">
+                      <input type="text" class="form-control form-control_opt content_wrap_list" id ="q-field" name="q" placeholder="Find profiles" autocomplete="off">
                       <input type="hidden" name="job_type" id='job_type'>
                       <button type="submit" class="btn btn-default">Search</button>
                       <!--<input type="hidden" name="search_slug" id='search_slug'>-->
@@ -132,13 +134,25 @@
           </div>
           <!-- skills_companies ends here -->
           <!-- top_locations starts here -->
-          {% cache 604800 top_job_locations_in_index %}
+          {% comment %} {% cache 604800 top_job_locations_in_index %} {% endcomment %}
           <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Locations</div>
+            <div class="heading text-uppercase">Top Escorts Locations</div>
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ city.slug }}"></a>{{ city.name }}</li>
+                      <li><a href="/call-girls/{{ city.name }}">{{ city.name }}</a></li>
+                </ul>
+              {% endfor %}
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <div class="row mar_lr_0 top_locations">
+            <div class="heading text-uppercase">Top Call girls Locations</div>
+            <div class="locations">
+              {% for city in cities %}
+                <ul class="location_ul">
+                      <li><a href="/call-girls/{{ city.name }}">{{ city.name }}</a></li>
                 </ul>
               {% endfor %}
               <ul>
@@ -150,14 +164,14 @@
             <div class="locations">
               {% for category in categories %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ category.slug }}"></a>{{ category.title }}</li>
+                      <li><a href="/call-girls/{{ category.slug }}">{{ category.title }}</a></li>
                 </ul>
               {% endfor %}
               <ul>
               </ul>
             </div>
           </div>
-          {% endcache %}
+          {% comment %} {% endcache %} {% endcomment %}
         </div>
         <div class="col-md-3 right_container">
 
@@ -169,24 +183,5 @@
   </section>
   <!-- main_container ends here -->
   <!-- help_options_row starts here -->
-  <div id="block_job_apply" style="display: none;"></div>
 <!-- help_options_row ends here -->
 {% endblock base %}
-{% block 'extra_js' %}
-<script type="text/javascript">
-  $('span.user_search').click(function(e){
-      $(window).scrollTop($('#banner').offset().top-$('.page-top').height()-100);
-  });
-  $(document).ready(function() {
-    $('#myCarousel').carousel({
-      interval: 10000
-  })
-      $(".latest_jobs_class").click(function(){
-        window.location = $(this).attr('id')
-      })
-    $(".latest_jobs a").click(function(e){
-      e.stopPropagation()
-    })
-    });
-</script>
-{% endblock %}
