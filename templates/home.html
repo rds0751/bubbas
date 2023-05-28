@@ -119,10 +119,12 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="profile">
                 <div class="row d-flex justify-content-center align-items-center image_row">
+                  {% for ad in ads %}
                     <div class="col-md-2 col-sm-3 col-xs-3 image_col">
                      <a href="/micropyramid-informatics-pvt-ltd-job-openings/" class='company_logo'>
-                      <img src="https://cn1.kommons.com/ez58PytDWTKKLODQ/ez58PytDWTKKLODQ.1.thumbnail.jpg" alt="Micropyramid Informatics Private Ltd."/></a>
+                      <img src="{{ ad.thumbnail.url }}" alt="{{ ad.title }}"/></a>
                     </div>
+                    {% endfor %}
                 </div>
                 <a class="pull-right view-more" href="/companies/">View More</a>
               </div>
@@ -130,7 +132,7 @@
           </div>
           <!-- skills_companies ends here -->
           <!-- top_locations starts here -->
-          {% comment %} {% cache 604800 top_job_locations_in_index %} {% endcomment %}
+          {% cache 604800 top_job_locations_in_index %}
           <div class="row mar_lr_0 top_locations">
             <div class="heading text-uppercase">Top Locations</div>
             <div class="locations">
@@ -155,30 +157,7 @@
               </ul>
             </div>
           </div>
-          {% comment %} {% endcache %} {% endcomment %}
-
-          <!-- top_locations edns here -->
-          <!-- latest_jobs starts here -->
-          <div class="latest_jobs row mar_lr_0">
-            <div class="heading text-uppercase">Latest Profiles<!--<a class="pull-right view-more" href="#">View More</a>--></div>
-            <div class="row jobs_columns">
-                <div class="col-md-4 col-sm-6 job_outer_col">
-                  <div class="job_col latest_jobs_class" id='{{ job.slug }}'>
-                  <strong class="title" ><a href="{{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ job.slug }}" >{{ job.title }} [{% if job.min_year == 0 and job.max_year == 0 %}Fresher{% else %}{{ job.min_year }} - {{ job.max_year }} Years{% endif %}]</a></strong>
-                    <p><a href=" 'company_jobs' job.company.slug %}">job.company.name|capfirst}}</a></p>
-                    <p>job.company.name|capfirst}}</p>
-                    <p>job.company_name|capfirst}}</p>
-                  <p><i class="fa fa-inr" aria-hidden="true"></i> <span >{{ job.get_job_salary.0 }} P.A</span></p>
-                  <p class="location" ><i class="fa fa-map-marker"></i> 
-                    <a href="location.get_job_url}}"> location.name }}</a>
-                    <a style="cursor:default">{{ location.name }}</a>
-                </p>
-                  </div>
-                </div>
-              <div><a class="pull-rit view-more" href="/jobs/">View More</a></div>
-            </div>
-          </div>
-          <!-- latest_jobs ends here -->
+          {% endcache %}
         </div>
         <div class="col-md-3 right_container">
 
