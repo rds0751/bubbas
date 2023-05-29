@@ -60,7 +60,7 @@
                                 {% for post in posts %}
                                 <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="height: 435px; border-radius:5px; margin: 2px; background-color: beige; float: left; opacity: 1; padding: 0; left: 31.1667%; top: 0px;">
                                 <a href="/call-girls/{{ post.city.name }}/{{ post.slug }}/" class='company_logo'>
-                                    <img style="width: -webkit-fill-available; height: 150px;" src="{{ post.thumbnail.url }}" alt="Micropyramid Informatics Private Ltd."/>
+                                    <img style="width: -webkit-fill-available; height: 150px;" src="{{ post.thumbnail.url }}" alt=""/>
                                 </a>
                                     <div class="result-data">
                                         <div class="result-data-description">
@@ -72,19 +72,26 @@
                                                 <div class="result-subtitle">{{ post.overview|truncatechars:40 }}</div>
                                             </div>
                                             <div class="result-location">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                                                {{ post.content|truncatechars:40 }}
+                                                {{ post.content|safe|truncatechars:40 }}
                                             </div>
                                             <div class="result-phone">
                                                 <a href="tel:{{ post.phone }}"><img style="width: 70px;" src="https://static.vecteezy.com/system/resources/previews/009/380/444/original/call-us-buttons-clipart-design-illustration-free-png.png"></img></a>
                                             </div>
                                             <div class="result-content">
                                                 <div class="result-content-header result-content-uk">
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {% endfor %}
+                            </div>
+                            <div class="result-content">
+                                <div class="result-content-header result-content-uk">
+                                    <br><br><br>
+                                    {{ city.page_content|safe }}
+                                </div>
                             </div>
                         </div>
                     </div>

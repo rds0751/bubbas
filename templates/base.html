@@ -69,13 +69,7 @@
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
-                {% cache 604800 latest_jobs_menu %}
-{% comment %}         
-                  {% get_skills as total_skills %}
-                  {% get_industries as total_industries %}
-                  {% get_locations as total_locations %}
-                  {% get_government_jobs as all_government_jobs %}
-                  {% get_internships as all_internship_jobs %} {% endcomment %}
+                {% comment %} {% cache 604800 latest_jobs_menu %}
                   
                   <li class="dropdown megamenu-fw">
                     <a href=" url 'jobs:index' %}" class="dropdown-toggle latest-jobs" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
@@ -102,16 +96,16 @@
                       </li>
                     </ul>
                   </li>
-                  {% endcache %}
+                  {% endcache %} {% endcomment %}
                   <li {% if request.path == '/fresher-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">New call girls <span class="sr-only">(current)</span></a></li>
                    <li {% if request.path == '/walkin-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'walkin' %}">Verified call girls <span class="sr-only">(current)</span></a></li>
                   {% if request.user.user_type == 'JS' %}
-                  <li><a href=" url 'jobs:jobs_applied' %}">Contacted call girls</a></li>
+                  <li><a href="">Contacted call girls</a></li>
                   {% endif %}
                   <li {% if request.path == '/internship-jobs/' %}class="active"{% endif %}>
-                    <a href=" url 'internship_jobs'%}">New in Town</a>
+                    <a href="">New in Town</a>
                   </li>
-                  <li><a href=" url 'my:alerts_list'%}">Profile Alerts</a></li>
+                  <li><a href="">Profile Alerts</a></li>
                 </ul>
                 {% if not request.user.is_authenticated %}
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
@@ -153,7 +147,7 @@
       {% endblock %}
       <!-- banner ends here -->
       <!-- job_types_links starts here -->
-      {% cache 604800 footer_links %}
+      {% comment %} {% cache 604800 footer_links %}
 
       <section class="job_types_links mar_lr_0">
         <div class="container">
@@ -185,7 +179,7 @@
           </div>
         </div>
       </section>
-      {% endcache %}
+      {% endcache %} {% endcomment %}
       <!-- job_types_links ends here -->
       <div id="WaitDialog"   class="hidden" style="text-align: center">
         <div style="margin-top: 10px; color: white">
@@ -206,7 +200,7 @@
                   </div>
                 {% endblock %}
                 <div class="col-md-5 col-sm-12 col-xs-12 links">
-                  <ul class="footer_links">
+                  {% comment %} <ul class="footer_links">
                     <li class="text-uppercase">About Us</li>
                     <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
                     <li><a href=" url 'sitemap' %}" target="_blank">Sitemap</a></li>
@@ -230,7 +224,7 @@
                     <li><a href="/" target="_blank">Search call girls</a></li>
                     <li><a href=" url 'jobs:index' %}" target="_blank">View All call girls</a></li>
                     <li><a href=" url 'pages' 'faq' %}" target="_blank">FAQs</a></li>
-                  </ul>
+                  </ul> {% endcomment %}
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
                 {% if not request.user.is_authenticated %}
@@ -467,82 +461,6 @@
 
 
     <!-- pip slider -->
-    <script>
-  {% if request.GET.referer == 'gmail' and not request.user.is_authenticated  %}
-    $('p.hint').remove();
-     $("#login_div").show()
-      $("#register_div").hide()
-    $('#login_register').modal('show');
-  {% endif %}
-  {% if show_pop_up and not request.user.is_authenticated %}
-    $('p.hint').remove();
-    $('#login_register').modal('show');
-    $("#login_div").hide()
-    $("#register_div").show()
-    $('#ApplicantFormRegister').trigger("reset");
-    $("#modal_head").show()
-  {% endif %}
-  {% if request.GET.verification == 'success' %}
-    open_dialog('You have Successfully Verified', 'Success!')
-  {% elif request.GET.verification == 'verified' %}
-    open_dialog('You have Already Subscribed', 'Success!')
-  {% elif request.GET.verification == 'error' %}
-    open_dialog('Sorry, No {{ request.GET.type }} Found', 'Warning!')
-  {% endif %}
-  jQuery(document).ready(function($){
-
-  $('#circle').circleProgress({
-            value: "{{ request.user.profile_completion_percentage }}"/100,
-            size: 100,
-            startAngle: -Math.PI / 2,
-            fill: {gradient: [['#0681c4', .5], ['#4ac5f8', .5]], gradientAngle: Math.PI / 4}
-            // fill: {
-            //   color: "#fff",
-            //   background: "white"
-            // }
-        });
-    });
-      function popop(){
-      var user_status = "{{request.user.is_authenticated}}"
-      current_date = new Date();
-      var diff =  Math.abs(new Date(current_date) - new Date($.cookie("login_popup")));
-      var seconds = Math.floor(diff/1000); //ignore any left over units smaller than a second +977 981-0330647
-      var minutes = Math.floor(seconds/60);
-      if (minutes == 5 && ($.cookie("show_popup")=='False')){
-        if (user_status == 'False') {
-           $("#login_div").show()
-          $("#register_div").hide()
-          $('#login_register').modal('show');
-          $.cookie('show_popup', 'True');
-        }
-      }
-      }
-
-      // The path parameter is needed to make this cookie valid across the whole page
-      if(! $.cookie("login_popup")){
-      current_date = new Date()
-      $.cookie('login_popup', current_date);
-      $.cookie('show_popup', 'False');
-
-      setInterval(popop, 1000);
-      }
-      else{
-       setInterval(popop, 1000);
-      }
-      $('.subscribe').click(function(e){
-      {% if job %}
-      id= {{job.id}}
-      $('#jobpost_id').val(id);
-      {% endif %}
-      $('p.hint').text('');
-      $('#email').val('')
-      $('#subscribe').plainModal('open');
-      })
-
-      $('.latest-jobs').click(function(e){
-        window.location = '/jobs/';
-      });
-    </script>
     {% endcompress %}
 
     {% compress js %}
@@ -551,30 +469,5 @@
     {% block 'extra_js' %}
     {% endblock %}
     {% endcompress %}
-
-    <script>
-    var initOpts = {
-      projectKey: "HqNqwbmBQwy4gFRWtkOc",
-      ingestPoint: "https://replay.micropyramid.com/ingest",
-      defaultInputMode: 0,
-      obscureTextNumbers: false,
-      obscureTextEmails: true,
-    };
-    var startOpts = { userID: "" };
-    (function(A,s,a,y,e,r){
-      r=window.OpenReplay=[e,r,y,[s-1, e]];
-      s=document.createElement('script');s.src=A;s.async=!a;
-      document.getElementsByTagName('head')[0].appendChild(s);
-      r.start=function(v){r.push([0])};
-      r.stop=function(v){r.push([1])};
-      r.setUserID=function(id){r.push([2,id])};
-      r.setUserAnonymousID=function(id){r.push([3,id])};
-      r.setMetadata=function(k,v){r.push([4,k,v])};
-      r.event=function(k,p,i){r.push([5,k,p,i])};
-      r.issue=function(k,p){r.push([6,k,p])};
-      r.isActive=function(){return false};
-      r.getSessionToken=function(){};
-    })("//static.openreplay.com/3.5.10/openreplay.js",1,0,initOpts,startOpts);
-  </script>
   </body>
 </html>

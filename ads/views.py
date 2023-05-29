@@ -7,7 +7,7 @@ from .models import Image, Ad, City, Category
 def home(request):
     c = City.objects.all().order_by('?')
     ca = Category.objects.all().order_by('?')[:50]
-    p = Ad.objects.all().order_by('?')[:30]
+    p = Ad.objects.filter(featured=True).order_by('?')[:30]
     meta_title = 'i am title of my meta'
     meta_description = 'describe my meta'
     context = {
@@ -37,7 +37,8 @@ def city(request, city):
         'ads': p,
         'meta_title': meta_title,
         'meta_description': meta_description,
-        'posts': posts
+        'posts': posts,
+        'city': city
     }
     return render(request, 'city.html', context)
 

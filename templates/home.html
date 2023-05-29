@@ -45,7 +45,7 @@
                       <label class="sr-only"></label>
                       <input type="text" class="form-control form-control_opt content_wrap_list" id ="q-field" name="q" placeholder="Find profiles" autocomplete="off">
                       <input type="hidden" name="job_type" id='job_type'>
-                      <button type="submit" class="btn btn-default">Search</button>
+                      <a href='/call-girls/agra' class="btn btn-default">Search</a>
                       <!--<input type="hidden" name="search_slug" id='search_slug'>-->
                     
                   </div>
@@ -123,7 +123,7 @@
                 <div class="row d-flex justify-content-center align-items-center image_row">
                   {% for ad in ads %}
                     <div class="col-md-2 col-sm-3 col-xs-3 image_col">
-                     <a href="/micropyramid-informatics-pvt-ltd-job-openings/" class='company_logo'>
+                     <a href="/" class='company_logo'>
                       <img src="{{ ad.thumbnail.url }}" alt="{{ ad.title }}"/></a>
                     </div>
                     {% endfor %}
@@ -136,7 +136,7 @@
           <!-- top_locations starts here -->
           {% comment %} {% cache 604800 top_job_locations_in_index %} {% endcomment %}
           <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Escorts Locations</div>
+            <div class="heading text-uppercase">Top Call Girls Cities</div>
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
@@ -148,11 +148,11 @@
             </div>
           </div>
           <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Call girls Locations</div>
+            <div class="heading text-uppercase">Top Escorts Locations</div>
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ city.name }}">{{ city.name }}</a></li>
+                      <li><a href="/escorts/{{ city.name }}">{{ city.name }}</a></li>
                 </ul>
               {% endfor %}
               <ul>
@@ -164,7 +164,7 @@
             <div class="locations">
               {% for category in categories %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ category.slug }}">{{ category.title }}</a></li>
+                      <li><a href="#">{{ category.title }}</a></li>
                 </ul>
               {% endfor %}
               <ul>
