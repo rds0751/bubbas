@@ -89,7 +89,7 @@ class State(models.Model):
 
 class City(models.Model):
     name = models.CharField(max_length=500)
-    state = models.ForeignKey(State, related_name="state", on_delete=models.CASCADE, null=True)
+    state = models.ForeignKey(State, related_name="state", on_delete=models.CASCADE, null=True, blank=True)
     status = models.CharField(choices=STATUS_TYPES, max_length=10, default="Enabled", null=True, blank=True)
     slug = models.SlugField(max_length=500, null=True, blank=True)
     meta_title = models.TextField(default="", null=True, blank=True)
