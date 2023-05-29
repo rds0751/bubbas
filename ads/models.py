@@ -90,18 +90,18 @@ class State(models.Model):
 class City(models.Model):
     name = models.CharField(max_length=500)
     state = models.ForeignKey(State, related_name="state", on_delete=models.CASCADE, null=True)
-    status = models.CharField(choices=STATUS_TYPES, max_length=10, default="Enabled")
-    slug = models.SlugField(max_length=500)
-    meta_title = models.TextField(default="")
-    meta_description = models.TextField(default="")
-    page_content = RichTextField()
+    status = models.CharField(choices=STATUS_TYPES, max_length=10, default="Enabled", null=True, blank=True)
+    slug = models.SlugField(max_length=500, null=True, blank=True)
+    meta_title = models.TextField(default="", null=True, blank=True)
+    meta_description = models.TextField(default="", null=True, blank=True)
+    page_content = RichTextField(null=True, blank=True)
     parent_city = models.ForeignKey(
         "self",
         related_name="child_cities",
         null=True,
         blank=True,
         on_delete=models.CASCADE,
-    )
+        )
 
     def __str__(self):
         return self.name
