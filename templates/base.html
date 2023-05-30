@@ -67,7 +67,35 @@
 
           <!-- search_login starts here -->
           {% block search_block %}
-          {% endblock %}
+<section class="inner_search_section" id='search_div'>
+  <div class="container">
+      <div class="row">
+          <form autocomplete="off" name="job-search-form" class="autocomplete-me search-form" id="elastic-search" method="POST">
+              <div class="search_div_form" style="margin-top: 78px;">
+                  <div class="form_element">
+                      <select class="form-select" name="job_type" id="job_type">
+                          <option value="">Select A City</option>
+                          {% for city in cities %}
+                          <option value="{{ city.id }}">{{ city.name }}</option>
+                          {% endfor %}
+                      </select>
+                  </div>
+                  <div class="form_element">
+                      <input type="text" class="form-control" id="q" name="q" placeholder="Profile Names" value="{% for text in searched_text %}{{ text }}, {% empty %}{% for skill in searched_skills %}{{ skill }}, {% endfor %}{% for edu in searched_edu %}{{ edu }}, {% endfor %}{% endfor %}">
+                  </div>
+                  <div class="form_element">
+                      <input type="text" class="form-control" id="location" name="location" placeholder="Enter Any Locations, States" value="{% for loc in searched_locations %}{{ loc }}, {% endfor %}{% for state in searched_states %}{{ state }}, {% endfor %}">
+                  </div>
+                  <div class="search_form_element">
+                      <button type="submit" class="btn">Search</button>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+{% endblock %}
           <!-- search_login ends here -->
         </div>
       </section>
@@ -363,15 +391,6 @@
   </div>
 
   <div id="block_question" style="display:none;"></div>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    {% compress js %}
-    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
-
-
-    <!-- pip slider -->
-    {% endcompress %}
-
     {% compress js %}
     {% block 'extra_js' %}
     {% endblock %}
