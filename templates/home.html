@@ -30,7 +30,8 @@
             </ul>
             <div class="search_location_other_block">
               <div class="job-location_other">
-                <form class="form-inline autocomplete-me search-form" name="search-form" id="search-form" method="POST">
+                <form action="/" class="form-inline autocomplete-me search-form" name="search-form" id="search-form" method="POST">
+                  {% {% csrf_token %} %}
                   <div class="input-group">
                     
                       <label class="sr-only"></label>
@@ -45,7 +46,7 @@
                       <label class="sr-only"></label>
                       <input type="text" class="form-control form-control_opt content_wrap_list" id ="q-field" name="q" placeholder="Find profiles" autocomplete="off">
                       <input type="hidden" name="job_type" id='job_type'>
-                      <a href='/call-girls/agra' class="btn btn-default">Search</a>
+                      <button href='/call-girls/agra' class="btn btn-default">Search</button>
                       <!--<input type="hidden" name="search_slug" id='search_slug'>-->
                     
                   </div>
