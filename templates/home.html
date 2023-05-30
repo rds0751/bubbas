@@ -17,17 +17,7 @@
   <div class="container search_login_row">
       <div class="row mar_lr_0 search_login_blocks">
         <div class="search_block col-md-8 col-sm-12">
-          <p class="message">You will find the best
-            Call Girls India in
-            Bubbas<br> It’s time to live your life fully</p>
           <div class="tabs_block">
-            <ul class="tabs">
-              <li><button class="job_type active_button" id="full-time">Escorts</button></li>
-              <li><button class='job_type' id="internship">Verified Call Girls</button></li>
-              <li><button class='job_type' id="walk-in">Verified Escorts</button></li>
-              <li><button class='job_type' id="Fresher">Call Girls Online</button></li>
-              <li><button class='job_type' id="Fresher">Chat Girls</button></li>
-            </ul>
             <div class="search_location_other_block">
               <div class="job-location_other">
                 <form action="/" class="form-inline autocomplete-me search-form" name="search-form" id="search-form" method="POST">
@@ -65,22 +55,9 @@
     <div class="container">
       <div class="row mar_lr_0">
         <div class="col-md-9 left_container">
-          <!-- register_block starts here -->
-          <div class="row mar_lr_0 register_block">
-            <div class="col-md-12 register_point border redirect_link" data-href=" 'my:alerts_list'%}">
-              <div class="text-center register_col">
-                <strong>Get Profiles Into your inbox</strong>
-                <p>Create Profile Alert in your desired areas and get best-matched profiles into your inbox.</p>
-              </div>
-            </div>
-          </div>
-          <!-- register_block ends here -->
-          <!-- skills_companies starts here -->
           <div class="row mar_lr_0 skills_locations">
-            <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation" class="nav-items"><a href="#profile" class="nav-link active" aria-controls="profile" aria-expanded="true" role="tab" data-bs-toggle="tab">Top Profiles</a></li>
-              {% comment %} <li role="presentation" class="nav-items" ><a href="#home" class="nav-link" aria-controls="home" role="tab" aria-expanded="false" data-bs-toggle="tab">Verified Profiles</a></li> {% endcomment %}
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
@@ -118,18 +95,6 @@
               {% for city in cities %}
                 <ul class="location_ul">
                       <li><a href="/escorts/{{ city.name }}">{{ city.name }}</a></li>
-                </ul>
-              {% endfor %}
-              <ul>
-              </ul>
-            </div>
-          </div>
-          <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Categories</div>
-            <div class="locations">
-              {% for category in categories %}
-                <ul class="location_ul">
-                      <li><a href="#">{{ category.title }}</a></li>
                 </ul>
               {% endfor %}
               <ul>
