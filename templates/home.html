@@ -19,11 +19,11 @@
       <div class="row mar_lr_0">
         <div class="col-md-12 left_container">
           <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Call Girls Cities</div>
+            <div class="heading text-uppercase"><strong>Top Call Girls Cities</strong></div>
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ city.name }}">{{ city.name }}</a></li>
+                      <li><a href="/call-girls/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_ads.count }})</strong></a></li>
                 </ul>
               {% endfor %}
               <ul>
@@ -31,11 +31,11 @@
             </div>
           </div>
           <div class="row mar_lr_0 top_locations">
-            <div class="heading text-uppercase">Top Escorts Locations</div>
+            <div class="heading text-uppercase"><strong>Top Escorts Locations</strong></div>
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/escorts/{{ city.name }}">{{ city.name }}</a></li>
+                      <li><a href="/escorts/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_ads.count }})</strong></a></li>
                 </ul>
               {% endfor %}
               <ul>

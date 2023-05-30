@@ -199,7 +199,7 @@ a:hover {
   background: #61d413;
 }
 .navbar ul li .yellow {
-  background: #00aeef;
+  background: #000276;
 }
 .navbar ul li:hover {
   /* cursor: pointer; */
@@ -304,7 +304,7 @@ a:hover {
   text-align: left;
   display: block;
   color: #888;
-  font-size: 13px;
+  font-size: 18px;
 }
 #menu ul li .sub_list li a i {
   padding-left: 5px;
@@ -466,7 +466,7 @@ a:hover {
 
 .joblist_table {
   width: 100%;
-  font-size: 13px;
+  font-size: 18px;
   border-collapse: separate;
   border-spacing: 0 6px;
 }
@@ -488,7 +488,7 @@ a:hover {
 }
 .joblist_table thead tr th {
   padding: 8px 8px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   border: none;
   color: black;

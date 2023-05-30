@@ -59,7 +59,7 @@ class Country(models.Model):
         return self.name
 
     def get_no_of_ads(self):
-        return Ad.objects.filter(location__state__country=self, status="Live")
+        return Ad.objects.filter(city__state__country=self, status="Live")
     
     class Meta:
         verbose_name_plural = "Countries"
@@ -105,6 +105,9 @@ class City(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_no_of_ads(self):
+        return Ad.objects.filter(city__in=[self])
 
     def get_ad_url(self):
         job_url = "/call-girls/" + str(self.slug) + "/"

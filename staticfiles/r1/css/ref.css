@@ -72,7 +72,7 @@
 .recruiter_table {
   margin-top: 15px;
   padding: 0 5px;
-  font-size: 13px;
+  font-size: 18px;
 }
 .recruiter_table .table thead tr th {
   background: #ddd;
@@ -145,7 +145,7 @@
   font-weight: 500;
 }
 .job_item .title a .exp {
-  color: #00aeef;
+  color: #000276;
   font-size: 15px;
   font-weight: 500;
 }
@@ -153,7 +153,7 @@
   border-radius: 20px;
   padding: 3px 12px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
   background: #62bb46;
@@ -172,10 +172,10 @@
 .job_item .job_type {
   display: block;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_item .job_type span {
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: 3px;
 }

@@ -102,42 +102,6 @@
      
       {% block base %}
       {% endblock %}
-      <!-- banner ends here -->
-      <!-- job_types_links starts here -->
-      {% comment %} {% cache 604800 footer_links %}
-
-      <section class="job_types_links mar_lr_0">
-        <div class="container">
-          <div class="row  d-flex justify-content-center  mar_lr_0">
-            <div class="col-md-3 col-sm-4 job_types_link_col">
-              <ul>
-                <li><a href=" url 'jobs_by_skill' %}">Verified</a></li>
-                <li><a href=" skill.get_job_url }}">call girls for  skill.name|truncatewords:2  }}</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4  job_types_link_col">
-              <ul>
-                <li><a href=" url 'jobs_by_industry' %}">New call girls</a></li>
-                <li><a href=" industry.get_job_url }}"> industry.name|get_industry_name }} call girls</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4  job_types_link_col">
-              <ul>
-                <li><a href=" url 'jobs_by_location' 'jobs' %}">Location</a></li
-                <li><a href=" location.get_job_url }}">call girls near location.name }}</a></li>
-              </ul>
-            </div>
-           <div class="col-md-3 col-sm-4  job_types_link_col">
-              <ul>
-                <li><a href="/fresher-jobs/">Hot</a></li>
-                <li><a href="/skill.slug}}-fresher-jobs/"> skill.name|truncatewords:2 }} Hot call girls</a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      {% endcache %} {% endcomment %}
-      <!-- job_types_links ends here -->
       <div id="WaitDialog"   class="hidden" style="text-align: center">
         <div style="margin-top: 10px; color: white">
           <b>Please wait</b>
@@ -157,7 +121,31 @@
                   </div>
                 {% endblock %}
                 <div class="col-md-5 col-sm-12 col-xs-12 links">
-                  Thankyou for Visit!
+                  {% comment %} <ul class="footer_links">
+                    <li class="text-uppercase">About Us</li>
+                    <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
+                    <li><a href=" url 'sitemap' %}" target="_blank">Sitemap</a></li>
+                    <li><a href=" url 'pages' 'terms-conditions' %}" target="_blank">Terms &amp; Conditions</a></li>
+                    <li><a href=" url 'pages' 'privacy-policy' %}" target="_blank">Privacy Policy</a></li>
+                    <li><a href=" url 'contact' %}" target="_blank">Contact Us</a></li>
+                  </ul>
+                  <ul class="footer_links">
+                    <li class="text-uppercase">call girls</li>
+                    <li><a href=" url 'recruiter:new_user' %}" target="_blank">Registration</a></li>
+                    <li><a href=" url 'pages' 'recruiter-faq' %}" target="_blank">FAQs</a></li>
+                    <li><a href=" url 'post_job' %}" target="_blank">Post Job For Free</a></li>
+                  </ul>
+                  <ul class="footer_links">
+                    <li class="text-uppercase">Find call girls</li>
+                    {% if request.user.is_authenticated %}                  
+                    <li style="display: none;"><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
+                    {%else%}
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
+                    {%endif%}
+                    <li><a href="/" target="_blank">Search call girls</a></li>
+                    <li><a href=" url 'jobs:index' %}" target="_blank">View All call girls</a></li>
+                    <li><a href=" url 'pages' 'faq' %}" target="_blank">FAQs</a></li>
+                  </ul> {% endcomment %}
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
                 {% if not request.user.is_authenticated %}

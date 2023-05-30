@@ -233,7 +233,7 @@
       top: 0;
       left: 0;
       opacity: 0;
-      font-size: 13px;
+      font-size: 18px;
       min-width: 100%;
       max-width: 100%;
       padding: 2em 1em;
@@ -367,7 +367,7 @@
       -o-transition: opacity 0.3s ease;
       transition: opacity 0.3s ease;
       border-radius: 8px;
-      font-size: 13px;
+      font-size: 18px;
       top: 130px;
       left: -10px;
       width: 140px;

@@ -7,12 +7,12 @@ a:hover {
   height: 40px;
   border: none;
   border-radius: 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .heading {
-  color: #00aeef;
-  font-size: 13px;
+  color: #000276;
+  font-size: 18px;
   font-weight: 500;
   padding-bottom: 6px;
   margin-bottom: 10px;
@@ -32,7 +32,7 @@ a:hover {
   border-radius: 20px;
   padding: 7px 30px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .view-more {
-  background: #00aeef;
+  background: #000276;
   color: white;
   border-radius: 2px;
   padding: 3px 10px;
@@ -84,12 +84,12 @@ a:hover {
 
 .green {
   color: #62bb46;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .grey {
   color: #45586d;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .job_list_section {
@@ -120,7 +120,7 @@ a:hover {
   display: block;
   color: #88898a;
   margin-top: 6px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_list_section .job_item .logo_post_date .apply {
   background: #62bb46;
@@ -145,8 +145,8 @@ a:hover {
   line-height: 23px;
 }
 .job_list_section .job_item .title a .exp {
-  color: #00aeef;
-  font-size: 12px;
+  color: #000276;
+  font-size: 16px;
   font-weight: 500;
 }
 .job_list_section .job_item .title a .highlight {
@@ -156,13 +156,13 @@ a:hover {
   border-radius: 20px;
   padding: 3px 12px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
   background: #62bb46;
 }
 .job_list_section .job_item p {
-  color: #5b748f;
+  color: #1f2326;
   margin: 0;
   /*&.location{
     font-size: 10px;
@@ -175,29 +175,29 @@ a:hover {
 }
 .job_list_section .job_item .job_type {
   display: block;
-  color: #5b748f;
+  color: #1f2326;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_list_section .job_item .job_type span {
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: 3px;
-  color: #5b748f;
+  color: #1f2326;
 }
 .job_list_section .job_item .job_type span a {
-  color: #5b748f;
+  color: #1f2326;
 }
 .job_list_section .job_item .ind_type {
   display: block;
-  color: #5b748f;
+  color: #1f2326;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_list_section .job_item .company {
   display: block;
   margin-top: 6px;
-  color: #5b748f;
+  color: #1f2326;
 }
 .job_list_section .job_item .company i {
   display: inline-block;
@@ -226,7 +226,7 @@ a:hover {
   margin-top: 5px;
 }
 .job_list_section .job_item .description.Keyskills .tags a {
-  color: #5b748f;
+  color: #1f2326;
   border: 1px solid #e5e8e5;
   display: inline-block;
   padding: 1px 6px;
@@ -240,7 +240,7 @@ a:hover {
 }
 .job_list_section .job_item .social_share_group .btn:first-child {
   padding-left: 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_list_section .job_item .social_share_group .btn.disabled {
   opacity: 1;
@@ -286,7 +286,7 @@ a:hover {
   display: inline-block;
   background: #62bb46;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   padding: 3px 12px;
   padding-bottom: 0px;
@@ -300,10 +300,10 @@ a:hover {
 .sty i {
   display: inline-block;
   width: 20px;
-  color: #5b748f;
+  color: #1f2326;
 }
 .sty a {
-  color: #5b748f;
+  color: #1f2326;
 }
 .sty a i {
   display: inline-block;

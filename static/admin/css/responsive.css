@@ -18,7 +18,7 @@ input[type="submit"], button {
     }
 
     .small {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /* Layout */
@@ -88,7 +88,7 @@ input[type="submit"], button {
     }
 
     td .changelink, td .addlink {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     /* Changelist */
@@ -392,7 +392,7 @@ input[type="submit"], button {
     }
 
     .datetime span {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .datetime .timezonewarning {
@@ -620,7 +620,7 @@ input[type="submit"], button {
 
     .aligned p.file-upload {
         margin-left: 0;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     span.clearable-file-input {
@@ -628,7 +628,7 @@ input[type="submit"], button {
     }
 
     span.clearable-file-input label {
-        font-size: 13px;
+        font-size: 18px;
         padding-bottom: 0;
     }
 
@@ -905,7 +905,7 @@ input[type="submit"], button {
     .errornote {
         margin: 0 0 20px;
         padding: 8px 12px;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     /* Calendar and clock */
@@ -952,7 +952,7 @@ input[type="submit"], button {
 
     .calendar-shortcuts {
         padding: 10px 0;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 12px;
     }
 
@@ -985,7 +985,7 @@ input[type="submit"], button {
     /* History */
 
     table#change-history tbody th, table#change-history tbody td {
-        font-size: 13px;
+        font-size: 18px;
         word-break: break-word;
     }
 
@@ -996,7 +996,7 @@ input[type="submit"], button {
     /* Docs */
 
     table.model tbody th, table.model tbody td {
-        font-size: 13px;
+        font-size: 18px;
         word-break: break-word;
     }
 }

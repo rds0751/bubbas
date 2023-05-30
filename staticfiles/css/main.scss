@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
   background: $bg;
@@ -37,13 +37,13 @@ body {
   #itemslider h4{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     margin: 10px auto 3px;
   }
   #itemslider h5{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     margin: 3px auto 2px;
   }
   #itemslider h6{
@@ -211,7 +211,7 @@ a{
   font-size:12px !important;
 }
 .left_container .job_detail_section .job_item .description *{
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 /* header_banner starts here */
 .header_banner{
@@ -305,7 +305,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             list-style: none;
             a{
               color: lighten($grey, 11%);
-              font-size: 12px;
+              font-size: 16px;
               // line-height: 25px;
               font-weight: 400;
             }
@@ -344,7 +344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       a{
         border-radius: 20px;
         padding:6px 20px;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
         background: #fff;
         color: $green_sky;
@@ -366,7 +366,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       &.jobseeker_auth{
         .title{
           letter-spacing: 1px;
-          font-size: 12px;
+          font-size: 16px;
           color: #fff;
           text-transform: uppercase;
           font-weight: 500;
@@ -508,7 +508,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 background: $green;
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 18px;
                 display: table-cell;
                 width: 130px;
                 color: #fff;
@@ -561,7 +561,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 &:first-child{
                   color: #fff;
                   font-weight: 500;
-                  font-size: 13px;
+                  font-size: 18px;
                 }
               }
             }
@@ -569,7 +569,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           .head{
             color: lighten($theme_blue ,40%);
             font-weight: 500;
-            font-size: 13px;
+            font-size: 18px;
             text-transform: uppercase;
             display: inline-block;
             padding-bottom: 3px;
@@ -593,7 +593,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 margin-top: 10px;
                 color: #d3eaff;
                 font-weight: 400;
-                font-size: 13px;
+                font-size: 18px;
                 float: right;
               }
             }
@@ -602,28 +602,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               a{
                 color: lighten($theme_blue ,55%);
                 font-weight: 400;
-                font-size: 13px;
+                font-size: 18px;
                 &.new_account{
-                  background: #00aeef;
+                  background: #000276;
                   border-radius: 2px;
                   color: #fff;
                   border: none;
                   padding: 4px 10px;
                   font-weight: 500;
-                  font-size: 12px;
+                  font-size: 16px;
                 }
                 &.upload_btn_resume{
-                  background: #00aeef;
+                  background: #000276;
                   border-radius: 2px;
                   color: #fff;
                   border: none;
                   padding: 4px 10px;
                   font-weight: 500;
-                  font-size: 12px;
+                  font-size: 16px;
                 }
                 &.up_res{
                   background: #fff;
-                  color: #00aeef;
+                  color: #000276;
                 }
               }
             }
@@ -671,7 +671,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               border-radius: 20px;
               padding: 7px 30px;
               border: none;
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 500;
               margin-top: 7px;
               display: block;
@@ -797,13 +797,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
         .details{
           display: table-cell;
           padding-left: 5px;
-          font-size: 12px;
+          font-size: 16px;
           vertical-align: middle;
           .title{
             a{
               color: lighten($grey, 5%);
               font-weight: 500;
-              font-size: 12px;
+              font-size: 16px;
             }
           }
           .link{
@@ -815,7 +815,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
          /* .posts{
             a{
               color: lighten($grey, 6%);
-              font-size: 12px;
+              font-size: 16px;
             }
           }*/
         }
@@ -916,7 +916,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       background: #fff;
       .refine_head{
         padding: 10px;
-        font-size: 13px;
+        font-size: 18px;
         background: #585856;
         color: #ffffff;
         margin-top: 0;
@@ -937,7 +937,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               text-transform: uppercase;
               font-weight: 400;
               letter-spacing: 1px;
-              font-size: 12px;
+              font-size: 16px;
               background-color: white;
               color: $grey;
               &:focus {
@@ -970,7 +970,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               box-shadow: none;
               background:#fff;
               padding-left: 2px;
-              font-size: 12px;
+              font-size: 16px;
               border:none;
               border-bottom:1px solid #e8e5e5;
               margin-bottom: 7px;
@@ -1048,7 +1048,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             .row{
               margin-bottom: 10px;
               label{
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 500;
                 color: $grey;
                 text-align: right;
@@ -1063,14 +1063,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 height: 40px;
                 border: 1px solid darken($bg,8%);
                 border-radius: 0;
-                font-size: 12px;
+                font-size: 16px;
               }
               .form-select{
                 box-shadow: none;
                 height: 40px;
                 border: 1px solid darken($bg,8%);
                 border-radius: 0;
-                font-size: 12px;
+                font-size: 16px;
               }
               .hint{
                 color:red;
@@ -1081,7 +1081,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 background: #62bb46;
                 text-transform: capitalize;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 18px;
                 color: #fff;
                 letter-spacing: 0.5px;
                 border: none;
@@ -1202,7 +1202,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             border:none;
             &:first-child{
               padding-left :0;
-              font-size: 12px;
+              font-size: 16px;
             }
             &.disabled{
               opacity: 1;
@@ -1212,7 +1212,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           }
         }
         .blog_date{
-          font-size: 12px;
+          font-size: 16px;
           color: lighten($grey, 15%);
           font-weight: 500;
         }
@@ -1239,7 +1239,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           }
         }
         .desc{
-          font-size: 12px;
+          font-size: 16px;
           line-height: 22px;
           margin:8px 0;
           color: lighten($grey, 11%);
@@ -1273,7 +1273,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           }
         }
         .desc{
-          font-size: 12px;
+          font-size: 16px;
           line-height: 22px;
           margin:8px 0;
           color: lighten($grey, 11%);
@@ -1282,7 +1282,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             font-weight: 500; 
           }
           p{
-            font-size: 12px;
+            font-size: 16px;
             line-height: 22px;
             margin:8px 0;
             color: lighten($grey, 11%);
@@ -1320,7 +1320,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             border:none;
             &:first-child{
               padding-left :0;
-              font-size: 12px;
+              font-size: 16px;
             }
             &.disabled{
               opacity: 1;
@@ -1329,7 +1329,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           }
         }
         .blog_date{
-          font-size: 12px;
+          font-size: 16px;
           color: lighten($grey, 15%);
           font-weight: 500;
         }
@@ -1356,7 +1356,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           }
         }
         .desc{
-          font-size: 12px;
+          font-size: 16px;
           line-height: 22px;
           margin:8px 0;
           color: lighten($grey, 11%);
@@ -1410,7 +1410,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
         margin-bottom: 10px;
         .head{
           color: #45586d;
-          font-size: 13px;
+          font-size: 18px;
           font-weight: 500;
           padding-bottom: 5px;
           text-transform: uppercase;
@@ -1443,7 +1443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   display: inline-block;
                   background:$green;
                   text-transform: uppercase;
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 600;
                   padding:3px 12px;
                   padding-bottom: 0px;
@@ -1465,7 +1465,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   display: inline-block;
                   background:$grey;
                   text-transform: uppercase;
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 600;
                   padding: 10px 15px 6px 15px;
                   color: #fff !important;
@@ -1489,7 +1489,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             background: #62bb46;
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 18px;
             color: #fff;
             letter-spacing: 0.5px;
             border: none;
@@ -1509,7 +1509,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               background: #62bb46;
               text-transform: uppercase;
               font-weight: 600;
-              font-size: 13px;
+              font-size: 18px;
               color: #fff;
               letter-spacing: 0.5px;
               border: none;
@@ -1522,23 +1522,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       .job_item{
       .job_typ {
     display: block;
-    color: #5b748f;
+    color: #1f2326;
     margin: 5px 0;
-    font-size: 12px;
+    font-size: 16px;
 
 
 }
 .job_typ span {
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 20px;
     margin-top: 3px;
-    color: #5b748f;
+    color: #1f2326;
 }
         .title{
           a{
             font-size: 16px;
             .exp{
-              font-size: 13px;
+              font-size: 18px;
             }
           }
         }
@@ -1583,7 +1583,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 border-bottom: 1px solid darken($bg, 6.5%);
                 strong{
                   display: block;
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 500;
                   color: $theme_blue;
                 }
@@ -1601,7 +1601,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
     .register_block{
      @extend .white_box;
       .register_point{
-        font-size: 12px;
+        font-size: 16px;
         &.border{
           // border-right:1px solid lighten($border, 5%);
           border: none !important;
@@ -1639,7 +1639,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
      .skills_locations{
         @extend .white_box;
        .view-more{
-        background: #00aeef;;
+        background: #000276;;
         color: white;
         border-radius: 0px;
         padding: 3px 10px;
@@ -1662,14 +1662,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           padding: 2px 1px 2px 2px;
           margin-bottom: 27px;
           .active {
-            background: #00aeef;
+            background: #000276;
             color: #fff !important;
             // border: 3px solid #101846;
             // height: 44px;
             width: 100%;
             border-radius: 0px;
             padding: 10px 15px;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: normal;
             text-transform: uppercase;
             
@@ -1679,7 +1679,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
 
         .nav-link {
             padding-top: 8px;
-            font-size: 12px;
+            font-size: 16px;
             width: 100%;
             padding: 10px 15px;
             font-weight: normal;
@@ -1857,16 +1857,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
         .comment_section{
               font-weight: 500;
               a{
-                color: #00aeef;
+                color: #000276;
                 font-size: 10px;
                 margin-right: 10px;
                 font-weight: 400;
-                /* border: 1px solid #00aeef; */
+                /* border: 1px solid #000276; */
                 display: inline-block;
                 border-radius: 2px;
                 padding: 1px 4px;
                 color: #fff;
-                background: #00aeef;
+                background: #000276;
                 &.view_comment{
                   background:#50779f;
                 }
@@ -1913,13 +1913,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   box-shadow: none;
                   background: #fff;
                   padding-left: 10px;
-                  font-size: 12px;
+                  font-size: 16px;
                   border: none;
                   border: none;
                   margin-bottom: 0px;
                 }
                 label{
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 500;
                   color: #45586d;
                 }
@@ -1928,7 +1928,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   background: #62bb46;
                   text-transform: capitalize;
                   font-weight: 600;
-                  font-size: 13px;
+                  font-size: 18px;
                   color: #fff;
                   letter-spacing: 0.5px;
                   border: none;
@@ -1962,7 +1962,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           .content{
             margin-top: 10px;
             *{
-              font-size: 12px;
+              font-size: 16px;
               line-height: 21px;
               color: #45586d;
             }
@@ -1971,16 +1971,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             .post_view{
               font-weight: 500;
               a{
-                color: #00aeef;
+                color: #000276;
                 font-size: 10px;
                 margin-right: 10px;
                 font-weight: 400;
-                /* border: 1px solid #00aeef; */
+                /* border: 1px solid #000276; */
                 display: inline-block;
                 border-radius: 2px;
                 padding: 1px 4px;
                 color: #fff;
-                background: #00aeef;
+                background: #000276;
                 &.view_comment{
                   background:#50779f;
                 }
@@ -2049,13 +2049,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   box-shadow: none;
                   background: #fff;
                   padding-left: 10px;
-                  font-size: 12px;
+                  font-size: 16px;
                   border: none;
                   border: none;
                   margin-bottom: 0px;
                 }
                 label{
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 500;
                   color: #45586d;
                 }
@@ -2064,7 +2064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                   background: #62bb46;
                   text-transform: capitalize;
                   font-weight: 600;
-                  font-size: 13px;
+                  font-size: 18px;
                   color: #fff;
                   letter-spacing: 0.5px;
                   border: none;
@@ -2097,7 +2097,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       padding:15px;
        .head{
           color: lighten($grey, 8%);
-          font-size: 13px;
+          font-size: 18px;
           margin-bottom: 5px;
           font-weight: 500;
         }
@@ -2105,14 +2105,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
         .form-control{
           border-radius: 0;
           box-shadow: none;
-          font-size: 12px;
+          font-size: 16px;
         }
         .input-group-btn{
           button{
             border-radius: 0;
             background: $dark_bg;
             color: $bg;
-            font-size: 12px;
+            font-size: 16px;
             padding: 8px 12px;
             padding-bottom: 7px;
           }
@@ -2126,7 +2126,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       background: #fff;
       .refine_head{
         padding: 10px;
-        font-size: 13px;
+        font-size: 18px;
         background: #585856;
         color: #ffffff;
         margin-top: 0;
@@ -2147,7 +2147,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
               text-transform: uppercase;
               font-weight: 500;
               letter-spacing: 1px;
-              font-size: 12px;
+              font-size: 16px;
               &:hover{
                 text-decoration:none;
               }
@@ -2173,7 +2173,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 padding: 3px 10px;
                 border: none;
                 display: inline-block;
-                color: #5b748f;
+                color: #1f2326;
               }
             }
           }
@@ -2238,7 +2238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
         padding: 15px;
         .head{
           color: $grey;
-          font-size: 13px;
+          font-size: 18px;
           font-weight: 500;
           padding-bottom: 5px;
           text-transform: uppercase;
@@ -2251,7 +2251,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             box-shadow: none;
             background: $bg;
             padding-left: 10px;
-            font-size: 12px;
+            font-size: 16px;
             border: none;
             border: none;
             margin-bottom: 0px;
@@ -2261,7 +2261,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
             box-shadow: none;
             background: $bg;
             padding-left: 10px;
-            font-size: 12px;
+            font-size: 16px;
             border: none;
             border: none;
             margin-bottom: 0px;
@@ -2271,7 +2271,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           background: $grey;
           color: #fff;
           padding: 10px 20px;
-          font-size: 12px;
+          font-size: 16px;
           display: block;
           border:none;
           border-radius: 0;
@@ -2336,7 +2336,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 &:first-child{
                   color: #fff;
                   font-weight: 500;
-                  font-size: 13px;
+                  font-size: 18px;
                 }
               }
             }
@@ -2344,7 +2344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
           .head{
             color: $bg;
             font-weight: 500;
-            font-size: 13px;
+            font-size: 18px;
             text-transform: uppercase;
             display: inline-block;
             padding-bottom: 3px;
@@ -2370,7 +2370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
                 font-weight: 500;
                 font-size: 11px;
                 &.new_account{
-                  background: #00aeef;
+                  background: #000276;
                   border-radius: 2px;
                   color: #fff;
                   border: none;
@@ -2402,9 +2402,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
       p{
         color: #fff;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 18px;
         strong{
-          font-size: 12px;
+          font-size: 16px;
           color: lighten($sky_color, 30%);
         }
       }
@@ -2674,7 +2674,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0060b9', end
          }
          a{
           color: lighten($grey, 11%);
-          font-size: 12px;
+          font-size: 16px;
           line-height: 25px;
           &:hover{
             color: darken($grey,5%);
@@ -2736,7 +2736,7 @@ footer{
         }
         a{
           color: $text;
-          font-size: 12px;
+          font-size: 16px;
           &:hover{
             color:#fff;
             text-decoration: none;
@@ -2928,7 +2928,7 @@ footer{
                     width: 23px;
                     height: 23px;
                     text-align: center;
-                    font-size: 13px;
+                    font-size: 18px;
                     padding-top: 5px;
                     border-radius: 50%;
                     display:inline-block;
@@ -3003,7 +3003,7 @@ footer{
                     color: #FFFFFF;
                     text-align: center;
                      padding:13px 0;
-                     font-size: 12px;
+                     font-size: 16px;
                      font-weight: 600;
                      padding-bottom: 12px;
                      display: block;
@@ -3104,7 +3104,7 @@ footer{
              color: #282c3f;
              background: #fff;
              padding-right: 40px;
-             font-size: 13px;
+             font-size: 18px;
              width: 100%;
              padding: 5px 15px;
              box-shadow: none;
@@ -3135,7 +3135,7 @@ footer{
              text-transform: uppercase;
              font-weight: 500;
              border-radius: 3px;
-             font-size: 13px;
+             font-size: 18px;
              .load_register{
               display:none;
              }
@@ -3157,7 +3157,7 @@ footer{
           #login_but{
           margin-left:8px;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500 !important;
           }
           #forgot_pass{
@@ -3299,7 +3299,7 @@ a:hover {
                     width: 23px;
                     height: 23px;
                     text-align: center;
-                    font-size: 13px;
+                    font-size: 18px;
                     padding-top: 5px;
                     border-radius: 50%;
                     display:inline-block;
@@ -3374,7 +3374,7 @@ a:hover {
                     color: #FFFFFF;
                     text-align: center;
                      padding:13px 0;
-                     font-size: 12px;
+                     font-size: 16px;
                      font-weight: 600;
                      padding-bottom: 12px;
                      display: block;
@@ -3473,7 +3473,7 @@ a:hover {
              color: #282c3f;
              background: #fff;
              padding-right: 40px;
-             font-size: 13px;
+             font-size: 18px;
              width: 100%;
              padding: 5px 15px;
              box-shadow: none;
@@ -3504,7 +3504,7 @@ a:hover {
              text-transform: uppercase;
              font-weight: 500;
              border-radius: 3px;
-             font-size: 13px;
+             font-size: 18px;
              .load_register{
               display:none;
              }
@@ -3526,7 +3526,7 @@ a:hover {
           #login_but{
           margin-left:8px;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500 !important;
           }
           #forgot_pass{
@@ -3631,7 +3631,7 @@ a:hover {
            
           .control-label{
             font-weight: 400;
-            font-size: 13px;
+            font-size: 18px;
             color: #45586d;
             text-align: right;
           }
@@ -3666,7 +3666,7 @@ a:hover {
              color: #282c3f;
              background: #fff;
              padding-right: 40px;
-             font-size: 13px;
+             font-size: 18px;
              width: 100%;
              padding: 5px 15px;
              box-shadow: none;
@@ -3718,7 +3718,7 @@ a:hover {
              text-transform: uppercase;
              font-weight: 500;
              border-radius: 3px;
-             font-size: 13px;
+             font-size: 18px;
              .load_register{
               display:none;
              }
@@ -3740,7 +3740,7 @@ a:hover {
           #login_but{
           margin-left:8px;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500 !important;
           }
           #forgot_pass{
@@ -3927,7 +3927,7 @@ a:hover {
           width: 23px;
           height: 23px;
           text-align: center;
-          font-size: 13px;
+          font-size: 18px;
           /*border: 1px solid #000;*/
           padding-top: 5px;
           border-radius: 50%;
@@ -4015,7 +4015,7 @@ a:hover {
         background: $blue;
         color: #fff;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
       }
     }
@@ -4144,7 +4144,7 @@ a:hover {
       border:none;
       height: 35px;
       background: #f5f6f7;
-      font-size: 12px;
+      font-size: 16px;
       outline: none;
       box-shadow: none;
     }
@@ -4153,7 +4153,7 @@ a:hover {
       border:none;
       height: 35px;
       // background: #f5f6f7;
-      font-size: 12px;
+      font-size: 16px;
       outline: none;
       box-shadow: none;
     }
@@ -4170,7 +4170,7 @@ a:hover {
       height: 35px;
       background: #62bb46;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 18px;
       width: 100%;
       color: #fff;
       letter-spacing: 0.5px;
@@ -4209,7 +4209,7 @@ i.linkin,   span.linkin{  color: #007bb6; }
 
 .cd-breadcrumb{
   line-height: 1;
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -4542,7 +4542,7 @@ Triangle breadcrumb
         .heading{
           padding: 10px;
           margin: 0;
-          font-size: 12px !important;
+          font-size: 16px !important;
           text-transform: uppercase;
           letter-spacing: 0.5px;
           background: darken($bg,6%);
@@ -4608,7 +4608,7 @@ Triangle breadcrumb
               border-radius: 2px;
               padding: 0px;
               color:#fff;
-              font-size: 12px;
+              font-size: 16px;
               letter-spacing: 0.5px;
               font-weight: 400;
               margin:4px 0;
@@ -4619,7 +4619,7 @@ Triangle breadcrumb
                 text-align: center;
                 padding:12px 10px;
                 border-top-left-radius: 2px;
-                font-size: 13px;
+                font-size: 18px;
                 margin-right: 10px;
                 border-bottom-left-radius: 2px;
               }
@@ -4682,7 +4682,7 @@ Triangle breadcrumb
             background: #62bb46;
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 16px;
             width: 100%;
             color: #fff;
             letter-spacing: 0.5px;
@@ -4722,7 +4722,7 @@ Triangle breadcrumb
               border-radius: 20px;
               padding: 7px 30px;
               border: none;
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 500;
               margin-top: 7px;
               display: block;
@@ -4736,7 +4736,7 @@ Triangle breadcrumb
             text-transform: uppercase;
             font-weight: 500;
             letter-spacing: 1px;
-            font-size: 12px;
+            font-size: 16px;
             text-align: center;
             color: $grey;
           }
@@ -4766,13 +4766,13 @@ Triangle breadcrumb
           position: absolute;
           top: 0px;
           right: 10px;
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 400;
         }
         .hint{
           display: block;
           color: lighten($grey, 5%);
-          font-size: 13px;
+          font-size: 18px;
           line-height: 20px;
           font-weight: 500;
           &.resume_title{
@@ -4790,7 +4790,7 @@ Triangle breadcrumb
           a{
             background: #62bb46;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 16px;
             color: #fff;
             letter-spacing: 0.5px;
             display: inline-block;
@@ -4805,7 +4805,7 @@ Triangle breadcrumb
       .other_details{
         .active_inactive{
           background: $bg;
-          font-size: 12px;
+          font-size: 16px;
           color: $sky_color;
           border-radius: 20px;
           padding: 5px 20px;
@@ -4819,7 +4819,7 @@ Triangle breadcrumb
           a{
             border-radius: 20px;
             padding: 6px 20px;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 500;
             background: $green_sky;
             color: #fff;
@@ -4828,7 +4828,7 @@ Triangle breadcrumb
         .notify{
           span{
             font-weight: 400;
-            font-size: 12px;
+            font-size: 16px;
             color: darken($grey, 3%);
             display: inline-block;
             padding:5px 10px;
@@ -4852,7 +4852,7 @@ Triangle breadcrumb
           padding:0px 0px;
           .head{
             /*border-bottom: 1px solid lighten($grey, 15%);*/
-            font-size: 12px;
+            font-size: 16px;
             color: $theme_blue;
             text-transform: uppercase;
             font-weight: 500;
@@ -4910,7 +4910,7 @@ Triangle breadcrumb
             .head{
               color: darken($bg, 15%);
               text-transform: uppercase;
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 600;
               margin-left: 0.7rem;
             }
@@ -4919,7 +4919,7 @@ Triangle breadcrumb
             }
             .fields_block{
               margin-top: 10px;
-              font-size: 12px;
+              font-size: 16px;
               form{
                 .form-group{
                   width: 48%;
@@ -4927,7 +4927,7 @@ Triangle breadcrumb
                   margin:5px 1%;
                   .form-control{
                     border-radius: 0;
-                    font-size: 12px;
+                    font-size: 16px;
                     box-shadow: none;
                     border:none !important;
                   }
@@ -4984,7 +4984,7 @@ Triangle breadcrumb
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 16px;
         background: #e4e7e9;
         color: #45586d;
        /* background: #e4f3f9;*/
@@ -5008,7 +5008,7 @@ Triangle breadcrumb
         .item_block{
           display: block;
           font-weight: 500;
-          font-size: 12px;
+          font-size: 16px;
           padding:5px 0px;
           color: $grey;
           border-bottom: 1px dashed #e5e5e5;
@@ -5054,7 +5054,7 @@ Triangle breadcrumb
             tr{
               th{
                 font-weight: 500;
-                font-size: 12px;
+                font-size: 16px;
                 color: $grey;
               }
             }
@@ -5063,7 +5063,7 @@ Triangle breadcrumb
             tr{
               td{
                 color: lighten($grey,11%);
-                    font-size: 12px;
+                    font-size: 16px;
                 &.actions{
                   a{
                     color: #fff;
@@ -5077,7 +5077,7 @@ Triangle breadcrumb
                       background: lighten($grey, 10%);
                     }
                     &.tech_edit{
-                      background: #00aeef;
+                      background: #000276;
                     }
                   }
                 }
@@ -5114,7 +5114,7 @@ Triangle breadcrumb
               padding: 10px;
               clear:both;
               label{
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 500;
                 color: $grey;
                 .important{
@@ -5128,7 +5128,7 @@ Triangle breadcrumb
                 height: 40px;
                 border: 1px solid darken(#f5f6f7,8%);
                 border-radius: 0;
-                font-size: 12px;
+                font-size: 16px;
               }
               .hint{
                 color:red;
@@ -5140,7 +5140,7 @@ Triangle breadcrumb
                 background: #62bb46;
                 text-transform: capitalize;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 18px;
                 outline: none;
                 color: #fff;
                 letter-spacing: 0.5px;
@@ -5174,7 +5174,7 @@ Triangle breadcrumb
                     height: 36px;
                     border: 1px solid darken(#f5f6f7,8%);
                     border-radius: 0;
-                    font-size: 12px;
+                    font-size: 16px;
               }
             }
           }
@@ -5192,7 +5192,7 @@ Triangle breadcrumb
         margin-top: 8px;
         color: $grey;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 16px;
         border-bottom: 1px solid #dde2e9;
       }
     }
@@ -5249,7 +5249,7 @@ Triangle breadcrumb
               padding: 10px;
               clear:both;
               label{
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 500;
                 color: $grey;
                 .important{
@@ -5263,14 +5263,14 @@ Triangle breadcrumb
                 height: 40px;
                 border: 1px solid darken(#f5f6f7,8%);
                 border-radius: 0;
-                font-size: 12px;
+                font-size: 16px;
               }
               .form-select{
                 box-shadow: none;
                 height: 40px;
                 border: 1px solid darken(#f5f6f7,8%);
                 border-radius: 0;
-                font-size: 12px;
+                font-size: 16px;
               }
               .hint{
                 color:red;
@@ -5282,7 +5282,7 @@ Triangle breadcrumb
                 background: #62bb46;
                 text-transform: capitalize;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 18px;
                 outline: none;
                 color: #fff;
                 letter-spacing: 0.5px;
@@ -5613,7 +5613,7 @@ Triangle breadcrumb
     padding: 12px 20px;
     background: #585856;
     color: #fff;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
 }
 /* recruiter_profile_container starts here */
@@ -5629,7 +5629,7 @@ Triangle breadcrumb
       text-transform: uppercase;
       font-weight: 500;
       letter-spacing: 1px;
-      font-size: 12px;
+      font-size: 16px;
       background: #e4e7e9;
       color: #45586d;
       /* background: #e4f3f9; */
@@ -5648,7 +5648,7 @@ Triangle breadcrumb
             .item_block{
               display: block;
               font-weight: 500;
-              font-size: 12px;
+              font-size: 16px;
               padding:2px 0px;
               color: $grey;
               border-bottom: 1px dashed #e5e5e5;
@@ -5722,7 +5722,7 @@ Triangle breadcrumb
           }
           .company_add{
             text-transform: capitalize;
-            font-size: 13px;
+            font-size: 18px;
             font-weight: 400;
             color: #eee;
             line-height: 22px;
@@ -5739,7 +5739,7 @@ Triangle breadcrumb
       background: #95a3a9;
       strong{
         color: #fff;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 600;
         margin-bottom: 10px;
       }
@@ -5747,7 +5747,7 @@ Triangle breadcrumb
         color: #edf6f9;
         line-height: 24px;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 16px;
         margin-top: 10px;
         margin-bottom: 5px;
         a{
@@ -5796,7 +5796,7 @@ Triangle breadcrumb
       
                     i {
                       float: right;
-                      font-size: 13px;
+                      font-size: 18px;
                     }
                  &:hover{
                   cursor: pointer;
@@ -5812,7 +5812,7 @@ Triangle breadcrumb
                             list-style: none;
                 list-style-position: inside;
                 color: #98A2AD;
-                font-size: 12px;
+                font-size: 16px;
                 text-transform: capitalize;
                 background: white;
                             &:hover {
@@ -5899,7 +5899,7 @@ Triangle breadcrumb
                             list-style: none;
                 list-style-position: inside;
                 color: #98A2AD;
-                font-size: 12px;
+                font-size: 16px;
                 text-transform: capitalize;
                 background: white;
                             &:hover {
@@ -5985,7 +5985,7 @@ Triangle breadcrumb
             padding:6px 0;
             font-weight: normal;
             text-transform: none;
-            font-size: 13px;
+            font-size: 18px;
             letter-spacing: 0;
           }
             &:first-child{
@@ -6013,7 +6013,7 @@ Triangle breadcrumb
             a{
               background: #fff;
               font-weight: bold;
-              font-size: 13px;
+              font-size: 18px;
               text-align: center;
               display: block;
               padding:3px;
@@ -6051,7 +6051,7 @@ Triangle breadcrumb
           margin:1.5px;
           background:lighten($grey, 60%);
           font-weight: 300;
-          font-size: 12px;
+          font-size: 16px;
           line-height: 20px;
           color: #337ab7;
           &:hover{
@@ -6073,7 +6073,7 @@ Triangle breadcrumb
           padding-top:10px;
           .title{
             font-weight: bold;
-            font-size: 12px;
+            font-size: 16px;
             letter-spacing: 0.5px;
             a{
               color:$grey;
@@ -6106,7 +6106,7 @@ Triangle breadcrumb
     padding: 15px;
     .head{
       color: $grey;
-      font-size: 13px;
+      font-size: 18px;
       font-weight: 500;
       padding-bottom: 5px;
       text-transform: uppercase;
@@ -6119,7 +6119,7 @@ Triangle breadcrumb
         color: #282c3f;
         background: #fff;
         padding-right: 40px;
-        font-size: 13px;
+        font-size: 18px;
         width: 100%;
         padding: 5px 15px;
         box-shadow: none;
@@ -6268,7 +6268,7 @@ Triangle breadcrumb
         padding: 15px;
         .head{
           color: $grey;
-          font-size: 13px;
+          font-size: 18px;
           font-weight: 500;
           padding-bottom: 5px;
           text-transform: uppercase;
@@ -6281,7 +6281,7 @@ Triangle breadcrumb
             box-shadow: none;
             background: $bg;
             padding-left: 10px;
-            font-size: 12px;
+            font-size: 16px;
             border: none;
             border: none;
             margin-bottom: 0px;
@@ -6291,7 +6291,7 @@ Triangle breadcrumb
             box-shadow: none;
             background: $bg;
             padding-left: 10px;
-            font-size: 12px;
+            font-size: 16px;
             border: none;
             border: none;
             margin-bottom: 0px;
@@ -6302,7 +6302,7 @@ Triangle breadcrumb
           background: $grey;
           color: #fff;
           padding: 10px 20px;
-          font-size: 12px;
+          font-size: 16px;
           display: block;
           border:none;
           border-radius: 0;
@@ -6355,7 +6355,7 @@ Triangle breadcrumb
        position: absolute;
        background: white;
        color: #45586d;
-       font-size: 13px;
+       font-size: 18px;
        z-index: 999;
        width: 246px;
        left: 327px;
@@ -6470,7 +6470,7 @@ display:none;
       .text{
         margin:0 auto;
         /*border: 1px solid #ddd;*/
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 600;
         background: #fff;
         /*border-radius: 15px;*/
@@ -6570,7 +6570,7 @@ display:none;
       .url{
         text-transform: initial;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.5px;
         color: #05549d;
       }
@@ -6585,12 +6585,12 @@ display:none;
     .reach{
       strong{
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 16px;
         color: $grey;
       }
       p{
         color: lighten($grey, 10%);
-        font-size: 12px;
+        font-size: 16px;
         line-height: 22px;
       }
     }
@@ -6600,13 +6600,13 @@ display:none;
     strong{
       color: $grey;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 16px;
       margin-bottom: 10px;
       display: block;
     }
     p{
       color: lighten($grey, 10%);
-      font-size: 12px;
+      font-size: 16px;
       line-height: 22px;
     }
   }
@@ -6626,7 +6626,7 @@ display:none;
           a{
             display: block;
             padding:6px 8px;
-            font-size: 12px;
+            font-size: 16px;
             background: #fff;
             color: lighten($grey, 10%);
             &:hover{
@@ -6658,7 +6658,7 @@ display:none;
   padding: 15px;
   .head{
     color: #45586d;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     padding-bottom: 5px;
     text-transform: uppercase;
@@ -6709,9 +6709,9 @@ display:none;
 .strip_box{
   margin-top:15px;
    .strip{
-      background: #00aeef;
+      background: #000276;
       color: #fff;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 500;
       padding:7px;
       border-radius: 3px;
@@ -6747,7 +6747,7 @@ display:none;
       padding-top: 6px;
       padding-bottom: 5px;
       font-weight: 500;
-      font-size: 13px;
+      font-size: 18px;
       display: inline-block;
       text-align: center;
       width: 100px;
@@ -6838,7 +6838,7 @@ display:none;
         background: #667b91;
         color: #fff;
         &.active{
-          color: #5b748f;
+          color: #1f2326;
           background: #fff;
         }
       }
@@ -6857,8 +6857,8 @@ display:none;
         a{
           display: block;
           line-height: 24px;
-          color: #5b748f;
-          font-size: 12px;
+          color: #1f2326;
+          font-size: 16px;
           font-weight: 400;
         }
       }
@@ -6868,7 +6868,7 @@ display:none;
 /* jobs_tabs_panel ends here */
 .highlight {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
 
 }
 
@@ -6885,7 +6885,7 @@ display:none;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 0;
-    font-size: 12px;
+    font-size: 16px;
     background: #26262f;
     margin-bottom: 0;
     color: darken($bg, 15%);
@@ -6929,7 +6929,7 @@ display:none;
                 font-weight: 400;
                 width: 30px;
                 text-align: center;
-                font-size: 12px;
+                font-size: 16px;
                 color: #fff;
                 background: $green;
                 &.offline{
@@ -7026,7 +7026,7 @@ display:none;
               .header{
                 p{
                   margin-right: 10px;
-                  font-size: 12px;
+                  font-size: 16px;
                   color: darken($text, 30%);
                 }
               }
@@ -7038,7 +7038,7 @@ display:none;
           background: #d9dde0;
          textarea{
               border-radius: 0;
-              font-size: 12px;
+              font-size: 16px;
               display:inline;
               width: 85%;
             }
@@ -7097,8 +7097,8 @@ display:none;
   .more{
   padding-left: 15px;
   line-height: 21px;
-  font-size: 13px;
-  color: #5b748f;
+  font-size: 18px;
+  color: #1f2326;
   text-align: justify;
   }
 
@@ -7173,7 +7173,7 @@ display:none;
     background: #62bb46;
     text-transform: capitalize;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 18px;
     outline: none;
     color: #fff;
     letter-spacing: 0.5px;
