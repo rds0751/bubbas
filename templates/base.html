@@ -46,34 +46,6 @@
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
-                {% comment %} {% cache 604800 latest_jobs_menu %}
-                  
-                  <li class="dropdown megamenu-fw">
-                    <a href=" url 'jobs:index' %}" class="dropdown-toggle latest-jobs" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false">Latest call girls<span class="caret"></span></a>
-        
-                    <ul class="dropdown-menu megamenu-content" role="menu">
-                    <li>
-                      <ul class="col-md-2 information" style="width:19.99%">
-                        <li><a href=" url 'jobs_by_skill' %}">Verified call girls</a></li>
-                        <li><a href=" skill.get_job_url }}"> skill.name|truncatewords:2 call girls</a></li>
-                      </ul>
-                      <ul class="col-md-2 information industries_parts">
-                        <li><a href=" url 'jobs_by_industry' %}">New Joined</a></li>
-                        <li><a href=""> industry.name|get_industry_name  call girls</a></li>
-                      </ul>
-                      <ul class="col-md-2 information location_parts">
-                        <li><a href=" url 'jobs_by_location' 'jobs' %}">Location</a></li>
-                            <li><a href=" location.get_job_url ">call girls in location.name </a></li>
-                      </ul>
-                      <ul class="col-md-3 information fresher-jobs-part">
-                        <li><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">Fresher</a></li>
-                        <li><a href="/skill.slug}}-fresher-jobs/"> skill.name|truncatewords:2 Fresher call girls</a></li>
-                      </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  {% endcache %} {% endcomment %}
                   <li {% if request.path == '/fresher-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">New call girls <span class="sr-only">(current)</span></a></li>
                    <li {% if request.path == '/walkin-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'walkin' %}">Verified call girls <span class="sr-only">(current)</span></a></li>
                   {% if request.user.user_type == 'JS' %}
@@ -84,26 +56,6 @@
                   </li>
                   <li><a href="">Profile Alerts</a></li>
                 </ul>
-                {% if not request.user.is_authenticated %}
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
-                  <li class="jobseeker_auth">
-                    <div class="dropdown">
-                      <button class="item dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Seekers
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a href="#" class="login_modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
-                        <li><a href="#" class="new_account" data-bs-toggle="modal" data-bs-target="#register-div">Register</a></li>
-                      </ul>
-                    </div>
-                  </li>
-
-
-                 
-
-                  <li class="log"><a href=" url 'post_job' %}">Recruiter Login | register</a></li>
-                </ul>
-                {% endif %}
               </div>
               
             </div>
