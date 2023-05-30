@@ -4222,7 +4222,6 @@ footer .subscribe_social_copy .copy_right a:hover {
 .blog_menu_section {
   padding: 0px 0px;
   text-align: left;
-  background: url("../img/footer_icons_bg.png") no-repeat center bottom #26262f;
   background-size: cover;
 }
 .blog_menu_section ul {
@@ -4251,7 +4250,6 @@ footer .subscribe_social_copy .copy_right a:hover {
 .inner_search_section {
   padding: 6px 0px;
   text-align: center;
-  background: url("../img/footer_icons_bg.png") no-repeat center bottom #26262f;
   background-size: cover;
   width: 100%;
 }
