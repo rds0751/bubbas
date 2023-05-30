@@ -157,31 +157,7 @@
                   </div>
                 {% endblock %}
                 <div class="col-md-5 col-sm-12 col-xs-12 links">
-                  {% comment %} <ul class="footer_links">
-                    <li class="text-uppercase">About Us</li>
-                    <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
-                    <li><a href=" url 'sitemap' %}" target="_blank">Sitemap</a></li>
-                    <li><a href=" url 'pages' 'terms-conditions' %}" target="_blank">Terms &amp; Conditions</a></li>
-                    <li><a href=" url 'pages' 'privacy-policy' %}" target="_blank">Privacy Policy</a></li>
-                    <li><a href=" url 'contact' %}" target="_blank">Contact Us</a></li>
-                  </ul>
-                  <ul class="footer_links">
-                    <li class="text-uppercase">call girls</li>
-                    <li><a href=" url 'recruiter:new_user' %}" target="_blank">Registration</a></li>
-                    <li><a href=" url 'pages' 'recruiter-faq' %}" target="_blank">FAQs</a></li>
-                    <li><a href=" url 'post_job' %}" target="_blank">Post Job For Free</a></li>
-                  </ul>
-                  <ul class="footer_links">
-                    <li class="text-uppercase">Find call girls</li>
-                    {% if request.user.is_authenticated %}                  
-                    <li style="display: none;"><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
-                    {%else%}
-                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
-                    {%endif%}
-                    <li><a href="/" target="_blank">Search call girls</a></li>
-                    <li><a href=" url 'jobs:index' %}" target="_blank">View All call girls</a></li>
-                    <li><a href=" url 'pages' 'faq' %}" target="_blank">FAQs</a></li>
-                  </ul> {% endcomment %}
+                  Thankyou for Visit!
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
                 {% if not request.user.is_authenticated %}
@@ -200,12 +176,11 @@
                   {% endif %}
   
                   {% cache 604800 social_footer_links %}
-                  <div class="social_links text-center">
+                  <div class="text-center">
                     <ul>
-                      <li><a target="_blank" href="https://facebook.com/Bubbas/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                      <li><a target="_blank" href="https://www.linkedin.com/company/Bubbas?trk=top_nav_home"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                      <li ><a href=" url 'social:google_login' %}"><strong>G</strong></a></li>
-                      <li><a target="_blank" href="https://twitter.com/Bubbas"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a target="_blank" href="https://facebook.com/Bubbas/">Facebook</a></li>
+                      <li ><a href=" url 'social:google_login' %}">Google</a></li>
+                      <li><a target="_blank" href="https://twitter.com/Bubbas">Twitter</a></li>
                     </ul>
                   </div>
                   <div class="copy_right text-center">Copyright &copy; {% now "Y" %} Bubbas.com<br><a href="https://blockitsy.com" title="Blockitsy" target="_blank">Development + SEO by Blockitsy</a>
