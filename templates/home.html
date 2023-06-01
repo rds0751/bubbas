@@ -23,7 +23,7 @@
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/call-girls/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_ads.count }})</strong></a></li>
+                      <li><a aria-label="go to {{ city.name }} city page" href="/call-girls/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_cg_ads.count }})</strong></a></li>
                 </ul>
               {% endfor %}
               <ul>
@@ -35,7 +35,7 @@
             <div class="locations">
               {% for city in cities %}
                 <ul class="location_ul">
-                      <li><a href="/escorts/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_ads.count }})</strong></a></li>
+                      <li><a aria-label="go to {{ city.name }} city page" href="/escorts/{{ city.name }}"><strong>{{ city.name }} ({{ city.get_no_of_es_ads.count }})</strong></a></li>
                 </ul>
               {% endfor %}
               <ul>

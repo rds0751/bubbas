@@ -156,7 +156,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .job_item p {
   margin: 0;
@@ -3857,7 +3857,7 @@ img {
   padding-right: 10px;
 }
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .file_upload, #view_profile .company_view_profile .profile_description .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .file_upload, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .file_upload {
-  background: #62bb46;
+  background: #28850b;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -4958,7 +4958,7 @@ img {
   padding-right: 8px;
 }
 .inner_main_container .left_forms_container .panel .panel-content .individual_form .form_block .logo_upload {
-  background: #62bb46;
+  background: #28850b;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -5249,7 +5249,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .job_item p {
   margin: 0;
@@ -5664,13 +5664,13 @@ img {
   text-align: center;
   font-size: 16px;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li a .msg_count.offline {
   background: #b91a1a;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li.active a {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li.active a .msg_count {

@@ -131,7 +131,7 @@ $(document).ready(function(e){
       //     if (data.response){
       //       $('.ac-result').parent().remove();
       //       for (i = 0; i < data.response.length; i++) {
-      //           elem = $('<div class="result-wrapper"><a href="" class="ac-result"><span>'+data.response[i] + '</span></a></div>');
+      //           elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"><span>'+data.response[i] + '</span></a></div>');
       //           $('#register-name').after(elem)
       //       }
       //     }

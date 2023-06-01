@@ -58,7 +58,11 @@ class Country(models.Model):
     def __str__(self):
         return self.name
 
-    def get_no_of_ads(self):
+    def get_no_of_cg_ads(self):
+        return Ad.objects.filter(city__state__country=self, status="Live")
+    
+    
+    def get_no_of_es_ads(self):
         return Ad.objects.filter(city__state__country=self, status="Live")
     
     class Meta:
@@ -94,20 +98,23 @@ class City(models.Model):
     slug = models.SlugField(max_length=500, null=True, blank=True)
     meta_title = models.TextField(default="", null=True, blank=True)
     meta_description = models.TextField(default="", null=True, blank=True)
-    page_content = RichTextField(null=True, blank=True)
+    page_content = models.TextField(null=True, blank=True)
     parent_city = models.ForeignKey(
         "self",
         related_name="child_cities",
         null=True,
         blank=True,
-        on_delete=models.CASCADE,
+        on_delete=models.CASCADE, 
         )
 
     def __str__(self):
         return self.name
+
+    def get_no_of_cg_ads(self):
+        return Ad.objects.filter(city__in=[self], profile_status='Call Girls')
     
-    def get_no_of_ads(self):
-        return Ad.objects.filter(city__in=[self])
+    def get_no_of_es_ads(self):
+        return Ad.objects.filter(city__in=[self], profile_status='Escorts')
 
     def get_ad_url(self):
         job_url = "/call-girls/" + str(self.slug) + "/"
@@ -121,9 +128,9 @@ class Ad(models.Model):
     title = models.CharField(max_length=10000, null=True, blank=True)
     slug = models.SlugField(max_length=1000, null=True, blank=True)
     profile_status = models.CharField(choices=PROFILE_STATUS, max_length=25, default="Enabled", null=True, blank=True)
-    overview = RichTextField(null=True, blank=True)
+    overview = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    content = RichTextField(null=True, blank=True)
+    content = models.TextField(null=True, blank=True)
     phone = models.CharField(max_length=15, null=True, blank=True)
     whatsapp = models.CharField(max_length=15, null=True, blank=True)
     thumbnail = models.ImageField(null=True, blank=True)

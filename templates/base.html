@@ -1,5 +1,5 @@
 {% load thumbnail %}{% load compress %}{% load static %}{% load cache %}<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# Bubbas: https://ogp.me/ns/fb/Bubbas#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,12 @@
     {% block block_canonical_tag %}
     {% endblock %}
     {% block css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     {% compress css %}
-    <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">
+      <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">  
     {% endcompress %}
     {% endblock %}
-
   </head>
   <body>
     <a href="#0" class="cd-top">Top</a>
@@ -49,12 +47,12 @@
                   <li {% if request.path == '/fresher-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">New call girls <span class="sr-only">(current)</span></a></li>
                    <li {% if request.path == '/walkin-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'walkin' %}">Verified call girls <span class="sr-only">(current)</span></a></li>
                   {% if request.user.user_type == 'JS' %}
-                  <li><a href="">Contacted call girls</a></li>
+                  <li><a href="/" aria-label="go to home page">Contacted call girls</a></li>
                   {% endif %}
                   <li {% if request.path == '/internship-jobs/' %}class="active"{% endif %}>
-                    <a href="">New in Town</a>
+                    <a href="/" aria-label="go to home page">New in Town</a>
                   </li>
-                  <li><a href="">Profile Alerts</a></li>
+                  <li><a href="/" aria-label="go to home page">Profile Alerts</a></li>
                 </ul>
               </div>
               
@@ -87,7 +85,7 @@
                       <input type="text" class="form-control" id="location" name="location" placeholder="Enter Any Locations, States" value="{% for loc in searched_locations %}{{ loc }}, {% endfor %}{% for state in searched_states %}{{ state }}, {% endfor %}">
                   </div>
                   <div class="search_form_element">
-                      <button type="submit" class="btn">Search</button>
+                      <button type="submit" aria-label="Search" class="btn btn-primary">Search</button>
                   </div>
                   <div class="clearfix"></div>
               </div>
@@ -102,25 +100,22 @@
      
       {% block base %}
       {% endblock %}
-      <div id="WaitDialog"   class="hidden" style="text-align: center">
-        <div style="margin-top: 10px; color: white">
-          <b>Please wait</b>
-        </div>
-      </div>
       <!-- footer starts here -->
         <section>
           <footer>
             <div class="container">
               <div class="row mar_lr_0">
                 {% block pj_info %}
-                  <div class="col-md-4 col-sm-12 col-xs-12 about">
+                  <div class="col-md-6 col-sm-12 col-xs-12 about">
                     <strong class="logo">Bubbas</strong>
-                    <p>At Bubbas, we understand the importance of discretion and privacy when it comes to availing call girl services. 
-                      Our expert team ensures that your personal information remains confidential, allowing you to indulge in your fantasies without any worries. 
+                    <p>Bubbas.in is a leading online platform for free call girls & escorts classified ads in India. We provide a 
+                      user-friendly and secure environment for individuals and businesses to browse a wide range of call girls, 
+                      massage and escorts classifieds and more. With our extensive network and dedicated team, we aim to making 
+                      the process of hire meetup easier and more efficient. At Bubbas we prioritize the privacy and security of our users. 
                       </p>
                   </div>
                 {% endblock %}
-                <div class="col-md-5 col-sm-12 col-xs-12 links">
+                <div class="col-md-3 col-sm-12 col-xs-12 links">
                   {% comment %} <ul class="footer_links">
                     <li class="text-uppercase">About Us</li>
                     <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
@@ -148,27 +143,25 @@
                   </ul> {% endcomment %}
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
-                {% if not request.user.is_authenticated %}
                   <form name="BaseSubscribeform" id="BaseSubscribeform" method="POST">
                     <div class="subscribe">
                       <div class="input-group">
                         <input type="text" class="form-control text-capitalize" placeholder="Subscribe to get updates" name='email' id="subscribe_email" value="{{request.user.email}}">
                         <input type="hidden" name="subscribe_from" id="subscribe_from" value="All">
                         <span class="input-group-btn">
-                        <button class="btn btn-secondary text-uppercase" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        <button class="btn btn-secondary text-uppercase" aria-label="Subscribe" type="submit"><i class="fa fa-paper-plane"></i></button>
                         </span>
                       </div>
                         <p id="subscribe_response_message"></p>
                     </div>
                   </form>
-                  {% endif %}
   
                   {% cache 604800 social_footer_links %}
-                  <div class="text-center">
+                  <div class="social_links text-center">
                     <ul>
-                      <li><a target="_blank" href="https://facebook.com/Bubbas/">Facebook</a></li>
-                      <li ><a href=" url 'social:google_login' %}">Google</a></li>
-                      <li><a target="_blank" href="https://twitter.com/Bubbas">Twitter</a></li>
+                      <li><a aria-label="go to facebook page" target="_blank" href="https://facebook.com/peeljobs/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li ><a aria-label="go to google page" href="https://google.com"><strong>G</strong></a></li>
+                      <li><a aria-label="go to twitter page" target="_blank" href="https://twitter.com/PeelJobs"><i class="fa-brands fa-twitter"></i></a></li>
                     </ul>
                   </div>
                   <div class="copy_right text-center">Copyright &copy; {% now "Y" %} Bubbas.com<br><a href="https://blockitsy.com" title="Blockitsy" target="_blank">Development + SEO by Blockitsy</a>
@@ -184,176 +177,9 @@
     <div class="modal_loading">
       <!-- Place at bottom of page -->
     </div>
-<!-- Modal -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
-  <!-- Modal -->
-  <div class="modal fade modal-dialog-scrollable" id="register-div" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          
-            <h3 id="modal_head" class="my-2">Not A Member? Register</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          
-        </div>
-        <div class="modal-body">
-          
-
-          <div class="row g-3 align-items-center">
-            <div class="col-md-12">
-              <div class="form_panel form">
-                <form id="ApplicantFormRegister" name="ApplicantFormRegister" class="form-horizontal ApplicantForm" method="POST" enctype="multipart/form-data">
-                  <div class="row">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Email ID<span class="important">*</span></label>
-                    <div class="col-sm-8">
-                      <input type="email" class="form-control" id="user_register_email" placeholder="Enter valid email address" name="email">
-                      <p id="user_register_response_message"></p>
-                      <input type="hidden" name="register_from" id='register_from' value="Email">
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Password<span class="important">*</span></label>
-                    <div class="col-sm-8">
-                      <input type="password" class="form-control" id="user_register_password" placeholder="Enter Password minimum of 7 characters" name="password">
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Mobile Number<span class="important">*</span></label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="user_register_mobile" placeholder="Recruiters will reach you on this number" name="mobile">
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Current Location<span class="important">*</span></label>
-                    <div class="col-sm-8">
-                      <select class="form-select select2" name="current_city" id="user_register_current_city">
-                        <option value="">Choose required location</option>
-                            <option value=" city.id }}"> city.name }}</option>
-                      </select>
-                      <span class="city_err"></span>
-                      <input type="text" class="form-control pb-1" id="user_register_other_location" placeholder="Enter your Location" name="other_location" style="display:none">
-                      <input class="form-check-input" type="checkbox" name="other_loc" id="other_location"> <span class="text">Other Location</span>
-                    </div>
-                  </div>
-                  <div class="row  mb-3">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Skills<span class="important">*</span></label>
-                    <div class="col-sm-8">
-                      <select class="form-select select2" name="technical_skills" id="user_register_technical_skills">
-                            <option value=" skill.id }}"> skill.name }}</option>
-                      </select>
-                      <span class="reg_skill_err"></span>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="colFormLabelSm" class="col-sm-4 control-label">Experience</label>
-                    <div class="col-sm-8">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <select class="form-select" name="year" id="user_register_year">
-                              <option value=''>Year</option>
-                              <option value='i.0}}'>i.1}}</option>
-                          </select>
-                        </div>
-                        <div class="col-md-6">
-                          <select class="form-select" name="month" id="user_register_month">
-                              <option value=''>Month</option>
-                              <option value='k.0}}'>k.1}}</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-7 d-flex">
-                      <button for="colFormLabelSm" type="submit" class="btn  register_form_button">
-                        <span class='load_register'>
-                          <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...
-                        </span>
-                        <span class='register_click'>Create Account</span>
-                      </button>
-                      <p><a id="login_but">Already a Member? Login</a></p>
-                    </div>
-                  </div>
-                </form>
-              
-                <div class="alternate_login">
-                  <span class="or_reg">
-                    <span class="text">Or Register With</span>
-                  </span>
-                  <div class="social_reg_logins">
-                    <ul>
-                      <li><a href=" url 'social:facebook_login' %}" class="facebook" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-facebook-f fb"></i></a></li>
-                      <li><a href=" url 'social:linkedin_login' %}" class="linkedin" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-linkedin-in in"></i></a></li>
-                      <li><a href=" url 'social:github_login' %}" class="github" style="line-height: 32px; padding: 0; padding-left: 7px;"><i class="fa-brands fa-github git"></i></a></li>
-                      <li><a href=" url 'social:google_login' %}" class="gplus" style="line-height: 32px; padding: 0; padding-left: 7px;"><i style="color: white; font-style: normal; font-size: larger;"><strong>G</strong></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal ends-->
-
-
-  <div class="modal fade modal-dialog-scrollable" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <input type="hidden" name="login_reg" id="is_show_popup" value="False">
-          <input type="hidden" name="logged_usser" id="logged_user" value="{{request.user}}">
-          <div class="row marl" id="login_div">
-            <div class="social_panel">
-              <div class="icons_list">
-                <ul class="other_options clearfix">
-                  <li class="active" id="login_li"><a class="sign_in_li" target="_blank">Login</a></li>
-                  <li id="sign_up_li"><a class="sign_up_li" target="_blank">Create Account</a></li>
-                </ul>
-                <div class="or"><span>Or</span></div>
-                <ul>
-                  <li class="facebook_li" style="padding-left: 5px;"><a href=" url 'social:facebook_login' %}" target="_blank"><i class="fa-brands fa-facebook-f fb"></i><span>Sign in with <span>FaceBook</span></span></a></li>
-                  <li class="linkedin_li" style="padding-left: 5px;"><a href=" url 'social:linkedin_login' %}" target="_blank"><i class="fa-brands fa-linkedin-in in"></i><span>Sign in with <span>LinkedIn</span></span></a></li>
-                  <li class="github_li" style="padding-left: 5px;"><a href=" url 'social:github_login' %}" target="_blank"><i class="fa-brands fa-github git"></i><span>Sign in with <span>GitHub</span></span></a></li>
-                </ul>
-                <div class="customGPlusSignIn" data-href=" url 'social:google_login' %}">
-                  <span class="icon"></span>
-                  <span class="buttonText">Sign in With Google</span>
-                </div>
-              </div>
-            </div>
-            <div class="form_panel form">
-              <div class="login_box">
-                <h3 id="pop_up_header">Already a Member? Login</h3>
-                <form id="ApplicantForm" name="ApplicantForm" class="ApplicantForm" method="POST" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="userlogin_email" placeholder="Enter Email ID" name="email">
-                    <p id="userlogin_response_message"></p>
-                    <input type="hidden" name="register_type" id='user_register_type' value="login">
-                    <input type="hidden" name="next" value="{{request.GET.next}}">
-                    <input type="password" class="form-control" id="userlogin_password" placeholder="Enter Password" name="password">
-                    <button type="submit" class="btn btn-default login_form_button" id="button_value">Sign In</button>
-                    <div id="forgot_pass"><a>Forgot Password?</a></div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="block_question" style="display:none;"></div>
     {% compress js %}
     {% block 'extra_js' %}
     {% endblock %}

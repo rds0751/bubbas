@@ -248,10 +248,10 @@ $('.adv_job_type').click(function(e){
         $('.ac-cityresults').remove()
         var results = data.results || []
         var results_wrapper = $('<div class="ac-cityresults"></div>')
-        var base_elem = $('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
+        var base_elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
         if(results.length > 0) {
           for(var res_offset in results) {
-            elem = $('<div class="result-wrapper"><a href="" class="ac-cityresult"><span>'+results[res_offset]['name'] + '</span></a></div>');
+            elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-cityresult"><span>'+results[res_offset]['name'] + '</span></a></div>');
             results_wrapper.append(elem);
           }
         }
@@ -323,10 +323,10 @@ $('.adv_job_type').click(function(e){
         $('.ac-industryresults').remove()
         var results = data.results || []
         var results_wrapper = $('<div class="ac-industryresults"></div>')
-        var base_elem = $('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
+        var base_elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
         if(results.length > 0) {
           for(var res_offset in results) {
-            elem = $('<div class="result-wrapper"><a href="" class="ac-industryresult"><span>'+results[res_offset]['name'] + '</span></a></div>');
+            elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-industryresult"><span>'+results[res_offset]['name'] + '</span></a></div>');
             results_wrapper.append(elem);
           }
         }
@@ -397,10 +397,10 @@ $('.adv_job_type').click(function(e){
         $('.ac-functionalarearesults').remove()
         var results = data.results || []
         var results_wrapper = $('<div class="ac-functionalarearesults"></div>')
-        var base_elem = $('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
+        var base_elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
         if(results.length > 0) {
           for(var res_offset in results) {
-            elem = $('<div class="result-wrapper"><a href="" class="ac-functionalarearesult"><span>'+results[res_offset]['name'] + '</span></a></div>');
+            elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-functionalarearesult"><span>'+results[res_offset]['name'] + '</span></a></div>');
             results_wrapper.append(elem);
           }
         }
@@ -554,11 +554,11 @@ function SetCaretAtEnd(elem) {
           $('.ac-skillresults').remove()
           var results = data.results || []
           var results_wrapper = $('<div class="ac-skillresults"></div>')
-          var base_elem = $('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
+          var base_elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
           if(results.length > 0) {
             for(var res_offset in results) {
               // console.log(results[res_offset])
-              elem = $('<div class="result-wrapper"><a href="" class="ac-result" data-href="'+results[res_offset]['slug']+'" id="'+ results[res_offset]['id'] +'"><span>'+results[res_offset]['name'] + '</span></a></div>');
+              elem = $('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result" data-href="'+results[res_offset]['slug']+'" id="'+ results[res_offset]['id'] +'"><span>'+results[res_offset]['name'] + '</span></a></div>');
               results_wrapper.append(elem);
             }
           }

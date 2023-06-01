@@ -21,7 +21,7 @@ from ads.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('call-girls/', include('ads.urls')), # new
-    path('escorts/', include('ads.urls')), # new
+    path('call-girls/', include('call_girls.urls')), # new
+    path('escorts/', include('escorts.urls')), # new
     path('', home, name = 'post'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -251,7 +251,7 @@ a:hover {
 }
 
 .green {
-  color: #62bb46;
+  color: #28850b;
   font-size: 16px;
 }
 
@@ -291,7 +291,7 @@ a:hover {
   font-size: 16px;
 }
 .job_list_section .job_item .logo_post_date .apply, .main_container .left_container .job_detail_section .job_item .logo_post_date .apply {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
   height: 29px;
   padding-top: 6px;
@@ -327,7 +327,7 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .job_list_section .job_item p, .main_container .left_container .job_detail_section .job_item p, .main_container .left_container .job_list_section .job_item p {
   color: #1f2326;
@@ -452,7 +452,7 @@ a:hover {
 }
 .jobs_columns .job_outer_col .job_col p .apply {
   display: inline-block;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -805,7 +805,7 @@ a:hover {
 }
 .header_banner .icon_banner .search_login_row .search_login_blocks .search_block .tabs_block .search_location_other_block .job-location_other button {
   height: 40px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -923,7 +923,7 @@ a:hover {
 .header_banner .icon_banner .search_login_row .search_login_blocks .login_block .login_box form .btn {
   margin-top: 8px;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
   border-bottom: 1px solid #001120;
 }
 .header_banner .icon_banner .search_login_row .search_login_blocks .login_block .login_box form .btn:hover {
@@ -967,7 +967,7 @@ a:hover {
   margin-top: 7px;
   display: block;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
   border-bottom: 1px solid #001120;
 }
 
@@ -1001,7 +1001,7 @@ a:hover {
   display: inline-block;
 }
 .main_container h3 {
-  color: #62bb46;
+  color: #28850b;
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 14px;
@@ -1074,7 +1074,7 @@ a:hover {
   color: #fff;
 }
 .main_container .left_container .alphabets_row ul li:first-child a {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
 }
 .main_container .left_container .companies_row {
@@ -1354,7 +1354,7 @@ a:hover {
 .main_container .left_container .job_alert_form .card .card-body form .row button {
   margin-top: 15px;
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
@@ -1477,14 +1477,14 @@ a:hover {
   color: #45586d;
 }
 .main_container .left_container .blog_detail_section .blog_item .category {
-  color: #62bb46;
+  color: #28850b;
   display: block;
   font-weight: 400;
   text-transform: uppercase;
   margin: 5px 0;
 }
 .main_container .left_container .blog_detail_section .blog_item .category a {
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   text-transform: initial;
   display: inline-block;
@@ -1592,14 +1592,14 @@ a:hover {
   color: #45586d;
 }
 .main_container .left_container .related_blog_post_section .blog_item .category {
-  color: #62bb46;
+  color: #28850b;
   display: block;
   font-weight: 400;
   text-transform: uppercase;
   margin: 5px 0;
 }
 .main_container .left_container .related_blog_post_section .blog_item .category a {
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   text-transform: initial;
   display: inline-block;
@@ -1689,7 +1689,7 @@ a:hover {
 }
 .main_container .left_container .job_detail_section .similar_jobs_section .job_outer_col .job_col p .apply {
   display: inline-block;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -1729,7 +1729,7 @@ a:hover {
 }
 .main_container .left_container .job_detail_section .tag_div .apply_btn {
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -1750,7 +1750,7 @@ a:hover {
 }
 .main_container .left_container .job_detail_section .tag_div .event_form .add_event {
   height: 28px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -2005,7 +2005,7 @@ a:hover {
 .main_container .left_container .questions_block .review-block span {
   display: inline-block;
   margin-left: 10px;
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   cursor: pointer;
 }
@@ -2087,7 +2087,7 @@ a:hover {
   border-bottom: 1px solid #e3e3e3;
 }
 .main_container .left_container .questions_block ul li .replies_block ul li span {
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   display: block;
 }
@@ -2120,7 +2120,7 @@ a:hover {
 }
 .main_container .left_container .questions_block ul li .comments_block form .form-group button {
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
@@ -2178,7 +2178,7 @@ a:hover {
 .main_container .left_container .questions_block .answers .answer .comment_section .review-block span {
   display: inline-block;
   margin-left: 10px;
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   cursor: pointer;
 }
@@ -2211,7 +2211,7 @@ a:hover {
   border-bottom: 1px solid #e3e3e3;
 }
 .main_container .left_container .questions_block .answers .answer .replies_block ul li span {
-  color: #62bb46;
+  color: #28850b;
   font-weight: 500;
   display: block;
 }
@@ -2244,7 +2244,7 @@ a:hover {
 }
 .main_container .left_container .questions_block .answers .answer .comments_block form .form-group button {
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
@@ -2482,7 +2482,7 @@ a:hover {
   background: #fff;
 }
 .main_container .right_container .subscribe_box.blog_subscribe .login_box button {
-  background: #62bb46;
+  background: #28850b;
 }
 .main_container .right_container .subscribe_box .select2-selection--multiple {
   min-height: 35PX;
@@ -2566,7 +2566,7 @@ a:hover {
 }
 .main_container .right_container .inner_login_box .login_box form .btn {
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
   border-bottom: 1px solid #001120;
 }
 .main_container .right_container .inner_login_box .login_box form .btn:hover {
@@ -2616,7 +2616,7 @@ a:hover {
   margin-top: 15px;
 }
 .main_container .right_container .walkin_jobs .heading {
-  background: #62BB46;
+  background: #28850b;
   color: #fff;
   padding: 4px 10px;
   padding-bottom: 2px;
@@ -2689,7 +2689,7 @@ a:hover {
   margin-top: 15px;
 }
 .main_container .right_container .top_recruiters .heading {
-  background: #62BB46;
+  background: #28850b;
   color: #fff;
   padding: 4px 10px;
   padding-bottom: 2px;
@@ -2890,7 +2890,7 @@ footer .subscribe_social_copy .subscribe .input-group .form-control {
   background: #f5f6f7;
 }
 footer .subscribe_social_copy .subscribe .input-group .input-group-btn .btn {
-  background: #62bb46;
+  background: #28850b;
   border-radius: 0;
   color: #fff;
   font-weight: 600;
@@ -2899,7 +2899,7 @@ footer .subscribe_social_copy .subscribe .input-group .input-group-btn .btn {
 }
 footer .subscribe_social_copy .subscribe .input-group .input-group-btn .btn:hover {
   background: #fff;
-  color: #62bb46;
+  color: #28850b;
 }
 footer .subscribe_social_copy .social_links ul li a, footer .subscribe_social_copy .header_banner .icon_banner .search_login_row .search_login_blocks .login_block .login_box .social_links ul li a, .header_banner .icon_banner .search_login_row .search_login_blocks .login_block .login_box footer .subscribe_social_copy .social_links ul li a, footer .subscribe_social_copy .main_container .right_container .inner_login_box .login_box .social_links ul li a, .main_container .right_container .inner_login_box .login_box footer .subscribe_social_copy .social_links ul li a, footer .subscribe_social_copy .social_links ul li a, .header_banner .icon_banner .search_login_row .search_login_blocks .login_block footer .subscribe_social_copy .main_container .right_container .inner_login_box .login_box .social_links ul li a {
   padding-top: 8px;
@@ -3260,7 +3260,7 @@ footer .subscribe_social_copy .copy_right a:hover {
   border-radius: 3px;
 }
 #login_register .modal-content .modal-body .form_panel form .register_form_button {
-  background-color: #62bb46;
+  background-color: #28850b;
   border-width: 0;
   color: #FFFFFF;
   display: inline-block;
@@ -3636,7 +3636,7 @@ footer .subscribe_social_copy .copy_right a:hover {
   border-radius: 3px;
 }
 #loginModal .modal-dialog .modal-content .modal-body .form_panel form .register_form_button {
-  background-color: #62bb46;
+  background-color: #28850b;
   border-width: 0;
   color: #FFFFFF;
   display: inline-block;
@@ -3845,7 +3845,7 @@ footer .subscribe_social_copy .copy_right a:hover {
   border-radius: 3px;
 }
 #register-div .modal-dialog .modal-content .modal-body .row .form_panel form .register_form_button {
-  background-color: #62bb46;
+  background-color: #28850b;
   border-width: 0;
   color: #FFFFFF;
   display: inline-block;
@@ -4251,7 +4251,7 @@ footer .subscribe_social_copy .copy_right a:hover {
   padding: 6px 0px;
   text-align: center;
   background-size: cover;
-  width: 100%;
+  width: 94%;
 }
 .inner_search_section .form_element {
   width: 25%;
@@ -4287,7 +4287,7 @@ footer .subscribe_social_copy .copy_right a:hover {
 }
 .inner_search_section .search_form_element button {
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   font-weight: 600;
   font-size: 18px;
   width: 100%;
@@ -4702,10 +4702,10 @@ Triangle breadcrumb
   color: #4b6076;
 }
 .profile_container .profile_left_container .left_block .profile_links.verifications li a span {
-  color: #62bb46;
+  color: #28850b;
 }
 .profile_container .profile_left_container .left_block .profile_links.verifications li:last-child a span {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
   border-radius: 2px;
   display: inline-block;
@@ -4794,7 +4794,7 @@ Triangle breadcrumb
 }
 .profile_container .profile_left_container .left_block .job_alert_block .create_job_alert {
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
@@ -4843,7 +4843,7 @@ Triangle breadcrumb
   margin-top: 7px;
   display: block;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
   border-bottom: 1px solid #001120;
 }
 .profile_container .profile_left_container .left_block .profile_percentage .head_profile {
@@ -4898,7 +4898,7 @@ Triangle breadcrumb
   height: 165px;
 }
 .profile_container .profile_right_container .profile_top_view_block .profile_pic_others .profile_pic a {
-  background: #62bb46;
+  background: #28850b;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -4997,7 +4997,7 @@ Triangle breadcrumb
 }
 .profile_container .profile_right_container .profile_top_view_block .other_details .verification_block .verify_block span.verified {
   /* background: $green;*/
-  color: #62bb46;
+  color: #28850b;
 }
 .profile_container .profile_right_container .profile_top_view_block .other_details .skip_close_tour {
   margin-top: 7px;
@@ -5047,7 +5047,7 @@ Triangle breadcrumb
   color: #f5f6f7;
 }
 .profile_container .profile_right_container .profile_top_view_block .other_details .skip_close_tour .skip_block .fields_block form .verify_btn {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -5174,7 +5174,7 @@ Triangle breadcrumb
 }
 .profile_container .profile_right_container .profile_detail_block .content .table tbody tr td.yes i {
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
   display: inline-block;
   border-radius: 2px;
   padding: 2px 5px;
@@ -5219,7 +5219,7 @@ Triangle breadcrumb
 .profile_container .profile_right_container .profile_detail_block form .form-group button {
   margin-top: 15px;
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
@@ -5379,7 +5379,7 @@ Triangle breadcrumb
 .detail_description_column .card .card-body form .row button {
   margin-top: 15px;
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;
@@ -6196,7 +6196,7 @@ Triangle breadcrumb
 }
 #content_pages .content-page .title {
   margin: 10px 0px;
-  color: #62bb46;
+  color: #28850b;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -6369,7 +6369,7 @@ Triangle breadcrumb
   background: #fff;
 }
 .subscribe_box.blog_subscribe .login_box button {
-  background: #62bb46;
+  background: #28850b;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
@@ -6793,7 +6793,7 @@ Triangle breadcrumb
   background: #ddd;
 }
 .job_bottom .apply {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
   height: 35px;
   padding-top: 6px;
@@ -6991,13 +6991,13 @@ Triangle breadcrumb
   text-align: center;
   font-size: 16px;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .message_card .card-body .chat_main_block .recruiters_list_block .recruiters_list li a .msg_count.offline {
   background: #b91a1a;
 }
 .message_card .card-body .chat_main_block .recruiters_list_block .recruiters_list li.active a {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
 }
 .message_card .card-body .chat_main_block .recruiters_list_block .recruiters_list li.active a .msg_count {
@@ -7196,7 +7196,7 @@ Triangle breadcrumb
   margin-top: 15px;
 }
 .success_view .sucess {
-  background: #62bb46;
+  background: #28850b;
   height: 100px;
   justify-content: center;
   display: flex;
@@ -7208,7 +7208,7 @@ Triangle breadcrumb
   color: #fff;
 }
 .success_view .sucess_walkin h2 {
-  color: #62bb46;
+  color: #28850b;
   font-size: 2rem;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -7222,7 +7222,7 @@ Triangle breadcrumb
 .form_submit, .form_cancel {
   margin-top: 15px;
   height: 35px;
-  background: #62bb46;
+  background: #28850b;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 18px;

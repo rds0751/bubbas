@@ -231,7 +231,7 @@ Autocomplete.prototype.show_results = function(data) {
     var results_wrapper = $(
         '<div class="ac-skillresults"></div>')
     var base_elem = $(
-        '<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>'
+        '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>'
     )
     if (results.length > 0) {
         for (var res_offset in results) {
@@ -328,12 +328,12 @@ AutocompleteCity.prototype.show_results = function(data) {
     var results_wrapper = $(
         '<div class="ac-cityresults"></div>')
     var base_elem = $(
-        '<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>'
+        '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>'
     )
     if (results.length > 0) {
         for (var res_offset in results) {
             elem = $(
-                '<div class="result-wrapper"><a href="" class="ac-cityresult"><span>' +
+                '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-cityresult"><span>' +
                 results[res_offset]['name'] +
                 '</span></a></div>'
             );
@@ -418,12 +418,12 @@ AutocompleteIndustry.prototype.show_results = function(data) {
     var results_wrapper = $(
         '<div class="ac-industryresults"></div>')
     var base_elem = $(
-        '<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>'
+        '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>'
     )
     if (results.length > 0) {
         for (var res_offset in results) {
             elem = $(
-                '<div class="result-wrapper"><a href="" class="ac-industryresult"><span>' +
+                '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-industryresult"><span>' +
                 results[res_offset]['name'] +
                 '</span></a></div>'
             );
@@ -509,12 +509,12 @@ AutocompleteFunctionalArea.prototype.show_results = function(
         '<div class="ac-functionalarearesults"></div>'
     )
     var base_elem = $(
-        '<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>'
+        '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>'
     )
     if (results.length > 0) {
         for (var res_offset in results) {
             elem = $(
-                '<div class="result-wrapper"><a href="" class="ac-functionalarearesult"><span>' +
+                '<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-functionalarearesult"><span>' +
                 results[res_offset]['name'] +
                 '</span></a></div>'
             );
