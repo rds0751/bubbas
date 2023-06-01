@@ -72,7 +72,7 @@
 .recruiter_table, #view_profile .company_panel .panel-body .recruiter_table, #view_profile_recruiter .company_panel .panel-body .recruiter_table, #view_recruiter .recruiter_list_panel .recruiter_table {
   margin-top: 15px;
   padding: 0 5px;
-  font-size: 13px;
+  font-size: 18px;
 }
 .recruiter_table .table thead tr th, #view_profile .company_panel .panel-body .recruiter_table .table thead tr th, #view_profile_recruiter .company_panel .panel-body .recruiter_table .table thead tr th, #view_recruiter .recruiter_list_panel .recruiter_table .table thead tr th {
   background: #ddd;
@@ -145,7 +145,7 @@
   font-weight: 500;
 }
 .job_item .title a .exp, .job_item .applicants_wrap .tab_content .ticket_each .wrapper .content_div .email a .exp, .job_item .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .email a .exp, .job_item .applicants_wrap .tab_content .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .job_item .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .tab_content .ticket_each .wrapper .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .date a .exp, .applicants_wrap .tab_content .ticket_each .wrapper .content_div .job_item .email a .exp, .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .job_item .email a .exp, .applicants_wrap .tab_content .ticket_each .wrapper .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content .ticket_each .wrapper .content_div .job_item .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .job_item .date a .exp, .job_item #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .ticket_view .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .ticket_view .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .job_item .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .job_item .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .job_item .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_view .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_view .applicants_wrap .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .job_item .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .job_item .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .job_item .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .applicants_wrap .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .applicants_wrap .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .ticket_view .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .ticket_view .applicants_wrap .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp {
-  color: #00aeef;
+  color: #000276;
   font-size: 15px;
   font-weight: 500;
 }
@@ -153,10 +153,10 @@
   border-radius: 20px;
   padding: 3px 12px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .job_item p {
   margin: 0;
@@ -172,10 +172,10 @@
 .job_item .job_type {
   display: block;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_item .job_type span {
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: 3px;
 }
@@ -682,18 +682,18 @@ img {
   } */
 }
 .job_list .tab_row .checkbox_block, .ticket_list .tab_row .checkbox_block, .applicants_wrap .tab_row .checkbox_block, #job_detail_wrap .applicants_wrap .tab_row .checkbox_block, .ticket_view .applicants_wrap .tab_row .checkbox_block, .ticket_view .applicants_wrap .applicants_wrap .tab_row .checkbox_block, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block, .applicants_wrap .applicants_wrap .tab_row .checkbox_block, .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block {
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_list .tab_row .checkbox_block input[type=radio], .ticket_list .tab_row .checkbox_block input[type=radio], .applicants_wrap .tab_row .checkbox_block input[type=radio], #job_detail_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio], .ticket_view .applicants_wrap .tab_row .checkbox_block input[type=radio], .ticket_view .applicants_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio], .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .checkbox_block input[type=radio] {
   vertical-align: middle;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0 5px;
 }
 .job_list .tab_row .tab_button, .ticket_list .tab_row .tab_button, .applicants_wrap .tab_row .tab_button, #job_detail_wrap .applicants_wrap .tab_row .tab_button, .ticket_view .applicants_wrap .tab_row .tab_button, .ticket_view .applicants_wrap .applicants_wrap .tab_row .tab_button, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .tab_button, .applicants_wrap .applicants_wrap .tab_row .tab_button, .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .tab_button, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_row .tab_button {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 8px 13px;
   /* color: $tab_button_bg; */
   color: #fff;
@@ -730,7 +730,7 @@ img {
 .job_list .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .ticket_list .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, #job_detail_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .ticket_view .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .applicants_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .filters_row .filter_col .select2-container--default .select2-selection--single {
   background-color: #fff;
   border: 1px solid #ccc;
-  font-size: 13px;
+  font-size: 18px;
   border-radius: 0;
   height: 35px;
 }
@@ -739,7 +739,7 @@ img {
 }
 .job_list .table_wraper .job_list_table, .ticket_list .table_wraper .job_list_table, .applicants_wrap .table_wraper .job_list_table, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table, .ticket_view .applicants_wrap .table_wraper .job_list_table, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table, .applicants_wrap .applicants_wrap .table_wraper .job_list_table, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table {
   width: 98%;
-  font-size: 13px;
+  font-size: 18px;
   display: table;
   border-collapse: separate;
   border-spacing: 0 6px;
@@ -761,7 +761,7 @@ img {
 }
 .job_list .table_wraper .job_list_table thead tr th, .ticket_list .table_wraper .job_list_table thead tr th, .applicants_wrap .table_wraper .job_list_table thead tr th, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table thead tr th, .ticket_view .applicants_wrap .table_wraper .job_list_table thead tr th, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th, .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th {
   padding: 10px 15px;
-  font-size: 13px;
+  font-size: 18px;
   color: #47484a;
 }
 .job_list .table_wraper .job_list_table thead tr th:first-child, .ticket_list .table_wraper .job_list_table thead tr th:first-child, .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .ticket_view .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table thead tr th:first-child {
@@ -808,7 +808,7 @@ img {
   border-top: 1px solid #f4f4f4;
   border-bottom: 1px solid #f4f4f4;
   color: #222223;
-  font-size: 13px;
+  font-size: 18px;
 }
 @media (min-width: 240px) and (max-width: 852px) {
   .job_list .table_wraper .job_list_table tbody tr td, .ticket_list .table_wraper .job_list_table tbody tr td, .applicants_wrap .table_wraper .job_list_table tbody tr td, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td, .ticket_view .applicants_wrap .table_wraper .job_list_table tbody tr td, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td, .applicants_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table tbody tr td {
@@ -1219,7 +1219,7 @@ img {
 }
 .job_list .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .ticket_list .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), #job_detail_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .ticket_view .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4), .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:nth-child(4) {
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   color: #333;
 }
 .job_list .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .ticket_list .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .ticket_view .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr td:last-child {
@@ -1250,7 +1250,7 @@ img {
 .job_list .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .ticket_list .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, #job_detail_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .ticket_view .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .job_list_table.jobs_table tbody tr.content_block td ul li {
   list-style: none;
   padding: 8px 6px;
-  font-size: 13px;
+  font-size: 18px;
   border-bottom: 1px solid #ccc;
   font-weight: normal;
 }
@@ -1259,13 +1259,13 @@ img {
   margin-right: 20px;
 }
 .job_list .table_wraper .checkbox_block, .ticket_list .table_wraper .checkbox_block, .applicants_wrap .table_wraper .checkbox_block, #job_detail_wrap .applicants_wrap .table_wraper .checkbox_block, .ticket_view .applicants_wrap .table_wraper .checkbox_block, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .checkbox_block, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block, .applicants_wrap .applicants_wrap .table_wraper .checkbox_block, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block {
-  font-size: 12px;
+  font-size: 16px;
   padding-right: 28px;
 }
 .job_list .table_wraper .checkbox_block input[type=radio], .ticket_list .table_wraper .checkbox_block input[type=radio], .applicants_wrap .table_wraper .checkbox_block input[type=radio], #job_detail_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio], .ticket_view .applicants_wrap .table_wraper .checkbox_block input[type=radio], .ticket_view .applicants_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio], .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio], .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .checkbox_block input[type=radio] {
   vertical-align: middle;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 10px;
 }
 .job_list .table_wraper .resume_list .resume-preview-frame, .ticket_list .table_wraper .resume_list .resume-preview-frame, .applicants_wrap .table_wraper .resume_list .resume-preview-frame, #job_detail_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .ticket_view .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .ticket_view .applicants_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .applicants_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .table_wraper .resume_list .resume-preview-frame {
@@ -1433,7 +1433,7 @@ img {
 .resume-display .modal-dialog .modal-header .resume-head .tab_button {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 1px 13px;
   color: #fff;
   position: relative;
@@ -1456,7 +1456,7 @@ img {
 }
 .resume-display .profile_details_block .edit_button a, .resume-display .profile_details_block .edit_button span {
   float: right;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   background: #63C076;
@@ -1469,7 +1469,7 @@ img {
 .resume-display .profile_details_block .profile_block .name, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_description .logo_name_url .url, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url, #view_profile .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url {
   padding: 4px 0;
   margin-top: 0px;
-  font-size: 13px;
+  font-size: 18px;
 }
 .resume-display .profile_details_block .profile_block .name strong, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url strong, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url strong, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_description .logo_name_url .url strong, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url strong, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url strong, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url strong, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url strong, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url strong, #view_profile .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url strong, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url strong, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url strong, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url strong {
   color: #0B86C6;
@@ -1480,7 +1480,7 @@ img {
 .resume-display .profile_details_block .profile_block .name span, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url span, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url span, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_description .logo_name_url .url span, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url span, .resume-display .profile_details_block .profile_block #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url span, .resume-display .profile_details_block .profile_block #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url span, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url span, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .resume-display .profile_details_block .profile_block .url span, #view_profile .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url span, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .resume-display .profile_details_block .profile_block .url span, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url span, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .resume-display .profile_details_block .profile_block .url span {
   display: inline-block;
   margin-top: 1px;
-  font-size: 13px;
+  font-size: 18px;
 }
 .resume-display .profile_details_block .content_job_post {
   padding-left: 9px;
@@ -1492,7 +1492,7 @@ img {
 .resume-display .profile_details_block .content_job_post .edit_button {
   display: inline-block;
   float: right;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   background: #63C076;
@@ -1511,7 +1511,7 @@ img {
   margin: 0;
 }
 .resume-display .profile_details_block .content_job_post .profile_menu_table .Table {
-  font-size: 12px;
+  font-size: 16px;
   display: table;
   width: 100%;
   margin-top: 20px;
@@ -1629,7 +1629,7 @@ img {
   margin-top: 0px;
   margin-bottom: 20px;
   padding-right: 15px;
-  font-size: 13px;
+  font-size: 18px;
 }
 @media (min-width: 240px) and (max-width: 852px) {
   #job_post h5, #job_post_new h5, #edit_profile h5, #view_recruiter h5, #view_profile h5, #view_profile_recruiter h5, .change_password h5, .raise_ticket h5, .create_email_template h5 {
@@ -1684,14 +1684,14 @@ img {
   margin-bottom: 12px;
 }
 #job_post .copy_job .panel-body .copy_title, #job_post_new .copy_job .panel-body .copy_title, #edit_profile .copy_job .panel-body .copy_title, #view_recruiter .copy_job .panel-body .copy_title, #view_profile .copy_job .panel-body .copy_title, #view_profile_recruiter .copy_job .panel-body .copy_title, .change_password .copy_job .panel-body .copy_title, .raise_ticket .copy_job .panel-body .copy_title, .create_email_template .copy_job .panel-body .copy_title {
-  font-size: 13px;
+  font-size: 18px;
   color: #fff !important;
 }
 #job_post .copy_job .panel-body .button, #job_post_new .copy_job .panel-body .button, #edit_profile .copy_job .panel-body .button, #view_recruiter .copy_job .panel-body .button, #view_profile .copy_job .panel-body .button, #view_profile_recruiter .copy_job .panel-body .button, .change_password .copy_job .panel-body .button, .raise_ticket .copy_job .panel-body .button, .create_email_template .copy_job .panel-body .button {
   font-weight: 600;
   display: inline-block;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
   color: #fff;
 }
 #job_post .copy_job .panel-body .button.active_job, #job_post_new .copy_job .panel-body .button.active_job, #edit_profile .copy_job .panel-body .button.active_job, #view_recruiter .copy_job .panel-body .button.active_job, #view_profile .copy_job .panel-body .button.active_job, #view_profile_recruiter .copy_job .panel-body .button.active_job, .change_password .copy_job .panel-body .button.active_job, .raise_ticket .copy_job .panel-body .button.active_job, .create_email_template .copy_job .panel-body .button.active_job {
@@ -1744,7 +1744,7 @@ img {
 }
 #job_post .category .add_location, #job_post_new .category .add_location, #edit_profile .category .add_location, #view_recruiter .category .add_location, #view_profile .category .add_location, #view_profile_recruiter .category .add_location, .change_password .category .add_location, .raise_ticket .category .add_location, .create_email_template .category .add_location {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   padding: 6px 15px;
   cursor: pointer;
   margin-top: 0px;
@@ -1774,7 +1774,7 @@ img {
   border: 1px solid #dbdbdb;
   text-align: center;
   color: #dc4e41;
-  font-size: 13px;
+  font-size: 18px;
   padding-top: 4px;
   cursor: pointer;
   display: inline-block;
@@ -1845,7 +1845,7 @@ img {
 #job_post .category .form_div .input_element label, #job_post_new .category .form_div .input_element label, #edit_profile .category .form_div .input_element label, #view_recruiter .category .form_div .input_element label, #view_profile .category .form_div .input_element label, #view_profile_recruiter .category .form_div .input_element label, .change_password .category .form_div .input_element label, .raise_ticket .category .form_div .input_element label, .create_email_template .category .form_div .input_element label {
   display: none;
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 10px;
 }
@@ -2128,7 +2128,7 @@ img {
 .user_profile .content_job_post .category .form_div .input_element label {
   display: block !important;
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 10px !important;
 }
@@ -2398,7 +2398,7 @@ img {
   }
 }
 #job_detail_wrap .heading .button_wrap .button, .ticket_view .heading .button_wrap .button, .ticket_view .applicants_wrap .heading .button_wrap .button, .ticket_view .applicants_wrap .applicants_wrap .heading .button_wrap .button, .applicants_wrap .heading .button_wrap .button, .applicants_wrap .applicants_wrap .heading .button_wrap .button, .applicants_wrap .applicants_wrap .applicants_wrap .heading .button_wrap .button {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   margin-left: 5px;
   padding: 5px 15px;
@@ -2416,7 +2416,7 @@ img {
 }
 #job_detail_wrap .heading .button_wrap .button .name, #job_detail_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, #job_detail_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, #job_detail_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_description .logo_name_url .url, #job_detail_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, #job_detail_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, #job_detail_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_description .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url #job_detail_wrap .heading .button_wrap .button .url, .ticket_view .heading .button_wrap .button .name, .ticket_view .heading .button_wrap .button #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_view .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_view .heading .button_wrap .button #view_profile .company_view_profile .profile_description .logo_name_url .url, .ticket_view .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .ticket_view .heading .button_wrap .button #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .ticket_view .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .ticket_view .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .ticket_view .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_description .logo_name_url .ticket_view .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .ticket_view .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .ticket_view .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .ticket_view .heading .button_wrap .button .url, .ticket_view .applicants_wrap .heading .button_wrap .button .name, .ticket_view .applicants_wrap .applicants_wrap .heading .button_wrap .button .name, .applicants_wrap .heading .button_wrap .button .name, .applicants_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .applicants_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .applicants_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_description .logo_name_url .url, .applicants_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .applicants_wrap .heading .button_wrap .button #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .applicants_wrap .heading .button_wrap .button #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .applicants_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .applicants_wrap .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_description .logo_name_url .applicants_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .applicants_wrap .heading .button_wrap .button .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .applicants_wrap .heading .button_wrap .button .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .applicants_wrap .heading .button_wrap .button .url, .applicants_wrap .applicants_wrap .heading .button_wrap .button .name, .applicants_wrap .applicants_wrap .applicants_wrap .heading .button_wrap .button .name {
   color: inherit;
-  font-size: 13px;
+  font-size: 18px;
 }
 #job_detail_wrap .heading .button_wrap .button .edit, .ticket_view .heading .button_wrap .button .edit, .ticket_view .applicants_wrap .heading .button_wrap .button .edit, .ticket_view .applicants_wrap .applicants_wrap .heading .button_wrap .button .edit, .applicants_wrap .heading .button_wrap .button .edit, .applicants_wrap .applicants_wrap .heading .button_wrap .button .edit, .applicants_wrap .applicants_wrap .applicants_wrap .heading .button_wrap .button .edit {
   background: #F5A134;
@@ -2608,7 +2608,7 @@ img {
     background: none;
     color: #5C4C8D;
     font-weight: 700;
-    font-size: 13px !important;
+    font-size: 18px !important;
   }
 }
 #job_detail_wrap .applicants_wrap .tab_content1, .ticket_view .applicants_wrap .tab_content1, .ticket_view .applicants_wrap .applicants_wrap .tab_content1, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1, .applicants_wrap .applicants_wrap .tab_content1, .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 {
@@ -2639,7 +2639,7 @@ img {
   border: 1px solid #f4f4f4;
 }
 #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div, .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div, .ticket_view .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div, .ticket_view .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div, .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div, .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div, .applicants_wrap .applicants_wrap .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div {
-  font-size: 12px;
+  font-size: 16px;
   width: 100%;
   display: table-cell;
   vertical-align: top;
@@ -2904,7 +2904,7 @@ img {
   background: #fff;
 }
 #profile .row_one .pp_div .ticket_each.img_div .name_div_wrap .button, #profile .row_one .personal_info_div .ticket_each.img_div .name_div_wrap .button {
-  font-size: 12px;
+  font-size: 16px;
   background: #F5A134;
   color: #fff;
   padding: 2px 10px;
@@ -2919,7 +2919,7 @@ img {
 }
 #profile .row_one .pp_div .ticket_each.img_div .name_div_wrap .email, #profile .row_one .pp_div .ticket_each.img_div .name_div_wrap .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content #profile .row_one .pp_div .ticket_each.img_div .name_div_wrap .date, #profile .row_one .personal_info_div .ticket_each.img_div .name_div_wrap .email, #profile .row_one .personal_info_div .ticket_each.img_div .name_div_wrap .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content #profile .row_one .personal_info_div .ticket_each.img_div .name_div_wrap .date {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
   padding-bottom: 5px;
 }
 @media (min-width: 620px) and (max-width: 852px) {
@@ -3095,7 +3095,7 @@ img {
     background: none;
     color: #5C4C8D;
     font-weight: 700;
-    font-size: 13px !important;
+    font-size: 18px !important;
   }
 }
 .applicants_wrap .tab_content, .applicants_wrap .tab_content1 {
@@ -3128,7 +3128,7 @@ img {
   border: 1px solid #f4f4f4;
 }
 .applicants_wrap .tab_content .ticket_each .wrapper .content_div, .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div {
-  font-size: 12px;
+  font-size: 16px;
   display: table-cell;
   vertical-align: top;
   position: relative;
@@ -3268,7 +3268,7 @@ img {
   border: 1px solid #ddd;
   text-align: center;
   padding-top: 5px;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 50%;
 }
 .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .name, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .name, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .name, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile .company_view_profile .profile_description .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile .company_view_profile .profile_description .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile .company_view_profile .profile_description .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, .accordian_panel .details_wrap .tabular_details_wrap .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url, #view_profile .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .detail_each .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .accordian_panel .details_wrap .tabular_details_wrap .table_wrap .url, .accordian_panel .details_wrap .tabular_details_wrap #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .ticket_list .content_tickets .ticket_wrap .ticket .ticket_content .table_wrap .url {
@@ -3341,7 +3341,7 @@ img {
 .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .status {
   display: inline-block;
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
   padding: 2px 10px;
   text-align: center;
   margin-right: 0px;
@@ -3352,12 +3352,12 @@ img {
 }
 .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_title a {
   color: #63C076;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .email, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 18px;
   color: #616060;
 }
 .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date {
@@ -3369,7 +3369,7 @@ img {
 .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .status_type span {
   display: inline-block;
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
   padding: 2px 10px;
   text-align: center;
   margin-right: 5px;
@@ -3389,7 +3389,7 @@ img {
   padding: 3px 5px;
   float: left;
   margin-right: 5px;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   border-radius: 2px;
 }
@@ -3525,7 +3525,7 @@ img {
   background: rgba(220, 78, 65, 0.8);
   text-align: center;
   padding-top: 5px;
-  font-size: 12px;
+  font-size: 16px;
   right: 0px;
   top: 0px;
   color: #fff;
@@ -3638,7 +3638,7 @@ img {
   .ticket_view .comments_div_wrap .comments_div .comment_each .posted_details .time {
     display: block;
     padding-top: 3px;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .ticket_view .comments_div_wrap .comments_div .comment_each .posted_details .actions {
@@ -3696,7 +3696,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 18px;
   margin-right: 5px;
 }
 #view_recruiter .sub_heading, #view_recruiter #view_profile .modal .modal-title, #view_recruiter #view_profile_recruiter .modal .modal-title, #view_profile .modal #view_recruiter .modal-title, #view_profile_recruiter .modal #view_recruiter .modal-title {
@@ -3718,7 +3718,7 @@ img {
   right: 0;
 }
 #view_recruiter .recruiter_list_panel .edit_button a {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   background: #63C076;
@@ -3761,7 +3761,7 @@ img {
 #view_profile .company_panel, #view_profile_recruiter .company_panel {
   margin-top: 10px;
   margin-bottom: 5px;
-  font-size: 13px;
+  font-size: 18px;
 }
 #view_profile .company_panel .panel-body, #view_profile_recruiter .company_panel .panel-body {
   padding: 10px;
@@ -3779,7 +3779,7 @@ img {
   color: #5C4C8D;
   margin-top: 0px;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -3795,7 +3795,7 @@ img {
   right: 0;
 }
 #view_profile .company_view_profile .edit_button a, #view_profile_recruiter .company_view_profile .edit_button a, #view_profile .company_view_profile .edit_button span, #view_profile_recruiter .company_view_profile .edit_button span {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   background: #63C076;
@@ -3840,7 +3840,7 @@ img {
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .name, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .name, #view_profile .company_view_profile .profile_description .logo_name_url .name, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .name, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .name, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .name, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url, #view_profile .company_view_profile .profile_description .logo_name_url .url, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url {
   padding: 4px 0;
   margin-top: 0px;
-  font-size: 13px;
+  font-size: 18px;
 }
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .name strong, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .name strong, #view_profile .company_view_profile .profile_description .logo_name_url .name strong, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .name strong, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .name strong, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .name strong, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url strong, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url strong, #view_profile .company_view_profile .profile_description .logo_name_url .url strong, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url strong, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url strong, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url strong {
   color: #0B86C6;
@@ -3850,16 +3850,16 @@ img {
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .name span, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .name span, #view_profile .company_view_profile .profile_description .logo_name_url .name span, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .name span, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .name span, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .name span, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url span, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url span, #view_profile .company_view_profile .profile_description .logo_name_url .url span, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url span, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url span, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url span {
   display: block;
   margin-top: 1px;
-  font-size: 13px;
+  font-size: 18px;
 }
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .name span.in-block, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .name span.in-block, #view_profile .company_view_profile .profile_description .logo_name_url .name span.in-block, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .name span.in-block, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .name span.in-block, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .name span.in-block, #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .url span.in-block, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .url span.in-block, #view_profile .company_view_profile .profile_description .logo_name_url .url span.in-block, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .url span.in-block, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .url span.in-block, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .url span.in-block {
   display: inline-block;
   padding-right: 10px;
 }
 #view_profile .company_view_profile .profile_logo_name_url .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_logo_name_url .logo_name_url .file_upload, #view_profile .company_view_profile .profile_description .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_description .logo_name_url .file_upload, #view_profile .company_view_profile .profile_type_level_address .logo_name_url .file_upload, #view_profile_recruiter .company_view_profile .profile_type_level_address .logo_name_url .file_upload {
-  background: #62bb46;
+  background: #28850b;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -3880,7 +3880,7 @@ img {
   margin: 0;
 }
 #view_profile .profile_menu_table .Table, #view_profile_recruiter .profile_menu_table .Table {
-  font-size: 12px;
+  font-size: 16px;
   display: table;
   width: 100%;
   margin-top: 20px;
@@ -3935,10 +3935,10 @@ img {
   margin: 0;
 }
 #view_profile .modal .modal-body .form-group label, #view_profile_recruiter .modal .modal-body .form-group label {
-  font-size: 12px;
+  font-size: 16px;
 }
 #view_profile .modal .modal-body .form-group .form-control, #view_profile_recruiter .modal .modal-body .form-group .form-control {
-  font-size: 12px;
+  font-size: 16px;
   border: 1px solid #ddd;
   box-shadow: none;
   border-radius: 0;
@@ -3986,7 +3986,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 18px;
   margin-right: 5px;
 }
 #job_post_new .tab_row, #edit_profile .tab_row, #view_recruiter .tab_row, #view_profile .tab_row, #view_profile_recruiter .tab_row {
@@ -4029,18 +4029,18 @@ img {
   } */
 }
 #job_post_new .tab_row .checkbox_block, #edit_profile .tab_row .checkbox_block, #view_recruiter .tab_row .checkbox_block, #view_profile .tab_row .checkbox_block, #view_profile_recruiter .tab_row .checkbox_block {
-  font-size: 12px;
+  font-size: 16px;
 }
 #job_post_new .tab_row .checkbox_block input[type=radio], #edit_profile .tab_row .checkbox_block input[type=radio], #view_recruiter .tab_row .checkbox_block input[type=radio], #view_profile .tab_row .checkbox_block input[type=radio], #view_profile_recruiter .tab_row .checkbox_block input[type=radio] {
   vertical-align: middle;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0 5px;
 }
 #job_post_new .tab_row .tab_button, #edit_profile .tab_row .tab_button, #view_recruiter .tab_row .tab_button, #view_profile .tab_row .tab_button, #view_profile_recruiter .tab_row .tab_button {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 8px 13px;
   /* color: $tab_button_bg; */
   color: #fff;
@@ -4087,7 +4087,7 @@ img {
 #job_post_new .category .heading, #edit_profile .category .heading, #view_recruiter .category .heading, #view_profile .category .heading, #view_profile_recruiter .category .heading {
   color: #0B86C6;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   padding: 6px 0px;
   display: block !important;
@@ -4396,7 +4396,7 @@ img {
   text-align: left;
   display: block;
   color: #888;
-  font-size: 13px;
+  font-size: 18px;
 }
 #menu ul li .sub_list li a i {
   padding-left: 5px;
@@ -4473,7 +4473,7 @@ img {
   background-color: #B5C2C8;
   border-radius: 0;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 16px;
   list-style: none;
   overflow: hidden;
 }
@@ -4493,7 +4493,7 @@ img {
   padding: 6px 10px 7px 20px;
   position: relative;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
   border-radius: 0;
 }
 .breadcrumb li a:after {
@@ -4771,7 +4771,7 @@ img {
   line-spacing: 0;
 }
 .inner_main_container .job_text_upper p {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
 }
 .inner_main_container .left_forms_container .panel {
@@ -4864,7 +4864,7 @@ img {
 }
 .inner_main_container .left_forms_container .panel .panel-content .individual_form .form_block .add_location {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   padding: 6px 15px;
   cursor: pointer;
   margin-top: 0px;
@@ -4894,7 +4894,7 @@ img {
   border: 1px solid #dbdbdb;
   text-align: center;
   color: #dc4e41;
-  font-size: 13px;
+  font-size: 18px;
   padding-top: 4px;
   cursor: pointer;
   display: inline-block;
@@ -4958,9 +4958,9 @@ img {
   padding-right: 8px;
 }
 .inner_main_container .left_forms_container .panel .panel-content .individual_form .form_block .logo_upload {
-  background: #62bb46;
+  background: #28850b;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -5006,7 +5006,7 @@ img {
 .inner_main_container .right_list_container nav .content_fixed_block .button {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 8px 13px;
   /* color: $tab_button_bg; */
   color: #fff;
@@ -5167,7 +5167,7 @@ img {
   display: none;
   color: #fff;
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   /* outline radius for mozilla/firefox only */
   -moz-box-shadow: 0 0 10px #000;
   -webkit-box-shadow: 0 0 10px #000;
@@ -5221,7 +5221,7 @@ img {
 }
 #job_detail_id .job_other_points .inner_block .feature strong {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   color: #0060b9;
 }
@@ -5238,7 +5238,7 @@ img {
   font-weight: 500;
 }
 .job_item .title a .exp, .job_item #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .job_item .applicants_wrap .tab_content .ticket_each .wrapper .content_div .email a .exp, .job_item .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .email a .exp, .applicants_wrap .tab_content .ticket_each .wrapper .content_div .job_item .email a .exp, .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .job_item .email a .exp, .job_item #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .date a .exp, .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content #job_detail_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .job_item .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .date a .exp, .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp, .job_item .applicants_wrap .tab_content .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .job_item .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .applicants_wrap .tab_content .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .date a .exp, .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .date a .exp, .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content .ticket_each .wrapper .content_div .date a .exp, .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content .ticket_each .wrapper .content_div .job_item .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .applicants_wrap .tab_content1 .ticket_each .wrapper .content_div .job_item .date a .exp, .job_item .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .email a .exp, .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .email a .exp, .job_item .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .date a .exp, .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .job_item .date a .exp, .job_item .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .date a .exp, .ticket_list .content_tickets .ticket_wrap .ticket.recruiter_ticket .ticket_content .ticket_view .applicants_wrap .tab_content1 .ticket_each .content_div .job_item .date a .exp {
-  color: #00aeef;
+  color: #000276;
   font-size: 15px;
   font-weight: 500;
 }
@@ -5246,10 +5246,10 @@ img {
   border-radius: 20px;
   padding: 3px 12px;
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .job_item p {
   margin: 0;
@@ -5265,10 +5265,10 @@ img {
 .job_item .job_type {
   display: block;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .job_item .job_type span {
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: 3px;
 }
@@ -5349,18 +5349,18 @@ img {
   } */
 }
 .tab_row .checkbox_block {
-  font-size: 12px;
+  font-size: 16px;
 }
 .tab_row .checkbox_block input[type=radio] {
   vertical-align: middle;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0 5px;
 }
 .tab_row .tab_button {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 8px 13px;
   /* color: $tab_button_bg; */
   color: #fff;
@@ -5396,7 +5396,7 @@ img {
   background: #40b157;
   color: #fff;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: uppercase;
   display: inline-block;
   padding: 3px 10px;
@@ -5417,7 +5417,7 @@ img {
   top: 40px;
   padding: 2px 7px;
   margin: 2px -14px;
-  font-size: 13px;
+  font-size: 18px;
   z-index: 999;
   line-height: 22px;
   display: block;
@@ -5430,7 +5430,7 @@ img {
 .tab_button1, .tab_button2 {
   display: inline-block;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   padding: 8px 36px;
   /* color: $tab_button_bg; */
   color: #fff;
@@ -5454,7 +5454,7 @@ img {
 
 .work_logs {
   width: 98%;
-  font-size: 13px;
+  font-size: 18px;
   display: table;
   border-collapse: separate;
   border-spacing: 0 6px;
@@ -5470,7 +5470,7 @@ img {
 }
 .work_logs thead tr th {
   padding: 10px 15px;
-  font-size: 13px;
+  font-size: 18px;
   color: #47484a;
 }
 @media (min-width: 240px) and (max-width: 852px) {
@@ -5493,7 +5493,7 @@ img {
   border-top: 1px solid #f4f4f4;
   border-bottom: 1px solid #f4f4f4;
   color: #222223;
-  font-size: 13px;
+  font-size: 18px;
 }
 @media (min-width: 240px) and (max-width: 852px) {
   .work_logs tbody tr td {
@@ -5594,7 +5594,7 @@ img {
   font-weight: 500;
   letter-spacing: 1px;
   border-radius: 0;
-  font-size: 12px;
+  font-size: 16px;
   background: #26262f;
   margin-bottom: 0;
   color: #cbd0d5;
@@ -5662,15 +5662,15 @@ img {
   font-weight: 400;
   width: 30px;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
-  background: #62bb46;
+  background: #28850b;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li a .msg_count.offline {
   background: #b91a1a;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li.active a {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
 }
 .message_panel .panel-body .chat_main_block .recruiters_list_block .users_list li.active a .msg_count {
@@ -5754,7 +5754,7 @@ img {
 }
 .message_panel .panel-body .chat_main_block .message_box .messages_container .chat .chat-body .header p {
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 16px;
   color: #525254;
 }
 .message_panel .panel-body .chat_main_block .message_box .panel-footer {
@@ -5763,7 +5763,7 @@ img {
 }
 .message_panel .panel-body .chat_main_block .message_box .panel-footer textarea {
   border-radius: 0;
-  font-size: 12px;
+  font-size: 16px;
   display: inline;
   width: 85%;
 }

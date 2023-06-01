@@ -11,12 +11,12 @@ $mob_min:240px;
 $bg:#f5f6f7;
 $dark_bg:#26262f;
 $text: #9e9ea1;
-$green:#62bb46;
+$green:#28850b;
 $white_bg_text:#9e96a1;
-$sky_color:#00aeef;
+$sky_color:#000276;
 $border:#ced5df;
 $grey:#45586d;
-$green_sky:#00aeef;
+$green_sky:#000276;
 $theme_blue:#0060b9;
 $blue:#5AA2CE;
 
@@ -40,7 +40,7 @@ a{
   height: 40px;
   border:none;
   border-radius:0;
-  font-size: 12px;
+  font-size: 16px;
 }
 .heading{
   color: $sky_color;
@@ -114,11 +114,11 @@ a{
 
 .green{
   color: $green;
-  font-size: 12px;
+  font-size: 16px;
 }
 .grey{
   color: $grey;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
@@ -171,7 +171,7 @@ a{
               line-height:23px;
               .exp{
                 color: $green_sky;
-                font-size: 12px;
+                font-size: 16px;
                 font-weight:500;
               }
               .highlight{
@@ -184,7 +184,7 @@ a{
               border-radius: 20px;
               padding: 3px 12px;
               border: none;
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 400;
               color: #fff;
               background: $green;
@@ -206,9 +206,9 @@ a{
             display: block;
             color: lighten($grey, 11%);
             margin:5px 0;
-            font-size: 12px;
+            font-size: 16px;
             span{
-              font-size: 12px;
+              font-size: 16px;
               margin-left: 20px;
               margin-top:3px;
               color: lighten($grey, 11%);
@@ -221,7 +221,7 @@ a{
             display: block;
             color: lighten($grey, 11%);
             margin:5px 0;
-            font-size: 12px;
+            font-size: 16px;
           }
 
           .company{
@@ -272,7 +272,7 @@ a{
           border:none;
           &:first-child{
             padding-left :0;
-            font-size: 12px;
+            font-size: 16px;
           }
           &.disabled{
             opacity: 1;
@@ -322,7 +322,7 @@ a{
                   display: inline-block;
                   background:$green;
                   text-transform: uppercase;
-                  font-size: 12px;
+                  font-size: 16px;
                   font-weight: 600;
                   padding:3px 12px;
                   padding-bottom: 0px;
@@ -340,10 +340,10 @@ a{
         i{
             display:inline-block;
             width:20px;
-            color: #5b748f;
+            color: #1f2326;
            }
           a{
-          color: #5b748f;
+          color: #1f2326;
            i{
             display:inline-block;
             width:20px;

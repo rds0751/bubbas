@@ -442,18 +442,18 @@ img {
 			}
 		}
 		.checkbox_block{
-			font-size: 12px;
+			font-size: 16px;
 			input[type=radio]{
 				vertical-align: middle;
 				margin:0;
-				font-size: 12px;
+				font-size: 16px;
 				margin:0 5px;
 			}
 		}
 		.tab_button{
 			display: inline-block;
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 18px;
 			padding: 8px 13px;
 			/* color: $tab_button_bg; */
 			color: #fff;
@@ -487,7 +487,7 @@ img {
 					.select2-selection--single{
 						background-color: #fff;
 				    border: 1px solid #ccc;
-				    font-size: 13px;
+				    font-size: 18px;
 				    border-radius: 0;
 				    height: 35px;
 					    &.error_border{
@@ -499,7 +499,7 @@ img {
 		}
 		.job_list_table{
 			width: 98%;
-			font-size: 13px;
+			font-size: 18px;
 			display: table;
 			border-collapse: separate;
     	border-spacing: 0 6px;
@@ -562,7 +562,7 @@ img {
 						border-top:1px solid $stroke_color;
 						border-bottom:1px solid $stroke_color;
 						color: darken($text_color,55%);
-						font-size: 13px;
+						font-size: 18px;
 						@media (min-width: $mob_min) and (max-width: $mob_max){
 							background: #fff;
 							display: table!important;
@@ -944,7 +944,7 @@ img {
 						td{
 							&:nth-child(4){
 								text-align:left;
-								font-size: 12px;
+								font-size: 16px;
 								color:#333;
 							}	
 							&:last-child{
@@ -981,7 +981,7 @@ img {
 									li{
 										list-style: none;
 										padding:8px 6px;
-										font-size: 13px;
+										font-size: 18px;
 										border-bottom: 1px solid #ccc;
 										font-weight: normal;
 										strong{
@@ -997,12 +997,12 @@ img {
 			}
 		}
 		.checkbox_block{
-			font-size: 12px;
+			font-size: 16px;
 			padding-right:28px;
 			input[type=radio]{
 				vertical-align: middle;
 				margin:0;
-				font-size: 12px;
+				font-size: 16px;
 				margin-left:10px;
 			}
 		}
@@ -1185,7 +1185,7 @@ img {
 		.tab_button{ 
 			display: inline-block;
 	    font-weight: 600;
-	    font-size: 13px;
+	    font-size: 18px;
 	    padding: 1px 13px;
 	    color: #fff;
 	    position: relative;
@@ -1236,7 +1236,7 @@ img {
 					span{
 						display: inline-block;
 						margin-top:1px;
-						font-size: 13px;
+						font-size: 18px;
 					}
 				}
 		}
@@ -1249,7 +1249,7 @@ img {
    	.edit_button{
     	display:inline-block;
     	float: right;
-	    font-size: 13px;
+	    font-size: 18px;
 	    font-weight: bold;
 	    color: #fff;
 	    background: #63C076;
@@ -1269,7 +1269,7 @@ img {
 				margin: 0;
 			}
 			.Table{
-				font-size: 12px;
+				font-size: 16px;
 	    	display: table;
 	    	width: 100%;
 	    	margin-top:20px;
@@ -1415,7 +1415,7 @@ img {
 		margin-top: 0px;
 		margin-bottom: 20px;
 		padding-right: 15px;
-		font-size: 13px;
+		font-size: 18px;
 		@media (min-width: $mob_min) and (max-width: $mob_max){
 			display: block;
 		}
@@ -1468,14 +1468,14 @@ img {
 				margin-bottom: 12px;
 			}
 			.copy_title{
-				font-size: 13px;
+				font-size: 18px;
 				color: #fff !important;
 			}
 			.button{
 			font-weight: 600;
 			display: inline-block;
 			cursor: pointer;
-			font-size: 13px;
+			font-size: 18px;
 			color: #fff;
 			&.active_job{
 				padding:5px;
@@ -1518,7 +1518,7 @@ img {
 		@include category_header($header_blue);
 		.add_location{
 			font-weight: 600;
-			font-size: 12px;
+			font-size: 16px;
 			padding: 6px 15px;
 			cursor: pointer;
 			margin-top: 0px;
@@ -1550,7 +1550,7 @@ img {
 				border:1px solid darken($stroke_color,10%);
 				text-align: center;
 				color: $gplus;
-				font-size: 13px;
+				font-size: 18px;
 				padding-top: 4px;
 				cursor: pointer;
 				display: inline-block;
@@ -1614,7 +1614,7 @@ img {
 				label{
 					display: none;
 					text-align: left;
-					font-size: 12px;
+					font-size: 16px;
 					font-weight: 600;
 					margin-top: 10px;
 					&.visa{
@@ -1843,7 +1843,7 @@ img {
 						label{
 							display: block !important;
 					    text-align: left;
-					    font-size: 12px;
+					    font-size: 16px;
 					    font-weight: 600;
 					    margin-top: 10px !important;
 						}
@@ -2101,7 +2101,7 @@ img {
 				margin-top: 20px;
 			}
 			.button{
-				font-size: 12px;
+				font-size: 16px;
 				font-weight: 600;
 				margin-left: 5px;
 				padding: 5px 15px;
@@ -2117,7 +2117,7 @@ img {
 				}
 				.name{
 						color: inherit;
-						font-size: 13px;
+						font-size: 18px;
 				}
 				.edit{
 					background: $header_yellow;
@@ -2298,7 +2298,7 @@ img {
 			    background: none;
 			    color: $voilet;
 			    font-weight: 700;
-			    font-size: 13px!important;
+			    font-size: 18px!important;
 			}
 		}
 	}
@@ -2329,7 +2329,7 @@ img {
 				}
 			}
 			.content_div{
-				font-size: 12px;
+				font-size: 16px;
 				width:100%;
 				display: table-cell;
 				vertical-align: top;
@@ -2608,7 +2608,7 @@ img {
 						//position: relative;
 						//margin-top: 15px;
 						.button{
-							font-size: 12px;
+							font-size: 16px;
 							background: $header_yellow;
 							color: #fff;
 							padding: 2px 10px;
@@ -2623,7 +2623,7 @@ img {
 						}
 						.email{
 							display: block;
-							font-size: 13px;
+							font-size: 18px;
 							padding-bottom: 5px;
 						}
 						@media (min-width:620px) and (max-width:852px){
@@ -2796,7 +2796,7 @@ img {
 			    background: none;
 			    color: $voilet;
 			    font-weight: 700;
-			    font-size: 13px!important;
+			    font-size: 18px!important;
 			}
 		}
 	}
@@ -2828,7 +2828,7 @@ img {
 					}
 				}
 				.content_div{
-					font-size: 12px;
+					font-size: 16px;
 					display: table-cell;
 					vertical-align: top;
 					position: relative;
@@ -2964,7 +2964,7 @@ img {
 							border:1px solid #ddd;
 							text-align: center;
 							padding-top: 5px;
-							font-size: 12px;
+							font-size: 16px;
 							border-radius: 50%;
 						}
 						.name{
@@ -3044,7 +3044,7 @@ img {
 					.status{
 						display: inline-block;
 						color: #fff;
-						font-size: 13px;
+						font-size: 18px;
 						padding:2px 10px;
 						text-align: center;
 						margin-right:0px;
@@ -3057,13 +3057,13 @@ img {
 						.ticket_title{
 							a{
 								color:$header_green;
-								font-size: 12px;
+								font-size: 16px;
 								font-weight: bold;
 							}
 						}
 						.email{
 							margin-top: 10px;
-							font-size: 13px;
+							font-size: 18px;
 							color: #616060;
 					}
 						.date{
@@ -3075,7 +3075,7 @@ img {
 							span{
 								display: inline-block;
 								color: #fff;
-								font-size: 13px;
+								font-size: 18px;
 								padding:2px 10px;
 								text-align: center;
 								margin-right:5px;
@@ -3095,7 +3095,7 @@ img {
 								padding:3px 5px;
 								float: left;
 								margin-right: 5px;
-								font-size: 12px;
+								font-size: 16px;
 								text-align: center;
 								border-radius: 2px;
 								&.view{
@@ -3243,7 +3243,7 @@ img {
 				background:rgba(220,78,65,0.8);
 				text-align: center;
 				padding-top: 5px;
-				font-size: 12px;
+				font-size: 16px;
 				right: 0px;
 				top: 0px;
 				color: #fff;
@@ -3352,7 +3352,7 @@ img {
 						@media(min-width: $mob_min) and (max-width:$mob_max){
 							display: block;
 							padding-top: 3px;
-							font-size: 12px;
+							font-size: 16px;
 						}
 					}
 					.actions{
@@ -3416,7 +3416,7 @@ img {
 		    text-align: center;
 		    text-transform: uppercase;
 		    letter-spacing: 1px;
-		    font-size: 13px;
+		    font-size: 18px;
 		    margin-right: 5px;
 		  }
 		}
@@ -3492,7 +3492,7 @@ img {
 	.company_panel{
 		margin-top:10px;
 		margin-bottom: 5px;
-		font-size: 13px;
+		font-size: 18px;
 		.panel-body{
 			padding:10px;
 			.recruiter_table{
@@ -3517,7 +3517,7 @@ img {
 		color: $voilet;
     margin-top: 0px;
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -3586,7 +3586,7 @@ img {
 				span{
 					display: block;
 					margin-top:1px;
-					font-size: 13px;
+					font-size: 18px;
 					&.in-block{
 						display: inline-block;
 						padding-right: 10px;
@@ -3597,9 +3597,9 @@ img {
 				@extend .name;
 			}
 		.file_upload{
-		    background: #62bb46;
+		    background: #28850b;
 		    font-weight: 500;
-		    font-size: 12px;
+		    font-size: 16px;
 		    color: #fff;
 		    letter-spacing: 0.5px;
 		    display: inline-block;
@@ -3628,7 +3628,7 @@ img {
 			margin: 0;
 		}
 		.Table{
-			font-size: 12px;
+			font-size: 16px;
     	display: table;
     	width: 100%;
     	margin-top:20px;
@@ -3758,7 +3758,7 @@ img {
 		    text-align: center;
 		    text-transform: uppercase;
 		    letter-spacing: 1px;
-		    font-size: 13px;
+		    font-size: 18px;
 		    margin-right: 5px;
 			}
 		}
@@ -3808,18 +3808,18 @@ img {
 			}
 		}
 		.checkbox_block{
-			font-size: 12px;
+			font-size: 16px;
 			input[type=radio]{
 				vertical-align: middle;
 				margin:0;
-				font-size: 12px;
+				font-size: 16px;
 				margin:0 5px;
 			}
 		}
 		.tab_button{
 			display: inline-block;
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 18px;
 			padding: 8px 13px;
 			/* color: $tab_button_bg; */
 			color: #fff;
@@ -3868,7 +3868,7 @@ img {
 		.heading{
 			color: $header_blue;
 			text-transform: uppercase;
-			font-size: 13px;
+			font-size: 18px;
 			font-weight: bold;
 			padding:6px 0px;
 			display: block !important;
@@ -4177,7 +4177,7 @@ img {
                             text-align: left;
                             display: block;
                             color:#888;
-                            font-size: 13px;
+                            font-size: 18px;
                             i{
                                 padding-left: 5px;
                                 padding-right: 8px;
@@ -4270,7 +4270,7 @@ img {
 	background-color: #B5C2C8;
 	border-radius: 0;
 	margin-bottom: 10px;
-	font-size: 12px;
+	font-size: 16px;
 	list-style: none;
 	overflow: hidden;
 	li {
@@ -4285,7 +4285,7 @@ img {
 			padding: 6px 10px 7px 20px;
 			position: relative;
 			text-decoration: none;
-			font-size: 13px;
+			font-size: 18px;
 			border-radius: 0;
 			&:after {
 				border-bottom: 15px solid transparent;
@@ -4577,7 +4577,7 @@ img {
 			line-spacing:0;
 		}
 		p{
-			font-size: 13px;
+			font-size: 18px;
 		    font-weight: 400;
 		}
 	}
@@ -4677,7 +4677,7 @@ img {
 						}
 						.add_location{
 							font-weight: 600;
-							font-size: 12px;
+							font-size: 16px;
 							padding: 6px 15px;
 							cursor: pointer;
 							margin-top: 0px;
@@ -4709,7 +4709,7 @@ img {
 								border:1px solid darken($stroke_color,10%);
 								text-align: center;
 								color: $gplus;
-								font-size: 13px;
+								font-size: 18px;
 								padding-top: 4px;
 								cursor: pointer;
 								display: inline-block;
@@ -4773,9 +4773,9 @@ img {
 							}
 						}
 					.logo_upload{
-		            background: #62bb46;
+		            background: #28850b;
 		            font-weight: 500;
-		            font-size: 12px;
+		            font-size: 16px;
 		            color: #fff;
 		            letter-spacing: 0.5px;
 		            display: inline-block;
@@ -4826,7 +4826,7 @@ img {
 			.button{
 				display: inline-block;
 				font-weight: 600;
-				font-size: 13px;
+				font-size: 18px;
 				padding: 8px 13px;
 				/* color: $tab_button_bg; */
 				color: #fff;
@@ -5065,7 +5065,7 @@ img {
 								padding:7px 5px;
 								strong{
 									display: block;
-									font-size: 12px;
+									font-size: 16px;
 									font-weight: 500;
 									color: $theme_blue;
 								}
@@ -5096,7 +5096,7 @@ img {
 	      border-radius: 20px;
 	      padding: 3px 12px;
 	      border: none;
-	      font-size: 12px;
+	      font-size: 16px;
 	      font-weight: 400;
 	      color: #fff;
 	      background: $green;
@@ -5116,9 +5116,9 @@ img {
 	  .job_type{
 	    display: block;
 	    margin:5px 0;
-	    font-size: 12px;
+	    font-size: 16px;
 	    span{
-	      font-size: 12px;
+	      font-size: 16px;
 	      margin-left: 20px;
 	      margin-top:3px;
 	      a{
@@ -5211,18 +5211,18 @@ img {
 			}
 		}
 		.checkbox_block{
-			font-size: 12px;
+			font-size: 16px;
 			input[type=radio]{
 				vertical-align: middle;
 				margin:0;
-				font-size: 12px;
+				font-size: 16px;
 				margin:0 5px;
 			}
 		}
 		.tab_button{
 			display: inline-block;
 			font-weight: 600;
-			font-size: 13px;
+			font-size: 18px;
 			padding: 8px 13px;
 			/* color: $tab_button_bg; */
 			color: #fff;
@@ -5256,7 +5256,7 @@ img {
     background: #40b157;
     color: #fff;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
     text-transform: uppercase;
     display: inline-block;
     padding: 3px 10px;
@@ -5276,7 +5276,7 @@ img {
     top: 40px;
     padding: 2px 7px;
     margin: 2px -14px;
-    font-size: 13px;
+    font-size: 18px;
     z-index: 999;
     line-height: 22px;
     display: block;
@@ -5290,7 +5290,7 @@ img {
 .tab_button1, .tab_button2{
 	display: inline-block;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 18px;
 	padding: 8px 36px;
 	/* color: $tab_button_bg; */
 	color: #fff;
@@ -5312,7 +5312,7 @@ img {
 }
 .work_logs{
 	width: 98%;
-    font-size: 13px;
+    font-size: 18px;
     display: table;
     border-collapse: separate;
     border-spacing: 0 6px;
@@ -5347,7 +5347,7 @@ img {
 						border-top:1px solid $stroke_color;
 						border-bottom:1px solid $stroke_color;
 						color: darken($text_color,55%);
-						font-size: 13px;
+						font-size: 18px;
 						@media (min-width: $mob_min) and (max-width: $mob_max){
 							background: #fff;
 							display: table!important;
@@ -5448,7 +5448,7 @@ img {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 0;
-    font-size: 12px;
+    font-size: 16px;
     background: #26262f;
     margin-bottom: 0;
     color: darken($bg, 15%);
@@ -5510,7 +5510,7 @@ img {
                 font-weight: 400;
                 width: 30px;
                 text-align: center;
-                font-size: 12px;
+                font-size: 16px;
                 color: #fff;
                 background: $green;
                 &.offline{
@@ -5607,7 +5607,7 @@ img {
               .header{
                 p{
                   margin-right: 10px;
-                  font-size: 12px;
+                  font-size: 16px;
                   color: darken($text, 30%);
                 }
               }
@@ -5619,7 +5619,7 @@ img {
           background: #d9dde0;
           textarea{
             border-radius: 0;
-            font-size: 12px;
+            font-size: 16px;
     		display:inline;
     		width: 85%;
           }

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third Party
+    'webp_converter',
     'ckeditor',
     "sorl.thumbnail",
     "compressor",
@@ -46,6 +47,8 @@ INSTALLED_APPS = [
     # Custom Made
     'ads',
     'home',
+    'escorts',
+    'call_girls',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'webp_converter.context_processors.webp_support',
             ],
         },
     },

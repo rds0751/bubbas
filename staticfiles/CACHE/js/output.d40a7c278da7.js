@@ -1801,8 +1801,8 @@ $.ajax({url:'/city-auto/',data:{'location':query,'text':text},success:function(d
 AutocompleteCity.prototype.show_results=function(data){$('.ac-cityresults').remove()
 var results=data.results||[]
 var results_wrapper=$('<div class="ac-cityresults"></div>')
-var base_elem=$('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
-if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="" class="ac-cityresult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
+var base_elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
+if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-cityresult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
 else{return false}
 this.query_box.after(results_wrapper)}
 var AutocompleteIndustry=function(options){this.form_selector=options.form_selector
@@ -1827,8 +1827,8 @@ $.ajax({url:this.url,data:{'industry':query},success:function(data){self.show_re
 AutocompleteIndustry.prototype.show_results=function(data){$('.ac-industryresults').remove()
 var results=data.results||[]
 var results_wrapper=$('<div class="ac-industryresults"></div>')
-var base_elem=$('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
-if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="" class="ac-industryresult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
+var base_elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
+if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-industryresult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
 else{return false}
 this.query_box.after(results_wrapper)}
 var AutocompleteFunctionalArea=function(options){this.form_selector=options.form_selector
@@ -1853,8 +1853,8 @@ $.ajax({url:this.url,data:{'functional_area':query},success:function(data){self.
 AutocompleteFunctionalArea.prototype.show_results=function(data){$('.ac-functionalarearesults').remove()
 var results=data.results||[]
 var results_wrapper=$('<div class="ac-functionalarearesults"></div>')
-var base_elem=$('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
-if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="" class="ac-functionalarearesult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
+var base_elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
+if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-functionalarearesult"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
 else{return false}
 this.query_box.after(results_wrapper)}
 $(document).ready(function(){window.autocompleteCity=new AutocompleteCity({form_selector:'.autocomplete-me'})
@@ -1900,8 +1900,8 @@ $.ajax({url:'/skill-auto/',data:{'q':query,'text':search},success:function(data)
 Autocomplete.prototype.show_results=function(data){$('.ac-skillresults').remove()
 var results=data.results||[]
 var results_wrapper=$('<div class="ac-skillresults"></div>')
-var base_elem=$('<div class="result-wrapper"><a href="" class="ac-result"></a><br><p class="auther"></p></div>')
-if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="" class="ac-result" data-href="'+results[res_offset]['slug']+'" id="'+results[res_offset]['id']+'"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
+var base_elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result"></a><br><p class="auther"></p></div>')
+if(results.length>0){for(var res_offset in results){elem=$('<div class="result-wrapper"><a href="/" aria-label="go to home page" class="ac-result" data-href="'+results[res_offset]['slug']+'" id="'+results[res_offset]['id']+'"><span>'+results[res_offset]['name']+'</span></a></div>');results_wrapper.append(elem);}}
 else{return false}
 this.query_box.after(results_wrapper)}
 $(document).ready(function(){window.autocomplete=new Autocomplete({form_selector:'.autocomplete-me'})

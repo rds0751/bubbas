@@ -272,7 +272,7 @@ a {
             text-align: left;
             display: block;
             color: #888;
-            font-size: 13px;
+            font-size: 18px;
             i {
               padding-left: 5px;
               padding-right: 8px;
@@ -451,7 +451,7 @@ a {
 }
 .joblist_table {
   width: 100%;
-  font-size: 13px;
+  font-size: 18px;
   border-collapse: separate;
   border-spacing: 0 6px;
   @media (min-width: $mob_min) and (max-width: $smob_max) {
@@ -468,7 +468,7 @@ a {
       border: none;
       th {
         padding: 8px 8px;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 700;
         border: none;
         color: darken($text, 40%);

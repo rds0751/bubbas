@@ -8,7 +8,7 @@
 .form-row {
     overflow: hidden;
     padding: 10px;
-    font-size: 13px;
+    font-size: 18px;
     border-bottom: 1px solid #eee;
 }
 
@@ -34,7 +34,7 @@ form .form-row p {
 label {
     font-weight: normal;
     color: #666;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .required label, label.required {
@@ -395,7 +395,7 @@ body.popup .submit-row {
     margin: 0;
     color: #666;
     padding: 5px;
-    font-size: 13px;
+    font-size: 18px;
     background: #f8f8f8;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -496,7 +496,7 @@ body.popup .submit-row {
 .inline-group .tabular tr.add-row td a {
     background: url(../img/icon-addlink.svg) 0 1px no-repeat;
     padding-left: 16px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .empty-form {

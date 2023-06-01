@@ -365,7 +365,7 @@ span.clearable-file-input label {
 
 .calendarbox, .clockbox {
     margin: 5px auto;
-    font-size: 12px;
+    font-size: 16px;
     width: 19em;
     text-align: center;
     background: white;
@@ -399,7 +399,7 @@ span.clearable-file-input label {
     border-top: none;
     background: #f5dd5d;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -408,14 +408,14 @@ span.clearable-file-input label {
     background: #f8f8f8;
     border-bottom: 1px solid #ddd;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     color: #666;
 }
 
 .calendar td {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     padding: 0;
     border-top: 1px solid #eee;
@@ -509,7 +509,7 @@ span.clearable-file-input label {
 .calendar-cancel {
     margin: 0;
     padding: 4px 0;
-    font-size: 12px;
+    font-size: 16px;
     background: #eee;
     border-top: 1px solid #ddd;
     color: #333;

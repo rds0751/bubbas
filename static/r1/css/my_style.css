@@ -8,7 +8,7 @@
 }
 body {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.5em;
   color: #2e2f30;
@@ -1425,7 +1425,7 @@ a:hover {
   border: 1px solid #0d567e;
   background: #fff!important;
   color: #1485c3!important;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0px 3px;
   cursor: pointer;
 }
@@ -1510,7 +1510,7 @@ a:hover {
 }
 #new_job_post .post_details .form-group .error {
   color: red;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 5px;
 }
 #new_job_post .post_details .form-group .hint {
@@ -1647,7 +1647,7 @@ a:hover {
 }
 #new_job_post .eligibility_details .form-group .error {
   color: red;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 5px;
 }
 #new_job_post .eligibility_details .form-group .hint {
@@ -1790,7 +1790,7 @@ a:hover {
 }
 #new_job_post .offering_details .form-group .error {
   color: red;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 5px;
 }
 #new_job_post .offering_details .form-group .hint {
@@ -1930,7 +1930,7 @@ a:hover {
 }
 #new_job_post .deadline_details .form-group .error {
   color: red;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 5px;
 }
 #new_job_post .deadline_details .form-group .hint {
@@ -2672,7 +2672,7 @@ a:hover {
 #faq .questions_wrap .question .title {
   font-weight: 500;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 #faq .questions_wrap .question .answer {
@@ -2852,7 +2852,7 @@ a:hover {
   padding-top: 10px;
   text-align: center;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
   color: #666;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -3009,7 +3009,7 @@ a:hover {
 }
 #ticket_wrap #ticket_description .comments_wrap .comments_div h4 span {
   color: #ee9402;
-  font-size: 13px;
+  font-size: 18px;
   padding-left: 5px;
 }
 #ticket_wrap #ticket_description .comments_wrap .comments_div .img_wrap .img-item {
@@ -3038,7 +3038,7 @@ a:hover {
   cursor: pointer;
 }
 #ticket_wrap #ticket_description .comments_wrap .comments_div .ticket_user .comment-edit i {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3103,7 +3103,7 @@ a:hover {
   cursor: pointer;
 }
 #ticket_wrap #ticket_description .comments_wrap .comments_div .ticket_admin .comment-edit i {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3161,7 +3161,7 @@ a:hover {
   cursor: pointer;
 }
 #ticket_wrap #ticket_description .comments_wrap .comments_div .ticket_admin .comment-edit i {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3224,7 +3224,7 @@ a:hover {
   position: relative;
 }
 #ticket_wrap #tickets_view_panel .open_tickets_wrap .open_ticket_panel .ticket .ticket_title .ticket-edit {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3350,7 +3350,7 @@ a:hover {
   position: relative;
 }
 #ticket_wrap #tickets_view_panel .closed_tickets_wrap .open_ticket_panel .ticket .ticket_title .ticket-edit {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3473,7 +3473,7 @@ a:hover {
   position: relative;
 }
 #ticket_wrap #tickets_view_panel .closed_tickets_wrap .close_ticket_panel .ticket .ticket_title .ticket-edit {
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1485C3;
   color: white;
   border-radius: 3px;
@@ -3674,7 +3674,7 @@ a:hover {
   color: #5c4c8d;
 }
 #ticket_wrap #new_ticket_panel h3 span {
-  font-size: 12px;
+  font-size: 16px;
   color: #ee9402;
 }
 #ticket_wrap #new_ticket_panel button {
@@ -3834,7 +3834,7 @@ a:hover {
   color: #5c4c8d;
 }
 #help h3 span {
-  font-size: 12px;
+  font-size: 16px;
   color: #ee9402;
 }
 #help button {
@@ -3885,7 +3885,7 @@ a:hover {
   box-shadow: none;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
   background: #13a2f7 !important;
   color: #fff!important;
   transition: 0.5s;
@@ -3909,7 +3909,7 @@ a:hover {
   box-shadow: none;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
   background: #13a2f7 !important;
   color: #fff!important;
   transition: 0.5s;
@@ -3923,7 +3923,7 @@ a:hover {
   box-shadow: none;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
   background: #13a2f7 !important;
   color: #fff!important;
   transition: 0.5s;
@@ -4072,6 +4072,6 @@ a:hover {
 }
 .error {
   color: red;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 5px;
 }

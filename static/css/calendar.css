@@ -309,7 +309,7 @@
   background: none;
   padding: 0px;
   color: #333;
-  font-size: 13px;
+  font-size: 18px;
 }
 .cal-month td small a:hover {
   background: none;
@@ -343,7 +343,7 @@ a.event{
     background: none;
     box-shadow: none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
     text-shadow: 1px 1px 1px #065b90;
     background: brown!important;
     color: #fff!important;

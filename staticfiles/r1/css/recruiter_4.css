@@ -199,7 +199,7 @@ a:hover {
   background: #61d413;
 }
 .navbar ul li .yellow {
-  background: #00aeef;
+  background: #000276;
 }
 .navbar ul li:hover {
   /* cursor: pointer; */
@@ -270,7 +270,7 @@ a:hover {
   border-left: 3px solid #0060b9;
 }
 #menu ul li a:hover {
-  background: #62bb46;
+  background: #28850b;
   color: #fff;
   transition: 0.2s;
   border-left: 3px solid #315f23;
@@ -304,7 +304,7 @@ a:hover {
   text-align: left;
   display: block;
   color: #888;
-  font-size: 13px;
+  font-size: 18px;
 }
 #menu ul li .sub_list li a i {
   padding-left: 5px;
@@ -466,7 +466,7 @@ a:hover {
 
 .joblist_table {
   width: 100%;
-  font-size: 13px;
+  font-size: 18px;
   border-collapse: separate;
   border-spacing: 0 6px;
 }
@@ -488,7 +488,7 @@ a:hover {
 }
 .joblist_table thead tr th {
   padding: 8px 8px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   border: none;
   color: black;
@@ -678,14 +678,14 @@ a:hover {
   }
 }
 .joblist_table tbody tr.live td:first-child {
-  border-left: 5px solid #62bb46;
+  border-left: 5px solid #28850b;
 }
 .joblist_table tbody tr.live td.status {
-  background: #62bb46;
+  background: #28850b;
 }
 @media (min-width: 240px) and (max-width: 767px) {
   .joblist_table tbody tr.live {
-    border: 1px solid #62bb46;
+    border: 1px solid #28850b;
   }
 }
 @media (min-width: 240px) and (max-width: 767px) {
@@ -693,7 +693,7 @@ a:hover {
     position: absolute;
     right: 0px;
     top: 0px;
-    background: #62bb46;
+    background: #28850b;
     font-size: 0.7em;
     color: #fff;
     text-transform: uppercase;
