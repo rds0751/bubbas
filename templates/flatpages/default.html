@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% load static %}
+{% load cache %}
+
+    {% block block_canonical_tag %}
+      <link rel="canonical" href="https://Bubbas.com{{ request.path }}"/>
+    {% endblock %}
+
+{% block meta_tags %}
+<meta name="google-site-verification" content="YRAH49iQBxqqgGD-ogtwLY3t39VcM_7NrhX0hyzirPY" />
+<meta name="msvalidate.01" content="7748852145A5ECD3CF9FD6D8EAA04EDE" />
+{% endblock %}
+{% block base %}
+<!-- main_container starts here -->
+  <section class="main_container">
+    <div class="container">
+      <div class="row mar_lr_0">
+        <div class="col-md-12 left_container">
+          <div class="row mar_lr_0 top_locations">
+            <div class="heading text-uppercase"><strong>{{ flatpage.title }}</strong></div>
+          <div class="row mar_lr_0 top_locations">
+            <div class="heading text-uppercase"></div>
+            <div class="locations">
+                {{ flatpage.content|safe }}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 right_container">
+
+          <!--register_login form starts here -->
+          <!-- top_recruiters ends here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- main_container ends here -->
+  <!-- help_options_row starts here -->
+<!-- help_options_row ends here -->
+{% endblock base %}
