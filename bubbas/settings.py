@@ -180,6 +180,6 @@ CACHES = {
     'default':{
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
         'LOCATION': 'gv_cache',
-        'TIMEOUT': 300,
+        'TIMEOUT': 150,
     }
 }
