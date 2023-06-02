@@ -19,10 +19,9 @@
     {% block block_canonical_tag %}
     {% endblock %}
     {% block css %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% compress css %}
-      <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">  
+      <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}"> 
     {% endcompress %}
     {% endblock %}
   </head>
@@ -38,8 +37,8 @@
 
               <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  <i class="fa-solid fa-bars"></i>
+                  {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %}
+                  <img style="width: 25px;" src="{% static 'bars.png' %}" />
                 </button>
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -159,9 +158,8 @@
                   {% cache 604800 social_footer_links %}
                   <div class="social_links text-center">
                     <ul>
-                      <li><a aria-label="go to facebook page" target="_blank" href="https://facebook.com/peeljobs/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a aria-label="go to facebook page" target="_blank" href="https://facebook.com/peeljobs/"><strong>f</strong></a></li>
                       <li ><a aria-label="go to google page" href="https://google.com"><strong>G</strong></a></li>
-                      <li><a aria-label="go to twitter page" target="_blank" href="https://twitter.com/PeelJobs"><i class="fa-brands fa-twitter"></i></a></li>
                     </ul>
                   </div>
                   <div class="copy_right text-center">Copyright &copy; {% now "Y" %} Bubbas.com<br><a href="https://blockitsy.com" title="Blockitsy" target="_blank">Development + SEO by Blockitsy</a>
