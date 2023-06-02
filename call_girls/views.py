@@ -14,7 +14,7 @@ def city(request, city):
     if city.meta_title:
         meta_title = city.meta_title
     else:
-        meta_title = str(city.get_no_of_cg_ads()) + ' ' + str(city.name) + ' Call Girls & ' + str(int(city.get_no_of_cg_ads()*2.30865)) + ' Photos with Whatsapp Number'
+        meta_title = str(city.get_no_of_cg_ads) + ' ' + str(city.name) + ' Call Girls & ' + str(int(city.get_no_of_cg_ads*2.30865)) + ' Photos with Whatsapp Number'
     if city.meta_description:
         meta_description = city.meta_description
     else:
