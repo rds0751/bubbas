@@ -12,12 +12,14 @@ def home(request):
     meta_description = Data.objects.get(key='home_meta_description').value
     site_name = Data.objects.get(key='site_name').value
     site_logo = Data.objects.get(key='site_logo')
+    page_content = Data.objects.get(key='home_content').value
     context = {
         'cities': c,
         'meta_title': meta_title, 
         'meta_description': meta_description,
         'site_logo': site_logo,
-        'site_name': site_name
+        'site_name': site_name,
+        'page_content': page_content
     }
     print(context)
     return render(request, 'home.html', context)
