@@ -179,6 +179,7 @@ STATICFILES_FINDERS = (
 CACHES = {
     'default':{
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'dataflair_cache',
+        'LOCATION': 'dataflai_cache',
+        'TIMEOUT': 300,
     }
 }
