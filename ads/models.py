@@ -2,9 +2,7 @@ from django.db import models
 from django.db.models import Q, Count, F
 from django.contrib.auth import get_user_model
 
-from ckeditor.fields import RichTextField
-import string
-import random
+from django.utils.text import slugify
 
 User = get_user_model()
 
@@ -90,6 +88,10 @@ class State(models.Model):
             .order_by("-num_posts")
         )
         return cities[:5]
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(State, self).save(*args, **kwargs)
 
 class City(models.Model):
     name = models.CharField(max_length=500)
@@ -99,6 +101,8 @@ class City(models.Model):
     meta_title = models.TextField(default="", null=True, blank=True)
     meta_description = models.TextField(default="", null=True, blank=True)
     page_content = models.TextField(null=True, blank=True)
+    get_no_of_cg_ads = models.IntegerField(default=0)
+    get_no_of_es_ads = models.IntegerField(default=0)
     parent_city = models.ForeignKey(
         "self",
         related_name="child_cities",
@@ -110,15 +114,13 @@ class City(models.Model):
     def __str__(self):
         return self.name
 
-    def get_no_of_cg_ads(self):
-        return Ad.objects.filter(city__in=[self], profile_status='Call Girls').count()
-    
-    def get_no_of_es_ads(self):
-        return Ad.objects.filter(city__in=[self], profile_status='Escorts').count()
-
     def get_ad_url(self):
         job_url = "/call-girls/" + str(self.slug) + "/"
         return job_url
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(City, self).save(*args, **kwargs)
     
     class Meta:
         verbose_name_plural = "Cities"
@@ -145,3 +147,18 @@ class Ad(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        city = self.city
+        if self.profile_status == 'Escorts':
+            city.get_no_of_es_ads += 1
+            city.save()
+        else:
+            city.get_no_of_cg_ads += 1
+            city.save()
+        super(Ad, self).save(*args, **kwargs)
+    
+    class Meta:
+        verbose_name_plural = "Ads"
+        indexes = [models.Index(fields=['city', 'profile_status', ]), ]
