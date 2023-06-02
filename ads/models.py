@@ -145,3 +145,7 @@ class Ad(models.Model):
 
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name_plural = "Cities"
+        indexes = [models.Index(fields=['city', 'slug', ]), ]
