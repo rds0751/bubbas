@@ -44,9 +44,11 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
                   {% for page in flatpages %}
-                    <li {% if request.build_absolute_uri == '{{ page.url }}' %}class="active"{% endif %}>
-                      <a href="{{ page.url }}">{{ page.title }}<span class="sr-only">(current)</span></a>
-                    </li>
+                    {% if page.position == 'Top' %}
+                      <li>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                      </li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </div>
@@ -111,31 +113,15 @@
                   </div>
                 {% endblock %}
                 <div class="col-md-3 col-sm-12 col-xs-12 links">
-                  {% comment %} <ul class="footer_links">
-                    <li class="text-uppercase">About Us</li>
-                    <li><a href=" url 'pages' 'about-us' %}" target="_blank">About Bubbas</a></li>
-                    <li><a href=" url 'sitemap' %}" target="_blank">Sitemap</a></li>
-                    <li><a href=" url 'pages' 'terms-conditions' %}" target="_blank">Terms &amp; Conditions</a></li>
-                    <li><a href=" url 'pages' 'privacy-policy' %}" target="_blank">Privacy Policy</a></li>
-                    <li><a href=" url 'contact' %}" target="_blank">Contact Us</a></li>
-                  </ul>
                   <ul class="footer_links">
-                    <li class="text-uppercase">call girls</li>
-                    <li><a href=" url 'recruiter:new_user' %}" target="_blank">Registration</a></li>
-                    <li><a href=" url 'pages' 'recruiter-faq' %}" target="_blank">FAQs</a></li>
-                    <li><a href=" url 'post_job' %}" target="_blank">Post Job For Free</a></li>
+                    {% for page in flatpages %}
+                      {% if page.position == 'Bottom' %}
+                        <li>
+                          <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
                   </ul>
-                  <ul class="footer_links">
-                    <li class="text-uppercase">Find call girls</li>
-                    {% if request.user.is_authenticated %}                  
-                    <li style="display: none;"><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
-                    {%else%}
-                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#login_register">Login / Connect</a></li>
-                    {%endif%}
-                    <li><a href="/" target="_blank">Search call girls</a></li>
-                    <li><a href=" url 'jobs:index' %}" target="_blank">View All call girls</a></li>
-                    <li><a href=" url 'pages' 'faq' %}" target="_blank">FAQs</a></li>
-                  </ul> {% endcomment %}
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
                   <form name="BaseSubscribeform" id="BaseSubscribeform" method="POST">
