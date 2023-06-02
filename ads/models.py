@@ -137,7 +137,7 @@ class Ad(models.Model):
     categories = models.ManyToManyField(Category)
     featured = models.BooleanField(null=True, blank=True)
     views = models.IntegerField(default=0, null=True, blank=True)
-    images = models.ManyToManyField(Image)
+    images = models.ManyToManyField(Image, blank=True)
     likes = models.IntegerField(default=0, null=True, blank=True)
     city = models.ForeignKey(City, on_delete=models.CASCADE, null=True, blank=True, db_index=True)
     meta_title = models.TextField(default="", null=True, blank=True)
