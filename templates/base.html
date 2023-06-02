@@ -1,4 +1,4 @@
-{% load thumbnail %}{% load compress %}{% load static %}{% load cache %}<!DOCTYPE html>
+{% load thumbnail %}{% load flatpages %}{% get_flatpages as flatpages %}{% load compress %}{% load static %}{% load cache %}<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# Bubbas: https://ogp.me/ns/fb/Bubbas#">
     <meta charset="UTF-8">
@@ -43,15 +43,11 @@
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
-                  <li {% if request.path == '/fresher-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'fresher' %}">New call girls <span class="sr-only">(current)</span></a></li>
-                   <li {% if request.path == '/walkin-jobs-by-skills/' %}class="active"{% endif %}><a href=" url 'fresher_jobs_by_skills' 'walkin' %}">Verified call girls <span class="sr-only">(current)</span></a></li>
-                  {% if request.user.user_type == 'JS' %}
-                  <li><a href="/" aria-label="go to home page">Contacted call girls</a></li>
-                  {% endif %}
-                  <li {% if request.path == '/internship-jobs/' %}class="active"{% endif %}>
-                    <a href="/" aria-label="go to home page">New in Town</a>
-                  </li>
-                  <li><a href="/" aria-label="go to home page">Profile Alerts</a></li>
+                  {% for page in flatpages %}
+                    <li {% if request.build_absolute_uri == '{{ page.url }}' %}class="active"{% endif %}>
+                      <a href="{{ page.url }}">{{ page.title }}<span class="sr-only">(current)</span></a>
+                    </li>
+                  {% endfor %}
                 </ul>
               </div>
               

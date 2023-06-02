@@ -21,5 +21,4 @@ def home(request):
         'site_name': site_name,
         'page_content': page_content
     }
-    print(context)
     return render(request, 'home.html', context)

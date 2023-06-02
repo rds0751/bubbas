@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'flatpages',
 
     # Third Party
     "debug_toolbar",
@@ -51,6 +53,8 @@ INSTALLED_APPS = [
     'escorts',
     'call_girls',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
