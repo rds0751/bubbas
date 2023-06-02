@@ -111,10 +111,10 @@ class City(models.Model):
         return self.name
 
     def get_no_of_cg_ads(self):
-        return Ad.objects.filter(city__in=[self], profile_status='Call Girls')
+        return Ad.objects.filter(city__in=[self], profile_status='Call Girls').count()
     
     def get_no_of_es_ads(self):
-        return Ad.objects.filter(city__in=[self], profile_status='Escorts')
+        return Ad.objects.filter(city__in=[self], profile_status='Escorts').count()
 
     def get_ad_url(self):
         job_url = "/call-girls/" + str(self.slug) + "/"
