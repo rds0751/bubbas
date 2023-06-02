@@ -6,7 +6,7 @@ from home.models import Data
 
 # Create your views here.
 def city(request, city):
-    city = City.objects.get(name__icontains=city)
+    city = City.objects.get(slug__icontains=city)
     posts = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')
     c = City.objects.all().order_by('?')
     ca = Category.objects.all().order_by('?')[:50]
