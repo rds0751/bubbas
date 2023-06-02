@@ -134,7 +134,7 @@ class Ad(models.Model):
     phone = models.CharField(max_length=15, null=True, blank=True)
     whatsapp = models.CharField(max_length=15, null=True, blank=True)
     thumbnail = models.ImageField(null=True, blank=True)
-    categories = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category, blank=True)
     featured = models.BooleanField(null=True, blank=True)
     views = models.IntegerField(default=0, null=True, blank=True)
     images = models.ManyToManyField(Image, blank=True)
