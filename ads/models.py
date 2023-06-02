@@ -88,6 +88,10 @@ class State(models.Model):
             .order_by("-num_posts")
         )
         return cities[:5]
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(State, self).save(*args, **kwargs)
 
 class City(models.Model):
     name = models.CharField(max_length=500)
