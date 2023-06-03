@@ -3,6 +3,7 @@ from django.db.models import Q, Count, F
 from django.contrib.auth import get_user_model
 
 from django.utils.text import slugify
+from ckeditor.fields import RichTextField
 
 User = get_user_model()
 
@@ -100,7 +101,7 @@ class City(models.Model):
     slug = models.SlugField(max_length=500, null=True, blank=True)
     meta_title = models.TextField(default="", null=True, blank=True)
     meta_description = models.TextField(default="", null=True, blank=True)
-    page_content = models.TextField(null=True, blank=True)
+    page_content = RichTextField(null=True, blank=True)
     get_no_of_cg_ads = models.IntegerField(default=0)
     get_no_of_es_ads = models.IntegerField(default=0)
     parent_city = models.ForeignKey(

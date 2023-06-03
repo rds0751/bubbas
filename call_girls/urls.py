@@ -3,5 +3,5 @@ from .views import *
 
 urlpatterns = [
     path('<city>/', city, name = 'post'),
-    path('<city>/<slug>/', ad, name = 'post'),
+    path('<city>/<slug>/<id>/', ad, name = 'post'),
 ]
