@@ -37,6 +37,8 @@ def ad(request, slug, city, id):
     posts1 = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')[:4]
     posts2 = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')[:4]
     post = Ad.objects.get(slug__icontains=slug)
+    meta_title = post.title
+    meta_description = post.overview
     context = {
         'post': post,
         'posts': posts
