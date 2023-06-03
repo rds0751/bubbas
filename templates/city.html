@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% load thumbnail %}
-{% load webp_converter %}
 {% load static %}
 {% load cache %}
 {% block block_canonical_tag %}
@@ -32,7 +31,7 @@
                                 {% widthratio post.id 1 28474567 as c %}
                                 <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="height: 435px; border-radius:5px; margin: 2px; background-color: beige; float: left; opacity: 1; padding: 0; left: 31.1667%; top: 0px;">
                                 <a href="/call-girls/{{ post.city.slug }}/{{ post.slug }}/{{ c }}/" class='company_logo'>
-                                    <img style="width: -webkit-fill-available; height: 150px;" src="{% static_webp 'https://bubbas.in'|add:post.thumbnail.url 70 %}" alt=""/>
+                                    <img style="width: -webkit-fill-available; height: 150px;" src="{{ post.thumbnail.url }}" alt=""/>
                                 </a>
                                     <div class="result-data">
                                         <div class="result-data-description">
