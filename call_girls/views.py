@@ -31,8 +31,8 @@ def city(request, city):
     return render(request, 'city.html', context)
 
 # Create your views here.
-def ad(request, slug, city):
-    city = City.objects.get(name__icontains=city)
+def ad(request, slug, city, id):
+    city = City.objects.get(slug__icontains=city)
     posts = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts1 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts2 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
