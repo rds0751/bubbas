@@ -42,5 +42,8 @@ def ad(request, slug, city, id):
     context = {
         'post': post,
         'posts': posts
+        'meta_title': meta_title,
+        'meta_description': meta_description
+
     }
     return render(request, 'ad.html', context)
