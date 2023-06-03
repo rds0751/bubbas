@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('call-girls/', include('call_girls.urls')), # new
     path('escorts/', include('escorts.urls')), # new
-    path('', include('flatpages.urls')),
+    path('pages/', include('flatpages.urls')),
     path('', home, name = 'post'),
     path('__debug__/', include('debug_toolbar.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
