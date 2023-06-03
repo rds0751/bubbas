@@ -41,7 +41,7 @@ def ad(request, slug, city, id):
     meta_description = post.overview
     context = {
         'post': post,
-        'posts': posts
+        'posts': posts,
         'meta_title': meta_title,
         'meta_description': meta_description
 
