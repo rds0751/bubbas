@@ -17,7 +17,7 @@ STATUS_TYPES = (
 PROFILE_STATUS = (
     ("Call Girls", "Call Girls"),
     ("Escorts", "Escorts"),
-)
+) 
 
 class Agency(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
