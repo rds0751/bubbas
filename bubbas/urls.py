@@ -14,10 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf import settings
-from django.conf.urls.static import static 
+from django.conf.urls.static import static
 from ads.views import home
+from pictures.conf import get_settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,11 @@ urlpatterns = [
     path('pages/', include('flatpages.urls')),
     path('', home, name = 'post'),
     path('__debug__/', include('debug_toolbar.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if get_settings().USE_PLACEHOLDERS:
+    urlpatterns += [
+        path("_pictures/", include("pictures.urls")),
+    ]
