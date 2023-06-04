@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-from ads.models import Image, Ad, City, Category
+from ads.models import Ad, City, Category
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from home.models import Data
 
 # Create your views here.
@@ -11,6 +12,14 @@ def city(request, city):
     c = City.objects.all().order_by('?')
     ca = Category.objects.all().order_by('?')[:50]
     p = Ad.objects.all().order_by('?')[:30]
+    page = request.GET.get('page', 1)
+    paginator = Paginator(posts, 5)
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
     if city.meta_title:
         meta_title = city.meta_title
     else:

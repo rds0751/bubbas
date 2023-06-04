@@ -27,19 +27,27 @@
                 <div class="row mar_lr_0 skills_locations">
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="profile">
-                            <div class="row d-flex justify-content-center align-items-center image_row">
+                            <div class="row d-flex justify-content-center align-items-center image_row infinite-container">
                                 {% for post in posts %}
                                 {% widthratio post.id 1 28474567 as c %}
-                                <div class="col-md-2 col-sm-3 col-xs-3 image_col"  style="height: 435px; border-radius:5px; margin: 2px; background-color: beige; float: left; opacity: 1; padding: 0; left: 31.1667%; top: 0px;">
-                                <a href="/call-girls/{{ post.city.slug }}/{{ post.slug }}/{{ c }}/" class='company_logo'>
-                                    {% picture post.thumbnail img_alt="Bubbas - "|add:post.title img_loading="lazy" picture_class="my-picture" m=8 l=4 %}
-                                </a>
+                                <div class="col-md-2 col-sm-3 col-xs-3 image_col infinite-item"  style="height: 500px; border-radius:5px; margin-top: 25px; margin-left: 2%; background-color: beige; opacity: 1; padding: 0; left: 31.1667%; top: 0px;">
+                                    <a href="/call-girls/{{ post.city.slug }}/{{ post.slug }}/{{ c }}/" class='company_logo'>
+                                        {% if post.thumbnail %}
+                                            {% picture post.thumbnail img_alt="Bubbas - "|add:post.title img_loading="lazy" picture_class="my-picture" m=8 l=4 %}
+                                        {% else %}
+                                            <img src="{% static 'logos.png' %}" alt="profile picture">
+                                        {% endif %}
+                                    </a>
                                     <div class="result-data">
                                         <div class="result-data-description">
                                             <div class="result-header">
                                                 <div class="result-title">
                                                     <br>
-                                                    <h2 style="font-size: 1rem">{{ post.title|truncatechars:50 }}<h2>
+                                                    <h2 style="
+                                                    font-size: 1rem;
+                                                    font-family: cursive;
+                                                    font-weight: 600;
+                                                    ">{{ post.title|truncatechars:50 }}<h2>
                                                 </div>
                                                 <div class="result-subtitle">{{ post.overview|truncatechars:40 }}</div>
                                             </div>
@@ -53,7 +61,6 @@
                                             </div>
                                             <div class="result-content">
                                                 <div class="result-content-header result-content-uk">
-                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -61,6 +68,8 @@
                                 </div>
                                 {% endfor %}
                             </div>
+                            <img class="loading" style="display: none; width: 50%;
+                            margin-left: 25%;" src="{% static 'loader.gif' %}" alt='loader'>
                             <div class="result-content">
                                 <div class="result-content-header result-content-uk">
                                     <br><br><br>
@@ -71,10 +80,33 @@
                     </div>
                 </div>
                 <!-- skills_companies ends here -->
+                
+                {% if posts.has_next %}
+                    <a class="infinite-more-link" href="?page={{ posts.next_page_number }}">More</a>
+                {% endif %}
                 <!-- top_locations edns here -->
             </div>
         </div>
     </div>
 </section>
 <!-- help_options_row ends here -->
+
+
+
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/infinite.min.js' %}"></script>
+<script>
+    var infinite = new Waypoint.Infinite({
+      element: $('.infinite-container')[0],
+      onBeforePageLoad: function () {
+        console.log('loading!')
+        $('.loading').show();
+      },
+      onAfterPageLoad: function ($items) {
+        console.log('loaded')
+        $('.loading').hide();
+      }
+    });
+  </script>
 {% endblock base %}
