@@ -81,7 +81,7 @@ PICTURES = {
     "CONTAINER_WIDTH": 1200,
     "FILE_TYPES": ["WEBP"],
     "PIXEL_DENSITIES": [1, 2],
-    "USE_PLACEHOLDERS": True,
+    "USE_PLACEHOLDERS": False,
     "QUEUE_NAME": "pictures",
     "PROCESSOR": "pictures.tasks.process_picture",
 
