@@ -3,6 +3,9 @@ from django.urls import reverse
 from ads.models import City, Ad
 
 class EscortsAdsSitemap(Sitemap):
+    changefreq = "weekly"
+    priority = 0.7
+    protocol = 'https'
 
     def items(self):
         return Ad.objects.filter(profile_status="Escorts")
