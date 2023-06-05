@@ -25,6 +25,37 @@
                 <!-- register_block ends here -->
                 <!-- skills_companies starts here -->
                 <div class="row mar_lr_0 skills_locations">
+                    
+            {% if city.phone %}
+            <div style="margin-top: 1rem;" class="text-center col-sm-2 padding-1-right">
+                <a style="color: #000;
+                z-index: 2;
+                background-color: #7ac0c7;
+                font-size: 16px;
+                overflow: hidden;
+                height: 40px;
+                line-height: 4px;" class="btn col-xs-12 call-sponsored-escort-btn" href="tel:{{post.phone}}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
+                    <img style="height: 24px;
+                    display: inline-block;
+                    vertical-align: middle;" src="{% static 'call-icon.png' %}"> <span>Call Now</span>
+                </a>
+            </div>
+            {% endif %}
+            {% if city.whatsapp %}
+            <div style="margin-top: 1rem;" class="text-center col-sm-2 no-padding-right">
+                <a style="background-color: #35b548;
+                color: #fff;
+                font-size: 16px;
+                line-height: 4px;
+                z-index: 2;
+                height: 40px;" class="btn col-xs-12 whatsapp-sponsored-escort-btn" href="https://wa.me/{{ post.whatsapp }}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
+                    <img style="height: 24px;
+                    display: inline-block;
+                    vertical-align: middle;" src="{% static 'whatsapp.svg' %}">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+            {% endif %}
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="profile">
                             <div class="row d-flex justify-content-center align-items-center image_row infinite-container grid" data-masonry='{ "itemSelector": ".grid-item"}'>

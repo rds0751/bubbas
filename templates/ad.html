@@ -18,17 +18,17 @@
         <ol class="breadcrumb triangle">
           <a href="/" class="name">
           <li>
-              <span class="name" >Home</span>
+              <span class="name" >Home </span>
           </li>
         </a>
           <a href="/call-girls/{{post.city}}">
           <li>
-              <span class="name">{{ post.city }} Call Girls</span>
+              <span class="name"> {{ post.city }} Call Girls</span>
           </li>
         </a>
           <a href="/">
           <li class="current">
-              <span class="name">{{ post.title }}</span>
+              <span class="name"> {{ post.title }}</span>
           </li>
         </a>
         </ol>
@@ -45,7 +45,8 @@
           {% if post.thumbnail.url|validate %}
               {% picture post.thumbnail img_alt="Bubbas - "|add:post.title img_loading="lazy" picture_class="my-picture" m=8 l=4 %}
           {% else %}
-              <img src="{% static 'logos.png' %}" alt="profile picture">
+              <img style="width: -webkit-fill-available;
+              height: auto;" src="{% static 'logos.png' %}" alt="profile picture">
           {% endif %}
           
           {% for x in post.categories.all %}
@@ -63,7 +64,7 @@
                 line-height: 4px;" class="btn col-xs-12 call-sponsored-escort-btn" href="tel:{{post.phone}}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
                     <img style="height: 24px;
                     display: inline-block;
-                    vertical-align: middle;" src="https://kommons.com/assets/images/call-icon.png?28052023100335"> <span>Call Me</span>
+                    vertical-align: middle;" src="{% static 'call-icon.png' %}"> <span>Call Me</span>
                 </a>
             </div>
             {% endif %}
@@ -77,7 +78,7 @@
                 height: 40px;" class="btn col-xs-12 whatsapp-sponsored-escort-btn" href="https://wa.me/{{ post.whatsapp }}" target="_blank" rel="nofollow" data-phone="07933761867" data-escort="OTvRwFxuAk2qbRw4">
                     <img style="height: 24px;
                     display: inline-block;
-                    vertical-align: middle;" src="https://kommons.com/assets/images/whatsapp-logo.svg?28052023100335">
+                    vertical-align: middle;" src="{% static 'whatsapp.svg' %}">
                     <span>WhatsApp</span>
                 </a>
             </div>
@@ -99,59 +100,57 @@
               <!-- job_item ends here -->
               
               <!-- similar_jobs starts here -->
-              <div class="similar_jobs_section" style="margin-bottom: 3rem;">
-                <div id="recommended_jobs_carousel" class="carousel slide">
-                  <p class="head text-uppercase">Recommended Profiles</p>
-                  <ol class="carousel-indicators">
-                    <li data-target="#recommended_jobs_carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#recommended_jobs_carousel" data-slide-to="1"></li>
-                    <li data-target="#recommended_jobs_carousel" data-slide-to="2"></li>
-                  </ol>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="profile">
+                  <p style="padding-left: 15px;" class="head text-uppercase">Recommended Profiles</p>
                   <!-- Carousel items -->
                   <div class="carousel-inner">
                     <div class="item ">
-                      <div class="row">
+                      <div class="row d-flex justify-content-center align-items-center image_row">
                         
                         {% for postr in posts %}
                         {% widthratio postr.id 1 28474567 as c %}
-                            <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
+                            <div class="col-md-3 col-sm-3 col-xs-3 image_col" style="height: auto !important; border-radius:5px; margin-top: 25px; padding: 0;">
                               <div class="job_col redirect_job_click">
                                 <a href="/call-girls/{{ postr.city.slug }}/{{ postr.slug }}/{{c}}/" class='company_logo'>
                                   {% if postr.thumbnail.url|validate %}
                                     {% picture postr.thumbnail img_alt="Bubbas - "|add:postr.title img_loading="lazy" picture_class="my-picture" m=8 l=4 %}
                                   {% else %}
-                                      <img src="{% static 'logos.png' %}" alt="profile picture">
+                                      <img style="width: -webkit-fill-available;
+                                      height: auto;" src="{% static 'logos.png' %}" alt="profile picture">
                                   {% endif %}
                                   </a>
-                                  <div class="result-data">
-                                      <div class="result-data-description">
-                                          <div class="result-header">
-                                                <div class="result-title">
-                                                    <br>
-                                                    <h2 style="
-                                                    font-size: 1rem;
-                                                    font-family: cursive;
-                                                    font-weight: 600;
-                                                    ">{{ post.title|truncatechars:50 }}<h2>
-                                                </div>
-                                                <div class="result-subtitle">{{ post.overview }}</div>
-                                            </div>
-                                            <div class="result-location">
-                                                {% for x in post.categories.all %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                    <strong>{{ x }}</strong>
-                                                {% endfor %}
-                                            </div>
-                                            <div class="result-phone">
-                                                <a aria-label="Chat on WhatsApp" href="https://wa.me/{{post.whatsapp}}"> 
-                                                    <img alt="Chat with on WhatsApp" style="width: 120px;" src="{% static 'what.png' %}" />
-                                                </a>
-                                            </div>
-                                            <div class="result-content">
-                                                <div class="result-content-header result-content-uk">
-                                                </div>
-                                            </div>
-                                      </div>
-                                  </div>
+                                  <a href="/call-girls/{{ post.city.slug }}/{{ post.slug }}/{{ c }}/" class='company_logo'>
+                                    <div style="padding: 12px;" class="result-data">
+                                        <div class="result-data-description">
+                                            <div class="result-header">
+                                                  <div class="result-title">
+                                                      <br>
+                                                      <h2 style="
+                                                      font-size: 1rem;
+                                                      font-family: cursive;
+                                                      font-weight: 600;
+                                                      ">{{ post.title|truncatechars:50 }}<h2>
+                                                  </div>
+                                                  <div class="result-subtitle">{{ post.overview }}</div>
+                                              </div>
+                                              <div class="result-location">
+                                                  {% for x in post.categories.all %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                                                      <strong>{{ x }}</strong>
+                                                  {% endfor %}
+                                              </div>
+                                              <div class="result-phone">
+                                                  <a aria-label="Chat on WhatsApp" href="https://wa.me/{{post.whatsapp}}"> 
+                                                      <img alt="Chat with on WhatsApp" style="width: 120px;" src="{% static 'what.png' %}" />
+                                                  </a>
+                                              </div>
+                                              <div class="result-content">
+                                                  <div class="result-content-header result-content-uk">
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                  </a>
                               </div>
                             </div>
                             {% if forloop.counter|divisibleby:4 %}
