@@ -1,6 +1,7 @@
 from django.apps import apps as django_apps
 from django.contrib.sitemaps import Sitemap
 from django.core.exceptions import ImproperlyConfigured
+from django.urls import reverse
 
 
 class FlatPageSitemap(Sitemap):
@@ -14,3 +15,6 @@ class FlatPageSitemap(Sitemap):
         Site = django_apps.get_model('sites.Site')
         current_site = Site.objects.get_current()
         return current_site.flatpage_set.filter(registration_required=False)
+    
+    def location(self, item):
+        return reverse('flatpages:flatpages.views.flatpage', args=[item.url, ])
