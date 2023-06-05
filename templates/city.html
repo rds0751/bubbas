@@ -49,9 +49,9 @@
                                                     font-size: 1rem;
                                                     font-family: cursive;
                                                     font-weight: 600;
-                                                    ">{{ post.title }}<h2>
+                                                    ">{{ post.title|truncatechars:50 }}<h2>
                                                 </div>
-                                                <div class="result-subtitle">{{ post.overview|truncatechars:40 }}</div>
+                                                <div class="result-subtitle">{{ post.overview }}</div>
                                             </div>
                                             <div class="result-location">
                                                 {% for x in post.categories.all %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
