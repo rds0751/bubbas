@@ -9,6 +9,6 @@ def validate(value):
     url = URLValidator()
     try:
         url(value)
-        return True
-    except:
+    except ValidationError as e:
         return False
+    return True
