@@ -117,7 +117,7 @@
                               <div class="job_col redirect_job_click">
                                 <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>
                                   {% if post.thumbnail %}
-                                      <img src="{% img_url post.thumbnail ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
+                                      <img src="{% img_url post.thumbnail file_type="webp" width=200 %}" alt="profile picture">
                                   {% else %}
                                       <img src="{% static 'logos.png' %}" alt="profile picture">
                                   {% endif %}
