@@ -20,16 +20,16 @@ from django.conf.urls.static import static
 from ads.views import home
 from pictures.conf import get_settings
 from django.contrib.sitemaps import views
-from flatpages.sitemaps import Sitemap
+from flatpages.sitemaps import FlatPageSitemap
 from call_girls.sitemaps import CallGirlsCitySitemap, CallGirlAdsSitemap
 from escorts.sitemaps import EscortsCitySitemap, EscortsAdsSitemap
 
 sitemaps = {
- 'static-pages': Sitemap,
  'call-girls-cities': CallGirlsCitySitemap,
  'call-girls-profiles': CallGirlAdsSitemap,
  'escorts-cities': EscortsCitySitemap,
- 'escorts-profiles': EscortsAdsSitemap
+ 'escorts-profiles': EscortsAdsSitemap,
+ 'static-pages': FlatPageSitemap,
 }
 
 
