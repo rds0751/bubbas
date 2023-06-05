@@ -45,6 +45,7 @@
           {% else %}
               <img src="{% static 'logos.png' %}" alt="profile picture">
           {% endif %}
+          {{post.thumbnail.url}}
           {% for x in post.categories.all %}
               <strong style="
               background-color: #ffff90;

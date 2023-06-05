@@ -41,11 +41,11 @@ def city(request, city):
 
 # Create your views here.
 def ad(request, slug, city, id):
-    city = City.objects.get(slug__icontains=city)
+    city = City.objects.get(slug=city)
     posts = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts1 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts2 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
-    post = Ad.objects.get(slug__icontains=slug)
+    post = Ad.objects.get(slug=slug)
     meta_title = post.title
     meta_description = post.overview
     context = {

@@ -1,14 +1,15 @@
 from django import template
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
+from django.core.files.storage import default_storage
+from django.conf import settings
 
 register = template.Library()
 
+
 @register.filter(name="validate")
 def validate(value):
-    url = URLValidator()
     try:
-        url(value)
-    except ValidationError as e:
+        print(default_storage.exists(str(settings.BASE_DIR) + value))
+    except Exception as e:
+        print(e)
         return False
     return True
