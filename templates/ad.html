@@ -41,7 +41,7 @@
         <!-- upload_btn_block starts here -->
         <div class="similar_job_posts" style="margin-bottom:10px;">
           {% if post.thumbnail %}
-              <img src="{% img_url profile.picture ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
+              <img src="{% img_url post.thumbnail ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
           {% else %}
               <img src="{% static 'logos.png' %}" alt="profile picture">
           {% endif %}
@@ -117,7 +117,7 @@
                               <div class="job_col redirect_job_click">
                                 <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>
                                   {% if post.thumbnail %}
-                                      <img src="{% img_url profile.picture ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
+                                      <img src="{% img_url post.thumbnail ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
                                   {% else %}
                                       <img src="{% static 'logos.png' %}" alt="profile picture">
                                   {% endif %}
@@ -160,7 +160,7 @@
                             <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
                               <div class="job_col redirect_job_click">
                                 <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>{% if post.thumbnail %}
-              <img src="{% img_url profile.picture ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
+              <img src="{% img_url post.thumbnail ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
           {% else %}
               <img src="{% static 'logos.png' %}" alt="profile picture">
           {% endif %}
@@ -203,7 +203,7 @@
                             <div style="margin-top: 1rem" class="col-md-3 col-sm-6 job_outer_col">
                               <div class="job_col redirect_job_click">
                                 <a href="/call-girls/{{ postr.city.name }}/{{ postr.slug }}/" class='company_logo'>{% if post.thumbnail %}
-              <img src="{% img_url profile.picture ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
+              <img src="{% img_url post.thumbnail ratio="3/2" file_type="webp" width=200 %}" alt="profile picture">
           {% else %}
               <img src="{% static 'logos.png' %}" alt="profile picture">
           {% endif %}
