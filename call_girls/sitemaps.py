@@ -3,7 +3,7 @@ from django.urls import reverse
 from ads.models import City, Ad
 
 class CallGirlAdsSitemap(Sitemap):
-    changefreq = "weekly"
+    changefreq = "monthly"
     priority = 0.7
     protocol = 'https'
 
@@ -15,6 +15,9 @@ class CallGirlAdsSitemap(Sitemap):
     
 
 class CallGirlsCitySitemap(Sitemap):
+    changefreq = "daily"
+    priority = 1
+    protocol = 'https'
 
     def items(self):
         return City.objects.filter()
