@@ -14,4 +14,4 @@ class FlatPageSitemap(Sitemap):
         return FlatPage.objects.filter(registration_required=False, )
     
     def location(self, item):
-        return reverse('flatpages:flatpages.views.flatpage', args=[item.url, ])
+        return reverse('flatpages:flatpage', args=[item.url, ])
