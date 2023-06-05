@@ -94,11 +94,12 @@
 <!-- help_options_row ends here -->
 
 
-
+{% compress js %}
 <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
 <script src="{% static 'js/infinite.min.js' %}"></script>
 <script src="{% static 'js/masonry.min.js' %}"></script>
+{% endcompress %}
 <script>
     var infinite = new Waypoint.Infinite({
       element: $('.infinite-container')[0],
