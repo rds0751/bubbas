@@ -49,15 +49,7 @@
           {% endif %}
           
           {% for x in post.categories.all %}
-              <strong style="
-              background-color: #ffff90;
-              cursor: inherit;
-              margin-top: 4px;
-              font-weight: 300;
-              margin-bottom: 4px;
-              margin-right: 4px;
-              font-size: 16px;
-              white-space: nowrap;" class="title"><button class='btn btn-danger' style='width: 10px'>{{ x.title }}</button > </strong>
+              <button class='btn btn-danger mb-1'>{{ x.title }}</button >
             {% endfor %}
             {% if post.phone %}
             <div class="row">
