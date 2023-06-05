@@ -25,7 +25,7 @@ from call_girls.sitemaps import CallGirlsCitySitemap, CallGirlAdsSitemap
 from escorts.sitemaps import EscortsCitySitemap, EscortsAdsSitemap
 
 sitemaps = {
- 'pages': Sitemap,
+ 'static-pages': Sitemap,
  'call-girls-cities': CallGirlsCitySitemap,
  'call-girls-profiles': CallGirlAdsSitemap,
  'escorts-cities': EscortsCitySitemap,
