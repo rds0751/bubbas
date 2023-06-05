@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'flatpages',
 
     # Third Party
@@ -46,7 +47,8 @@ INSTALLED_APPS = [
     "sorl.thumbnail",
     "compressor",
     'pictures',
-
+    'cookie_consent',
+    
     # Custom Made
     'ads',
     'home',
