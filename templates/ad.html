@@ -57,8 +57,9 @@
               margin-bottom: 4px;
               margin-right: 4px;
               font-size: 16px;
-              white-space: nowrap;" class="title"><a>{{ x.title }}</a> </strong>
+              white-space: nowrap;" class="title"><button class='btn btn-danger' style='width: 10px'>{{ x.title }}</button > </strong>
             {% endfor %}
+            {% if post.phone %}
             <div class="row">
               <div style="margin-top: 1rem;" class="col-sm-6 padding-1-right">
                 <a style="color: #000;
@@ -73,7 +74,9 @@
                     vertical-align: middle;" src="https://kommons.com/assets/images/call-icon.png?28052023100335"> <span>Call Me</span>
                 </a>
             </div>
-                                    <div style="margin-top: 1rem;" class="col-sm-6 no-padding-right">
+            {% endif %}
+            {% if post.whatsapp %}
+            <div style="margin-top: 1rem;" class="col-sm-6 no-padding-right">
                 <a style="background-color: #35b548;
                 color: #fff;
                 font-size: 16px;
@@ -86,6 +89,7 @@
                     <span>WhatsApp</span>
                 </a>
             </div>
+            {% endif %}
           </div>
         </div>
       
