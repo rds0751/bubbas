@@ -37,7 +37,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('call-girls/', include('call_girls.urls', 'call-girls')), # new
     path('escorts/', include('escorts.urls', 'escorts')), # new
-    path('pages/', include('flatpages.urls'), name='static'),
+    path('pages', include('flatpages.urls'), name='static'),
     path('', home, name='home'),
     path('__debug__/', include('debug_toolbar.urls'), name=''),
     path("cookies/", include("cookie_consent.urls"), name=''),
