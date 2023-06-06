@@ -43,6 +43,7 @@ urlpatterns = [
     path("cookies/", include("cookie_consent.urls"), name=''),
     path('sitemap.xml', views.index, {'sitemaps': sitemaps}),
     path('sitemap-<section>.xml', views.sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('^account/', include('account.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

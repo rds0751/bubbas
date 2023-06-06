@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "compressor",
     'pictures',
     'cookie_consent',
+    'account',
     
     # Custom Made
     'ads',
@@ -69,6 +70,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "account.middleware.LocaleMiddleware",
+    "account.middleware.TimezoneMiddleware",
 ]
 
 PICTURES = {
@@ -107,6 +110,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'account.context_processors.account',
             ],
         },
     },
