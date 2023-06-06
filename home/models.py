@@ -14,8 +14,3 @@ class Data(models.Model):
 
     def __str__(self):
         return self.key
-    
-class Sitemap(models.Model):
-    url = models.CharField(max_length=500, default='')
-    parent_url = models.ForeignKey(Sitemap, null=True, blank=True)
-    last_modified = models.DateTimeField(auto_now_add=True)
