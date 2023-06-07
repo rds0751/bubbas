@@ -1,8 +1,39 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
 
 # Create your views here.
-from ads.models import Image, Ad, City, Category
+from ads.models import Ad, City
 from home.models import Data
+
+from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse, reverse_lazy
+from .models import Ad
+from .forms import AdForm
+
+# Class Based Views
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
+class AdListView(ListView):
+    model = Ad
+    context_object_name = 'ads'
+
+class AdDetailView(DetailView):
+    model = Ad
+
+class AdCreateView(CreateView):
+    model = Ad
+    form_class = AdForm
+    success_url = reverse_lazy('ads:ad_list')
+
+class AdUpdateView(UpdateView):
+    model = Ad
+    form_class = AdForm
+    success_url = reverse_lazy('ads:ad_list')
+
+class AdDeleteView(DeleteView):
+    model = Ad
+    success_url = reverse_lazy('ads:ad_list')
+
 
 # Create your views here.
 def home(request):
@@ -21,4 +52,14 @@ def home(request):
         'site_name': site_name,
         'page_content': page_content
     }
-    return render(request, 'home.html', context)
+    if request.POST:
+        url = request.POST.get('url')
+        request.session["accepted_cookies"] = True
+        print(request.session["accepted_cookies"])
+        return redirect(url)
+    else:
+        try:
+            print(request.session["accepted_cookies"])
+        except Exception as e:
+            request.session["accepted_cookies"] = False
+        return render(request, 'home.html', context)

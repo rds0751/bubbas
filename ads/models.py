@@ -105,7 +105,7 @@ class City(models.Model):
     meta_description = models.TextField(default="", null=True, blank=True)
     phone = models.CharField(max_length=15, null=True, blank=True)
     whatsapp = models.CharField(max_length=15, null=True, blank=True)
-    page_content = RichTextField(null=True, blank=True)
+    call_girl_page_content = RichTextField(null=True, blank=True)
     get_no_of_cg_ads = models.IntegerField(default=0)
     get_no_of_es_ads = models.IntegerField(default=0)
     parent_city = models.ForeignKey(

@@ -15,6 +15,10 @@ def city(request, city):
     page = request.GET.get('page', 1)
     paginator = Paginator(posts, 5)
     try:
+        print(request.session["accepted_cookies"])
+    except Exception as e:
+        request.session["accepted_cookies"] = False
+    try:
         posts = paginator.page(page)
     except PageNotAnInteger:
         posts = paginator.page(1)
@@ -42,6 +46,10 @@ def city(request, city):
 # Create your views here.
 def ad(request, slug, city, id):
     city = City.objects.get(slug=city)
+    try:
+        print(request.session["accepted_cookies"])
+    except Exception as e:
+        request.session["accepted_cookies"] = False
     posts = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts1 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]
     posts2 = Ad.objects.filter(city=city, profile_status='Call Girls').order_by('?')[:4]

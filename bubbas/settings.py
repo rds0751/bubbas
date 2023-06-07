@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'pictures',
     'cookie_consent',
     'account',
+    "django_bootstrap5",
     
     # Custom Made
     'ads',

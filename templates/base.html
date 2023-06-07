@@ -48,7 +48,7 @@
                   {% for page in flatpages %}
                     {% if page.position == 'Top' %}
                       <li>
-                        <a href="/pages/{{ page.url }}">{{ page.title }}</a>
+                        <a href="/pages{{ page.url }}">{{ page.title }}</a>
                       </li>
                     {% endif %}
                   {% endfor %}
@@ -96,6 +96,92 @@
           <!-- search_login ends here -->
         </div>
       </section>
+      {% if not request.session.accepted_cookies %}
+      <style>
+        #overlay {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          background: #999;
+          width: 100%;
+          height: 120%;
+          opacity: 0.8;
+          z-index: 100;
+        }
+        #popup {
+          display: block;
+          position: fixed;
+          top: auto;
+          background: #fff;
+          z-index: 200;
+          width: -webkit-fill-available;
+        }
+        #popupclose {
+          float: right;
+          padding: 10px;
+          cursor: pointer;
+        }
+        .popupcontent {
+          padding: 10px;
+        }
+        #button {
+          cursor: pointer;
+        }
+      </style>
+          <div id="overlay"></div>
+          <div id="popup">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Disclaimer!</h4>
+              </div>
+              <div class="modal-body">
+                  <strong>To browse this website you must accept the following terms:</strong>
+                  <ol>
+                      <li>
+                          I am 18 years old or over.
+                      </li>
+                      <li>
+                          I understand there will be explicit content.
+                      </li>
+                      <li>
+                          The shocking content will not offend me.
+                      </li>
+                      <li>
+                          By clicking on “I agree” below, I discharge all Internet providers, owners and founders of Bubbas of any responsibility regarding the content and the usage of the content in this website.
+                      </li>
+                  </ol>
+      
+                  For further information please read our <a href="/pages/terms-and-conditions/" target="_blank">Terms and Conditions</a>.
+              </div>
+              <div class="modal-footer">
+                  <a id="disclaimerDisagreeButton" href="https://www.google.com" rel="nofollow" style="float: left;">No thanks</a>
+                  <form action="/" method='POST'>
+                    {% csrf_token %}
+                    <input type="hidden" name="url" value={{ request.build_absolute_uri }}>
+                    <button type="submit" class="btn btn-primary" id="disclaimerAgreeButton">I agree</button>
+                  <form>
+              </div>
+          </div>
+          </div>
+          <script>
+            // Initialize Variables
+            var closePopup = document.getElementById("popupclose");
+            var overlay = document.getElementById("overlay");
+            var popup = document.getElementById("popup");
+            var button = document.getElementById("button");
+            // Close Popup Event
+            closePopup.onclick = function() {
+              overlay.style.display = 'none';
+              popup.style.display = 'none';
+            };
+            // Show Overlay and Popup
+            button.onclick = function() {
+              overlay.style.display = 'block';
+              popup.style.display = 'block';
+            }
+          </script>
+      {% endif %}
      
       {% block base %}
       {% endblock %}
@@ -105,7 +191,7 @@
             <div class="container">
               <div class="row mar_lr_0">
                 {% block pj_info %}
-                  <div class="col-md-6 col-sm-12 col-xs-12 about">
+                  <div class="col-md-5 col-sm-12 col-xs-12 about">
                     <strong class="logo">Bubbas</strong>
                     <p>Bubbas.in is a leading online platform for free call girls & escorts classified ads in India. We provide a 
                       user-friendly and secure environment for individuals and businesses to browse a wide range of call girls, 
@@ -116,16 +202,22 @@
                 {% endblock %}
                 <div class="col-md-3 col-sm-12 col-xs-12 links">
                   <ul class="footer_links">
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
                     {% for page in flatpages %}
                       {% if page.position == 'Bottom' %}
                         <li>
-                          <a href="/pages/{{ page.url }}">{{ page.title }}</a>
+                          <a href="/pages{{ page.url }}">{{ page.title }}</a>
                         </li>
                       {% endif %}
                     {% endfor %}
+                    <li>
+                      <a href="/sitemap.xml">Sitemap</a>
+                    </li>
                   </ul>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 subscribe_social_copy">
+                <div class="col-md-4 col-sm-12 col-xs-12 subscribe_social_copy">
                   <form name="BaseSubscribeform" id="BaseSubscribeform" method="POST">
                     <div class="subscribe">
                       <div class="input-group">
@@ -156,18 +248,6 @@
         </section>
       <!-- footer ends here -->
     </div>
-    <div class="modal_loading">
-      <!-- Place at bottom of page -->
-    </div>
-    <div id="popup1" style="position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.7);transition: opacity 500ms;visibility: hidden;opacity: 0;">
-      <div class="popup">
-        <h2>Here i am</h2>
-        <a class="close" href="#">&times;</a>
-        <div class="content">
-          Thank to pop me out of that button, but now i'm done so you can close this window.
-        </div>
-      </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -176,12 +256,39 @@
     {% block 'extra_js' %}
     {% endblock %}
     {% endcompress %}
-    <script>
-      window.showCookieBar({
-        content: '<div style="position: fixed;width: 100%; top:0; text-align:center; height:25px; line-height: 25px; background: #eee;" class="cookie-bar">This site uses {{ cookie_groups }} cookies for better performance and user experience. Do you agree to use cookies? <a href="{{ url_accept }}" class="cc-cookie-accept">Accept</a> <a href="{{ url_decline }}" class="cc-cookie-decline">Decline</a> <a href="{{ url_cookies }}">Cookies info</a></div>',
-        cookie_groups: ['disclaimer'],
-      });
-    </script>
+      {% not_accepted_or_declined_cookie_groups request as cookie_groups %}
+
+      {% if cookie_groups %}
+        {% url "cookie_consent_cookie_group_list" as url_cookies %}
+        {% cookie_consent_accept_url cookie_groups as url_accept %}
+        {% cookie_consent_decline_url cookie_groups as url_decline %}
+        <script type="text/javascript">
+          var cookie_groups = [];
+          {% for cookie_group in cookie_groups %}
+            cookie_groups.push("{{ cookie_group.varname }}");
+          {% endfor %}
+
+          function ready(fn) {
+	          if (document.readyState != 'loading') {
+	            fn();
+	          } else if (document.addEventListener) {
+	            document.addEventListener('DOMContentLoaded', fn);
+	          } else {
+	            document.attachEvent('onreadystatechange', function() {
+		          if (document.readyState != 'loading')
+		            fn();
+	            });
+	          }
+          }
+
+          ready(function() {
+	          showCookieBar({
+              content: '<div style="position: fixed;width: 100%; top:50%; text-align:center; height:25px; line-height: 25px; background: #eee;" class="cookie-bar">This site uses {{ cookie_groups }} cookies for better performance and user experience. Do you agree to use cookies? <a href="{{ url_accept }}" class="cc-cookie-accept">Accept</a> <a href="{{ url_decline }}" class="cc-cookie-decline">Decline</a> <a href="{{ url_cookies }}">Cookies info</a></div>',
+              cookie_groups: ['disclaimer'],
+            });
+          });
+        </script>
+      {% endif %}
   </body>
 </html>
 

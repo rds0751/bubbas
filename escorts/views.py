@@ -15,6 +15,10 @@ def city(request, city):
     page = request.GET.get('page', 1)
     paginator = Paginator(posts, 5)
     try:
+        print(request.session["accepted_cookies"])
+    except Exception as e:
+        request.session["accepted_cookies"] = False
+    try:
         posts = paginator.page(page)
     except PageNotAnInteger:
         posts = paginator.page(1)
@@ -48,6 +52,10 @@ def ad(request, slug, city, id):
     post = Ad.objects.get(slug__icontains=slug)
     meta_title = post.title
     meta_description = post.overview
+    try:
+        print(request.session["accepted_cookies"])
+    except Exception as e:
+        request.session["accepted_cookies"] = False
     context = {
         'post': post,
         'posts': posts,
