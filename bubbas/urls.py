@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
-from ads.views import home
+from ads.views import home, all
 from pictures.conf import get_settings
 from django.contrib.sitemaps import views
 from flatpages.sitemaps import FlatPageSitemap
@@ -39,6 +39,7 @@ urlpatterns = [
     path('escorts/', include('escorts.urls', 'escorts')), # new
     path('pages', include('flatpages.urls'), name='static'),
     path('', home, name='home'),
+    path('all-locations/', all, name='all'),
     path('__debug__/', include('debug_toolbar.urls'), name=''),
     path("cookies/", include("cookie_consent.urls"), name=''),
     path('sitemap.xml', views.index, {'sitemaps': sitemaps}),

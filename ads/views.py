@@ -71,8 +71,9 @@ def home(request):
 # Create your views here.
 def all(request):
     c = City.objects.all().order_by('?')
-    ad_count = Ad.objects.all().count()
-    meta_title = Data.objects.get(key='home_meta_title').value.replace('%ad_count', str(ad_count)).replace('<p>', '').replace('</p>', '')
+    cg_ad_count = Ad.objects.filter(profile_status="Call Girls").count()
+    es_ad_count = Ad.objects.filter(profile_status="Escorts").count()
+    meta_title = Data.objects.get(key='home_meta_title').value.replace('%cg_ad_count', str(cg_ad_count)).replace('<p>', '').replace('</p>', '').replace('%es_ad_count', str(es_ad_count))
     meta_description = Data.objects.get(key='home_meta_description').value
     site_name = Data.objects.get(key='site_name').value
     site_logo = Data.objects.get(key='site_logo')
