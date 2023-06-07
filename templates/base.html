@@ -44,11 +44,14 @@
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
+                  <li>
+                    <a href="/all-locations/">All Locations</a>
+                  </li>
                   {% for page in flatpages %}
                     {% if page.position == 'Top' %}
-                      <li>
-                        <a href="/pages{{ page.url }}">{{ page.title }}</a>
-                      </li>
+                    <li>
+                      <a href="/pages{{ page.url }}">{{ page.title }}</a>
+                    </li>
                     {% endif %}
                   {% endfor %}
                   {% if request.user.is_authenticated %}
@@ -242,11 +245,11 @@
                   {% cache 604800 social_footer_links %}
                   <div class="social_links text-center">
                     <ul>
-                      <li><a aria-label="go to facebook page" target="_blank" href="https://facebook.com/peeljobs/"><strong>f</strong></a></li>
+                      <li><a aria-label="go to facebook page" target="_blank" href="#"><strong>f</strong></a></li>
                       <li ><a aria-label="go to google page" href="https://google.com"><strong>G</strong></a></li>
                     </ul>
                   </div>
-                  <div class="copy_right text-center">Copyright &copy; {% now "Y" %} bubbas.in<br><a href="https://blockitsy.com" title="Blockitsy" target="_blank">Development + SEO by Blockitsy</a>
+                  <div class="copy_right text-center">Copyright &copy; {% now "Y" %} bubbas.in<br><a href="#" title="Bubbas" target="_blank">Development + SEO by Bubbas</a>
                   </div>
                   {% endcache %}
                 </div>
