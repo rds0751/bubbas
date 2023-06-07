@@ -28,7 +28,6 @@
     {% endblock %}
   </head>
   <body>
-    <a href="#0" class="cd-top">Top</a>
     <div id="wrapper" >
       <section class="header_banner">
         <div class="icon_banner">
@@ -52,6 +51,15 @@
                       </li>
                     {% endif %}
                   {% endfor %}
+                  {% if request.user.is_authenticated %}
+                  <li>
+                    <a href="/account/logout/">Logout</a>
+                  </li>
+                  {% else %}
+                  <li>
+                    <a href="/ads/">Post an Ad</a>
+                  </li>
+                  {% endif %}
                 </ul>
               </div>
               

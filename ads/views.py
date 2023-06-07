@@ -9,28 +9,29 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse, reverse_lazy
 from .models import Ad
 from .forms import AdForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Class Based Views
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-class AdListView(ListView):
+class AdListView(ListView, LoginRequiredMixin):
     model = Ad
     context_object_name = 'ads'
 
-class AdDetailView(DetailView):
+class AdDetailView(DetailView, LoginRequiredMixin):
     model = Ad
 
-class AdCreateView(CreateView):
-    model = Ad
-    form_class = AdForm
-    success_url = reverse_lazy('ads:ad_list')
-
-class AdUpdateView(UpdateView):
+class AdCreateView(CreateView, LoginRequiredMixin):
     model = Ad
     form_class = AdForm
     success_url = reverse_lazy('ads:ad_list')
 
-class AdDeleteView(DeleteView):
+class AdUpdateView(UpdateView, LoginRequiredMixin):
+    model = Ad
+    form_class = AdForm
+    success_url = reverse_lazy('ads:ad_list')
+
+class AdDeleteView(DeleteView, LoginRequiredMixin):
     model = Ad
     success_url = reverse_lazy('ads:ad_list')
 

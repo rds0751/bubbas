@@ -1,6 +1,49 @@
-<h3>{% if object %}Edit Task {% else %} Create New Task {% endif %}</h3>
-    <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <p><input type="submit" class="btn btn-success" value="Submit"></p>
-    </form>
+
+
+    {% extends "base.html" %}
+
+    {% load django_bootstrap5 %}
+    
+    {% load account_tags static %}
+    {% load i18n %}
+    
+    {% block head_title %}{% trans "Log in" %}{% endblock %}
+    
+    {% block base %}
+    
+    <section class="main_container">
+        <div class="container">
+            <div class="row mar_lr_0">
+                <div class="col-md-12 left_container">
+                    <div class="row mar_lr_0 skills_locations">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="profile">
+                                <div class="row d-flex justify-content-center align-items-center image_row infinite-container grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>{% if object %}Edit Task {% else %} Create New Task {% endif %}</h3>
+                                            <form action="" method="post" enctype="multipart/form-data">
+                                                {% csrf_token %}
+                                                {% bootstrap_form form %}
+                                                <p><input type="submit" class="btn btn-success" value="Submit"></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    
+    {% block scripts %}
+        {{ block.super }}
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#id_username').focus();
+            });
+        </script>
+    {% endblock %}

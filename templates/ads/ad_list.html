@@ -19,14 +19,24 @@
                             <div class="row d-flex justify-content-center align-items-center image_row infinite-container grid" data-masonry='{ "itemSelector": ".grid-item"}'>
                                 <div class="row">
                                     <div class="col-md-12">
+                                        <p> <a class="btn btn-primary" href="{% url 'ads:ad_create' %}"> + Add A New ad</a></p>
+                                        <table>
+                                            <tr>
+                                                <th>S No.</th>
+                                                <th>Title</th>
+                                                <th>City</th>
+                                                <th>Action<th>
+                                              </tr>
                                         {% for ad in ads %}
-                                            <p>{{ forloop.counter }}. {{ ad.title }} - {{ ad.get_status_display }}
-                                                (<a href="{% url 'ads:ad_update' ad.id %}">Update</a> |
-                                                <a href="{% url 'ads:ad_delete' ad.id %}">Delete</a>)
-                                            </p>
+                                            <tr>
+                                              <td>{{ forloop.counter }}</td>
+                                              <td>{{ ad.title }}</td>
+                                              <td>{{ ad.city }}</td>
+                                              <td><a href="{% url 'ads:ad_update' ad.id %}">Update</a> |
+                                                <a href="{% url 'ads:ad_delete' ad.id %}">Delete</a></td>
+                                            </tr>
                                         {% endfor %}
-
-                                        <p> <a href="{% url 'ads:ad_create' %}"> + Add A New ad</a></p>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

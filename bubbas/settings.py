@@ -118,6 +118,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bubbas.wsgi.application'
 
+ACCOUNT_LOGIN_REDIRECT_URL = '/ads/'
+LOGIN_REDIRECT_URL = '/ads/'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -128,6 +131,7 @@ DATABASES = {
         default='postgres://dbmasteruser:smarty24@ls-da7a92b0797c88d3459343bcb1d7c69ce6cd65ab.cfcmo0to43fn.ap-south-1.rds.amazonaws.com:5432/postgres',
         conn_max_age=600)}
 
+AUTH_USER_MODEL='auth.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

@@ -1,13 +1,11 @@
 from django.db import models
 from django.db.models import Q, Count, F
-from django.contrib.auth import get_user_model
 
 from django.utils.text import slugify
 from ckeditor.fields import RichTextField
 from pictures.models import PictureField
 
 
-User = get_user_model()
 
 # Create your models here.
 
@@ -105,7 +103,8 @@ class City(models.Model):
     meta_description = models.TextField(default="", null=True, blank=True)
     phone = models.CharField(max_length=15, null=True, blank=True)
     whatsapp = models.CharField(max_length=15, null=True, blank=True)
-    call_girl_page_content = RichTextField(null=True, blank=True)
+    call_girls_page_content = RichTextField(null=True, blank=True)
+    escorts_page_content = RichTextField(null=True, blank=True)
     get_no_of_cg_ads = models.IntegerField(default=0)
     get_no_of_es_ads = models.IntegerField(default=0)
     parent_city = models.ForeignKey(
@@ -150,6 +149,7 @@ class Ad(models.Model):
     city = models.ForeignKey(City, on_delete=models.CASCADE, null=True, blank=True, db_index=True)
     meta_title = models.TextField(default="", null=True, blank=True)
     meta_description = models.TextField(default="", null=True, blank=True)
+    user = models.CharField(max_length=100, default='rds0752')
 
     def __str__(self):
         return self.title

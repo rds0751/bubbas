@@ -1,20 +1,52 @@
-{% extends "site_base.html" %}
+{% extends "base.html" %}
 
+{% load django_bootstrap5 %}
+
+{% load account_tags static %}
 {% load i18n %}
 
-{% block head_title %}{% trans "Log out" %}{% endblock %}
+{% block head_title %}{% trans "Log in" %}{% endblock %}
 
-{% block body %}
-    <div class="row">
-        <div class="col-md-5">
-            <form method="POST" action="{% url "account_logout" %}">
-                <legend>{% trans "Log out" %}</legend>
-                <fieldset>
-                    {% csrf_token %}
-                    <p>{% trans "Are you sure you want to log out?" %}</p>
-                    <button type="submit" class="btn btn-primary">{% trans "Log out" %}</button>
-                </fieldset>
-            </form>
+{% block base %}
+
+<section class="main_container">
+    <div class="container">
+        <div class="row mar_lr_0">
+            <div class="col-md-12 left_container">
+                <div class="row mar_lr_0 skills_locations">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="profile">
+                            <div class="row d-flex justify-content-center align-items-center image_row infinite-container grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <form method="POST" action="{% url "account_logout" %}">
+                                            <legend>{% trans "Log out" %}</legend>
+                                            <fieldset>
+                                                {% csrf_token %}
+                                                <p>{% trans "Are you sure you want to log out?" %}</p>
+                                                <button type="submit" class="btn btn-primary">{% trans "Log out" %}</button>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src={% static 'login.png' %} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#id_username').focus();
+        });
+    </script>
 {% endblock %}
