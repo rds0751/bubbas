@@ -119,7 +119,11 @@
                             <div class="result-content">
                                 <div class="result-content-header result-content-uk">
                                     <br><br><br>
-                                    {{ city.page_content|safe }}
+                                    {% if escorts in request.path %}
+                                        {{ city.escorts_page_content|safe }}
+                                    {% else %}
+                                        {{ city.call_girls_page_content|safe }}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
