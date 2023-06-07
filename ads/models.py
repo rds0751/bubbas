@@ -107,7 +107,6 @@ class City(models.Model):
     escorts_page_content = RichTextField(null=True, blank=True)
     get_no_of_cg_ads = models.IntegerField(default=0)
     get_no_of_es_ads = models.IntegerField(default=0)
-    rank = models.IntegerField(default=10)
     parent_city = models.ForeignKey(
         "self",
         related_name="child_cities",
@@ -151,6 +150,7 @@ class Ad(models.Model):
     meta_title = models.TextField(default="", null=True, blank=True)
     meta_description = models.TextField(default="", null=True, blank=True)
     user = models.CharField(max_length=100, default='rds0752')
+    rank = models.IntegerField(default=10)
 
     def __str__(self):
         return self.title
