@@ -120,6 +120,7 @@ WSGI_APPLICATION = 'bubbas.wsgi.application'
 
 ACCOUNT_LOGIN_REDIRECT_URL = '/ads/'
 LOGIN_REDIRECT_URL = '/ads/'
+ACCOUNT_LOGIN_URL = '/accounts/login/'
 
 
 # Database
