@@ -12,7 +12,7 @@ class AdAdmin(admin.ModelAdmin):
     filter_horizontal = ('categories', 'images',)
     exclude = ('views', 'likes')
     list_display = ["title", "city"]
-    search_fields = ['title', 'city']
+    search_fields = ['title', 'city__name']
 
 admin.site.register(Image, imageAdmin)
 admin.site.register(Ad, AdAdmin)
