@@ -9,30 +9,52 @@
  {% include "meta_data/detail.html" %}
 {% endblock %}
 {% block base %}
+<style>
+  ul.breadcrumb {
+    padding: 3px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+</style>
 <!-- main_container starts here -->
 <div class="row mar_lr_0 main_container">
   <div class="container">
     <!-- breadcrumb_section starts here -->
     <div class="breadcrumb_section row">
-      <nav class="col-md-11" aria-label="breadcrumb">
-        <ol class="breadcrumb triangle">
+      <ul class="breadcrumb col-md-11">
+        <li>
           <a href="/" class="name">
-          <li>
-              <span class="name" >Home </span>
-          </li>
-        </a>
+            <span class="name" >Home </span>
+          </a>
+        </li>
+        <li>
           <a href="/call-girls/{{post.city}}">
-          <li>
-              <span class="name"> {{ post.city }} Call Girls</span>
-          </li>
-        </a>
-          <a href="/">
-          <li class="current">
-              <span class="name"> {{ post.title }}</span>
-          </li>
-        </a>
-        </ol>
-      </nav>
+            <span class="name"> {{ post.city }} Call Girls</span>
+          </a>
+        </li>
+        <li class="current">
+          <a href="#">
+            <span class="name"> {{ post.title }}</span>
+          </a>
+        </li>
+      </ul>
       <button class="btn btn-warning col-md-1" style="float: right;
       height: fit-content;" onclick="history.back()">Go Back</button>
     </div>
