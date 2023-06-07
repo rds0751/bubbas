@@ -44,9 +44,6 @@
               </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main_menu">
-                  <li>
-                    <a href="/all-locations/">All Locations</a>
-                  </li>
                   {% for page in flatpages %}
                     {% if page.position == 'Top' %}
                     <li>
@@ -215,6 +212,9 @@
                   <ul class="footer_links">
                     <li>
                       <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/all-locations/">All Locations</a>
                     </li>
                     {% for page in flatpages %}
                       {% if page.position == 'Bottom' %}
