@@ -8,7 +8,7 @@ from home.models import Data
 # Create your views here.
 def city(request, city):
     city = City.objects.get(slug=city)
-    posts = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')
+    posts = Ad.objects.filter(city=city, profile_status='Escorts').order_by('rank')
     c = City.objects.all().order_by('?')
     ca = Category.objects.all().order_by('?')[:50]
     p = Ad.objects.all().order_by('?')[:30]
@@ -46,7 +46,7 @@ def city(request, city):
 # Create your views here.
 def ad(request, slug, city, id):
     city = City.objects.get(slug__icontains=city)
-    posts = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')[:4]
+    posts = Ad.objects.filter(city=city, profile_status='Escorts').order_by('rank')[:4]
     posts1 = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')[:4]
     posts2 = Ad.objects.filter(city=city, profile_status='Escorts').order_by('?')[:4]
     post = Ad.objects.get(slug__icontains=slug)
