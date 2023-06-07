@@ -7,3 +7,4 @@ class AdForm(forms.ModelForm):
     class Meta:
         model = Ad
         fields = "__all__"
+        exclude = ('profile_status', 'likes', 'views', 'images', )

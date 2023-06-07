@@ -14,24 +14,25 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 # Class Based Views
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-class AdListView(ListView, LoginRequiredMixin):
+class AdListView(LoginRequiredMixin, ListView):
     model = Ad
     context_object_name = 'ads'
 
-class AdDetailView(DetailView, LoginRequiredMixin):
+
+class AdDetailView(LoginRequiredMixin, DetailView):
     model = Ad
 
-class AdCreateView(CreateView, LoginRequiredMixin):
-    model = Ad
-    form_class = AdForm
-    success_url = reverse_lazy('ads:ad_list')
-
-class AdUpdateView(UpdateView, LoginRequiredMixin):
+class AdCreateView(LoginRequiredMixin, CreateView):
     model = Ad
     form_class = AdForm
     success_url = reverse_lazy('ads:ad_list')
 
-class AdDeleteView(DeleteView, LoginRequiredMixin):
+class AdUpdateView(LoginRequiredMixin, UpdateView):
+    model = Ad
+    form_class = AdForm
+    success_url = reverse_lazy('ads:ad_list')
+
+class AdDeleteView(LoginRequiredMixin, DeleteView):
     model = Ad
     success_url = reverse_lazy('ads:ad_list')
 
