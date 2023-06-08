@@ -270,7 +270,7 @@
     
     {% compress js %}
     <script type="text/javascript" src={% static "cookie_consent/cookiebar.js" %}></script>
-    {% block 'extra_js' %}
+    {% block scripts %}
     {% endblock %}
     {% endcompress %}
       {% not_accepted_or_declined_cookie_groups request as cookie_groups %}

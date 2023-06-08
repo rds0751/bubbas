@@ -119,9 +119,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bubbas.wsgi.application'
 
-ACCOUNT_LOGIN_REDIRECT_URL = '/ads/'
-LOGIN_REDIRECT_URL = '/ads/'
 ACCOUNT_LOGIN_URL = '/accounts/login/'
+
+ACCOUNT_OPEN_SIGNUP = True
+ACCOUNT_EMAIL_UNIQUE = True
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+ACCOUNT_LOGIN_REDIRECT_URL = "home"
+ACCOUNT_LOGOUT_REDIRECT_URL = "home"
+ACCOUNT_USE_AUTH_AUTHENTICATE = True
+ACCOUNT_EMAIL_CONFIRMATION_EMAIL = False
+
+AUTHENTICATION_BACKENDS = [
+    "account.auth_backends.UsernameAuthenticationBackend",
+    "django.contrib.auth.backends.ModelBackend",
+]
 
 
 # Database

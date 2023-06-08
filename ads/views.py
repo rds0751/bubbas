@@ -10,9 +10,30 @@ from django.urls import reverse, reverse_lazy
 from .models import Ad
 from .forms import AdForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import UserCreationForm
+from django.contrib.auth import login, authenticate
 
 # Class Based Views
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
+def register(request, *args, **kwargs):
+    if request.method=='POST':
+        form = UserCreationForm(request.POST)
+        print(form.errors)
+
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('ads:ad_list')
+
+    else:
+        form = UserCreationForm()
+
+    context = {'form': form}
+    return render(request, 'account/signup.html', context)
 
 class AdListView(LoginRequiredMixin, ListView):
     model = Ad

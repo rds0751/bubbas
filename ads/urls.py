@@ -7,6 +7,7 @@ from . import views
 app_name = 'ads'
 
 urlpatterns = [
+    path("register/", views.register, name="register"),
     # Create a ad
     path('create/', views.AdCreateView.as_view(), name='ad_create'),
     # Retrieve ad list

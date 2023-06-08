@@ -42,6 +42,8 @@
     {% block scripts %}
         {{ block.super }}
         <script type="text/javascript">
+            document.getElementById("id_user").style.display = "none";
+            document.getElementById("id_user").value = {{ request.user.username }};
             $(document).ready(function() {
                 $('#id_username').focus();
             });
