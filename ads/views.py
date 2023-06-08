@@ -18,6 +18,12 @@ class AdListView(LoginRequiredMixin, ListView):
     model = Ad
     context_object_name = 'ads'
 
+    def get_queryset(self):
+        new_context = Ad.objects.filter(
+            user=self.request.user.username,
+        )
+        return new_context
+
 
 class AdDetailView(LoginRequiredMixin, DetailView):
     model = Ad
