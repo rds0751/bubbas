@@ -18,15 +18,7 @@
     {% block meta_tags %}
     {% endblock %}
     <meta name="google-site-verification" content="rjXHWAhCEigD_m80r_GgDIeZzm10POueJCfKc_Lk99s" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H037P9ES70"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-H037P9ES70');
-    </script>
+    
 
     {% block block_canonical_tag %}
     {% endblock %}
@@ -270,6 +262,15 @@
     
     {% compress js %}
     <script type="text/javascript" src={% static "cookie_consent/cookiebar.js" %}></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H037P9ES70"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-H037P9ES70');
+    </script>
     {% block scripts %}
     {% endblock %}
     {% endcompress %}
