@@ -20,7 +20,7 @@ class EscortsCitySitemap(Sitemap):
     protocol = 'https'
 
     def items(self):
-        return City.objects.filter()
+        return City.objects.filter(profile_status="Escorts")
 
     def location(self, item):
         return reverse('call-girls:cities', args=[item.slug])
