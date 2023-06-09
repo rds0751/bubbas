@@ -223,7 +223,7 @@ STATICFILES_FINDERS = (
 CACHES = {
     'default':{
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'gvi_cache',
+        'LOCATION': 'gvip_cache',
         'TIMEOUT': 150,
     }
 }
