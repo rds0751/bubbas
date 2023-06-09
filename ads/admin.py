@@ -11,7 +11,7 @@ class AdAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     filter_horizontal = ('categories', 'images',)
     exclude = ('views', 'likes')
-    list_display = ["title", "city"]
+    list_display = ["title", "city", "profile_status"]
     search_fields = ['title', 'city__name']
 
 admin.site.register(Image, imageAdmin)
