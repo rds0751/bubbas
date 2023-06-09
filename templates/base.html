@@ -270,9 +270,9 @@
 
       gtag('config', 'G-H037P9ES70');
     </script>
+    {% endcompress %}
     {% block scripts %}
     {% endblock %}
-    {% endcompress %}
       {% not_accepted_or_declined_cookie_groups request as cookie_groups %}
 
       {% if cookie_groups %}
