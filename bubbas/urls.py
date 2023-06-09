@@ -23,6 +23,7 @@ from django.contrib.sitemaps import views
 from flatpages.sitemaps import FlatPageSitemap
 from call_girls.sitemaps import CallGirlsCitySitemap, CallGirlAdsSitemap
 from escorts.sitemaps import EscortsCitySitemap, EscortsAdsSitemap
+from .sitemaps import StaticSitemap
 
 sitemaps = {
  'call-girls-cities': CallGirlsCitySitemap,
@@ -30,6 +31,7 @@ sitemaps = {
  'escorts-cities': EscortsCitySitemap,
  'escorts-profiles': EscortsAdsSitemap,
  'static-pages': FlatPageSitemap,
+ 'home-page': StaticSitemap
 }
 
 

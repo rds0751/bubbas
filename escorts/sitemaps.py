@@ -11,7 +11,7 @@ class EscortsAdsSitemap(Sitemap):
         return Ad.objects.filter(profile_status="Escorts")
 
     def location(self, item):
-        return reverse('call-girls:profiles', args=[item.city.slug, item.slug, item.id*28474567, ])
+        return reverse('escorts:profiles', args=[item.city.slug, item.slug, item.id*28474567, ])
     
 
 class EscortsCitySitemap(Sitemap):
@@ -20,7 +20,7 @@ class EscortsCitySitemap(Sitemap):
     protocol = 'https'
 
     def items(self):
-        return City.objects.filter(profile_status="Escorts")
+        return City.objects.filter()
 
     def location(self, item):
-        return reverse('call-girls:cities', args=[item.slug])
+        return reverse('escorts:cities', args=[item.slug])
