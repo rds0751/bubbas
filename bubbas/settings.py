@@ -220,10 +220,10 @@ STATICFILES_FINDERS = (
     "compressor.finders.CompressorFinder"
 )
 
-CACHES = {
-    'default':{
-        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'derfctvgh_cache',
-        'TIMEOUT': 150,
-    }
-}
+# CACHES = {
+#     'default':{
+#         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+#         'LOCATION': 'derfctvgh_cache',
+#         'TIMEOUT': 150,
+#     }
+# }
