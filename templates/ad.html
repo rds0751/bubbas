@@ -222,12 +222,12 @@
                                                       font-size: 1.5rem;
                                                       font-family: cursive;
                                                       font-weight: 600;
-                                                      ">{{ post.title|truncatechars:50 }}<h2>
+                                                      ">{{ postr.title|truncatechars:50 }}<h2>
                                                   </div>
-                                                  <div class="result-subtitle">{{ post.overview }}</div>
+                                                  <div class="result-subtitle">{{ postr.overview }}</div>
                                               </div>
                                               <div class="result-location">
-                                                  {% for x in post.categories.all %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                                                  {% for x in postr.categories.all %}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                                                       <strong>{{ x }}</strong>
                                                   {% endfor %}
                                               </div>
