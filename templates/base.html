@@ -263,7 +263,7 @@
     {% compress js %}
     <script type="text/javascript" src={% static "cookie_consent/cookiebar.js" %}></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H037P9ES70"></script>
+    <script async src="{{ static 'js/gtag.js' }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
