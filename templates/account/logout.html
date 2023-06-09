@@ -18,7 +18,7 @@
                         <div role="tabpanel" class="tab-pane active" id="profile">
                             <div class="row d-flex justify-content-center align-items-center image_row infinite-container grid" data-masonry='{ "itemSelector": ".grid-item"}'>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <form method="POST" action="{% url "account_logout" %}">
                                             <legend>{% trans "Log out" %}</legend>
                                             <fieldset>
@@ -28,7 +28,7 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-6">
                                         <img src={% static 'login.png' %} />
                                     </div>
                                 </div>
