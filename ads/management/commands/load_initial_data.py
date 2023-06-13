@@ -16,7 +16,6 @@ class Command(BaseCommand):
 
     
     def handle(self, *args, **options):
-        
         ads = Ad.objects.all()
         images = os.listdir('./medias')
         imas = []
@@ -30,7 +29,7 @@ class Command(BaseCommand):
             imas.remove(rn)
             print(rn)
             file = File(open('/home/ubuntu/django/bubbas/medias/'+rn, "rb"))
-            i.thumbnail = file
+            i.thumbnail.save(rn, file, save=True)
             i.save()
             print(i.id)
             image_temp_file = NamedTemporaryFile(delete=True)
@@ -51,4 +50,3 @@ class Command(BaseCommand):
             i.thumbnail.save(rn, in_memory_image, save=True)
             i.save()
             print(i.id)
-
