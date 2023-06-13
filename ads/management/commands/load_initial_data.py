@@ -1,5 +1,12 @@
 from django.core.management.base import BaseCommand
 from ads.models import *
+from django.core.files.temp import NamedTemporaryFile
+from django.core import files
+from ads.models import Ad
+import random
+import os
+import uuid
+from django.core.files import File
 
 
 class Command(BaseCommand):
@@ -10,12 +17,38 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options):
         
-        cities = ["Agra","Ahmedabad","Ajmer","Allahabad","Ambala","Amritsar","Bangalore","Bhopal","Bhubaneswar","Chandigarh","Chennai","Dehradun","Delhi","Faridabad","Ghaziabad","Goa","Greater Noida","Gurgaon","Guwahati","Hyderabad","Indore","Jaipur","Jalandhar","Jamshedpur","Jodhpur","Kanpur","Kochi","Kolkata","Kota","Lucknow","Ludhiana","Manali","Manesar","Mohali","Mumbai","Nagpur","Nainital","Nashik","Navi Mumbai","Noida","Panchkula","Patna","Pune","Raipur","Rajkot","Ranchi","Rishikesh","Shimla","Surat","Thane","Udaipur","Vadodara","Vijayawada","Zirakpur"]
-        categories = ["69","Adult Baby Minding","A Level - Anal","BDSM","Bisexual","Blowjob","Bukkake","Car Meets","CIF - Cum in Face","COB","Couples","Crossdresser","CIM - Cum in Mouth","Deep Throat","Dogging","Domination","DUO","Erotic massage","Face Sitting","Fetish","Filming","Fisting","French Kiss","Gang Bang","GFE","Hardcore sex","HDJ - Handjob","Incall","Kissing","Massage","Milking/Lactating","Outcall","OW","OWO","Party Girl","Pregnant","PSE - Pornstar","Quickie","Rimming","Rimming (giving)","Role-playing","Hardsports & Scat","Spanking","Squirting","Pegging - Strapon","Submissive","Swallow","Threesomes","Tie and Tease","Travel","Uniform","Watersports"]
-        url = "ls-da7a92b0797c88d3459343bcb1d7c69ce6cd65ab.cfcmo0to43fn.ap-south-1.rds.amazonaws.com"
-        for x in cities:
-            print(x)
-            c = City()
-            c.name = x
-            c.save()
+        ads = Ad.objects.all()
+        images = os.listdir('./medias')
+        imas = []
+        for image in images:
+            if '.jpg' in image:
+                    imas.append(image)
+
+        for ad in ads:
+            i = ad
+            rn = random.choice(imas)
+            imas.remove(rn)
+            print(rn)
+            file = File(open('/home/ubuntu/django/bubbas/medias/'+rn, "rb"))
+            i.thumbnail = file
+            i.save()
+            print(i.id)
+            image_temp_file = NamedTemporaryFile(delete=True)
+            in_memory_image = open('/home/ubuntu/django/bubbas/medias/'+rn, 'rb')
+            print(in_memory_image)
+            for block in in_memory_image.read(1024 * 8):
+                    print('1')
+                    if not block:
+                            print('2')
+                            break
+                    print('3')
+                    image_temp_file.write(block)
+                    print('4')
+            file_name = rn
+            image_temp_file.flush()
+            temp_file = files.File(image_temp_file, name=file_name)
+            i.thumbnail = temp_file
+            i.thumbnail.save(rn, in_memory_image, save=True)
+            i.save()
+            print(i.id)
 
