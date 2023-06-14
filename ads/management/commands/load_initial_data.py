@@ -31,4 +31,4 @@ class Command(BaseCommand):
             file = File(open('/home/ubuntu/django/bubbas/medias/'+rn, "rb"))
             i.thumbnail.save(rn, file, save=True)
             i.save()
-            print(i.id) 
+            print(i.id)
