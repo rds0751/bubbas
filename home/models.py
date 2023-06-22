@@ -14,3 +14,6 @@ class Data(models.Model):
 
     def __str__(self):
         return self.key
+
+class Key(models.Model):
+    key = models.CharField(max_length=100)
