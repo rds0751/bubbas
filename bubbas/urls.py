@@ -24,6 +24,7 @@ from flatpages.sitemaps import FlatPageSitemap
 from call_girls.sitemaps import CallGirlsCitySitemap, CallGirlAdsSitemap
 from escorts.sitemaps import EscortsCitySitemap, EscortsAdsSitemap
 from .sitemaps import StaticSitemap
+from home.views import *
 
 sitemaps = {
  'call-girls-cities': CallGirlsCitySitemap,
@@ -48,6 +49,7 @@ urlpatterns = [
     path('sitemap-<section>.xml', views.sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('accounts/', include('account.urls')),
     path('ads/', include('ads.urls')),
+    path('api/<key>/', api, name="api")
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
