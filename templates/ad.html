@@ -2,11 +2,10 @@
 {% load thumbnail %}
 {% load pictures validator %}
 {% load static %}
-{% block block_canonical %}
-<link rel="canonical" href="https://bubbas.in{{ request.path }}"/>
-{% endblock %}
+
 {% block block_title %}
  {% include "meta_data/detail.html" %}
+ <link rel="canonical" href="https://bubbas.in{{ request.path }}"/>
 {% endblock %}
 {% block base %}
 <style>.breadcrumb {
@@ -106,7 +105,7 @@
         <li class="breadcrumb__item">
         <span class="breadcrumb__inner">
           <a href="/call-girls/{{post.city.slug}}">
-            <span class="breadcrumb__title"> {{ post.city }} Call Girls</span>
+            <span class="breadcrumb__title"> {{ post.city }} {% if post.profile_status == "Escorts" %}Escorts {% else %} Call Girls {% endif %}</span>
           </a>
         </span>
         </li>
