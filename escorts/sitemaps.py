@@ -1,10 +1,12 @@
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from ads.models import City, Ad
+from django.utils import datetime_safe
 
 class EscortsAdsSitemap(Sitemap):
     changefreq = "daily"
-    priority = 0.6
+    priority = 0.5
+    lastmod = datetime_safe.datetime.now()
     protocol = 'https'
 
     def items(self):

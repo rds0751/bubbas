@@ -1,9 +1,11 @@
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
+from django.utils import datetime_safe
 
 class StaticSitemap(Sitemap):
-    changefreq = "monthly"
-    priority = 0.6
+    changefreq = "daily"
+    priority = 0.7
+    lastmod = datetime_safe.datetime.now()
     protocol = 'https'
 
     def items(self):
