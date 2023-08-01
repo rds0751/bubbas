@@ -208,6 +208,8 @@ COMPRESS_PRECOMPILERS = (
     ("text/x-scss", "sass {infile} {outfile}"),
 )
 
+APPEND_SLASH = True
+
 COMPRESS_OFFLINE_CONTEXT = {
     "STATIC_URL": "STATIC_URL",
 }
