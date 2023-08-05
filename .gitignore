@@ -10,9 +10,6 @@ db.sqlite3
 media
 media/
 media/*
-staticfiles
-staticfiles/
-staticfiles/*
 __pycache__/
 *.pyc
 **/__pycache__/
@@ -74,7 +71,6 @@ lib/
 lib64/ 
 parts/ 
 sdist/ 
-staticfiles/ 
 wheels/ 
 *.egg-info/ 
 .installed.cfg 
