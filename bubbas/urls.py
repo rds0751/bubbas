@@ -29,8 +29,8 @@ from home.views import *
 sitemaps = {
  'call-girls-cities': CallGirlsCitySitemap,
  'call-girls-profiles': CallGirlAdsSitemap,
- 'escorts-cities': EscortsCitySitemap,
- 'escorts-profiles': EscortsAdsSitemap,
+#  'escorts-cities': EscortsCitySitemap,
+#  'escorts-profiles': EscortsAdsSitemap,
  'static-pages': FlatPageSitemap,
  'home-page': StaticSitemap
 }
@@ -39,7 +39,7 @@ sitemaps = {
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('call-girls/', include('call_girls.urls', 'call-girls')), # new
-    path('escorts/', include('escorts.urls', 'escorts')), # new
+    # path('escorts/', include('escorts.urls', 'escorts')), # new
     path('pages', include('flatpages.urls'), name='static'),
     path('', home, name='home'),
     path('all-locations/', all, name='all'),
