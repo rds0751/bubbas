@@ -141,7 +141,7 @@ AUTHENTICATION_BACKENDS = [
 import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://dbmasteruser:smarty24@ls-1c993e389b14e8540bce24e8480fc70a11043290.cfwaanyttcfq.ap-south-1.rds.amazonaws.com:5432/postgres',
+        default='postgres://dbmasteruser:smarty24@ls-1babd0cdc392a7380e81c4559646b4ca825401e0.c9lbdzu14me5.ap-south-1.rds.amazonaws.com:5432/postgres',
         conn_max_age=600)}
 
 AUTH_USER_MODEL='auth.User'
