@@ -137,37 +137,6 @@
           cursor: pointer;
         }
       </style>
-          <div id="overlay"></div>
-          <div id="popup">
-            <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Disclaimer!</h4>
-              </div>
-              <div class="modal-body">
-                  <strong>To browse this website you must accept the following terms:</strong>
-                  <ol>
-                      <li>
-                          I am 18 years old or over.
-                      </li>
-                      <li>
-                          I understand there will be explicit content.
-                      </li>
-                      <li>
-                          The shocking content will not offend me.
-                      </li>
-                  </ol>
-
-              </div>
-              <div class="modal-footer">
-                  <a id="disclaimerDisagreeButton" href="https://www.google.com" rel="nofollow" style="float: left;">No thanks</a>
-                  <form action="/" method='POST'>
-                    {% csrf_token %}
-                    <input type="hidden" name="url" value={{ request.build_absolute_uri }}>
-                    <button type="submit" class="btn btn-primary" id="disclaimerAgreeButton">I agree</button>
-                  <form>
-              </div>
-          </div>
-          </div>
           <script>
             // Initialize Variables
             var closePopup = document.getElementById("popupclose");
@@ -197,9 +166,9 @@
                 {% block pj_info %}
                   <div class="col-md-5 col-sm-12 col-xs-12 about">
                     <strong class="logo">Bubbas</strong>
-                    <p>Bubbas.in is a leading online platform for free call girls & escorts classified ads in India. We provide a 
+                    <p>Bubbas.in is a leading online platform for free call girls classified ads in India. We provide a 
                       user-friendly and secure environment for individuals and businesses to browse a wide range of call girls, 
-                      massage and escorts classifieds and more. With our extensive network and dedicated team, we aim to making 
+                      massage classifieds and more. With our extensive network and dedicated team, we aim to making 
                       the process of hire meetup easier and more efficient. At Bubbas we prioritize the privacy and security of our users. 
                       </p>
                   </div>
