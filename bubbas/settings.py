@@ -140,7 +140,7 @@ AUTHENTICATION_BACKENDS = [
 import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://dbmasteruser:LuN5EfVkW]oTctgvsSF8fbS4h[W|pxfrcgv0E8T@ls-1babd0cdc392a7380e81c4559646b4ca825401e0.c9lbdzu14me5.ap-south-1.rds.amazonaws.com:5432/postgres',
+        default='postgres://dbmasteruser:LuN5EfVkW]oTctgvsSF8fbS4h[W|pxfrcgv0E8T@ls-1a358400610b750b82be08c8f57358c6e1703a81.chmvmfxjqgwq.us-east-2.rds.amazonaws.com:5432/postgres',
         conn_max_age=600)}
 
 AUTH_USER_MODEL='auth.User'
