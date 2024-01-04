@@ -69,9 +69,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
-    "account.middleware.LocaleMiddleware",
-    "account.middleware.TimezoneMiddleware",
-    "account.middleware.ExpiredPasswordMiddleware",
 ]
 
 PICTURES = {
@@ -110,7 +107,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'account.context_processors.account',
             ],
         },
     },
@@ -129,7 +125,6 @@ ACCOUNT_USE_AUTH_AUTHENTICATE = True
 ACCOUNT_EMAIL_CONFIRMATION_EMAIL = False
 
 AUTHENTICATION_BACKENDS = [
-    "account.auth_backends.UsernameAuthenticationBackend",
     "django.contrib.auth.backends.ModelBackend",
 ]
 
