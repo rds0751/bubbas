@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     "compressor",
     'pictures',
     'cookie_consent',
-    'account',
     "django_bootstrap5",
     
     # Custom Made

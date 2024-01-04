@@ -47,7 +47,6 @@ urlpatterns = [
     path("cookies/", include("cookie_consent.urls"), name=''),
     path('sitemap.xml', views.index, {'sitemaps': sitemaps}),
     path('sitemap-<section>.xml', views.sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-    path('accounts/', include('account.urls')),
     path('ads/', include('ads.urls')),
     path('api/<key>/', api, name="api")
 ]
