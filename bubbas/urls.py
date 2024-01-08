@@ -43,7 +43,6 @@ urlpatterns = [
     path('pages', include('flatpages.urls'), name='static'),
     path('', home, name='home'),
     path('all-locations/', all, name='all'),
-    path('__debug__/', include('debug_toolbar.urls'), name=''),
     path("cookies/", include("cookie_consent.urls"), name=''),
     path('sitemap.xml', views.index, {'sitemaps': sitemaps}),
     path('sitemap-<section>.xml', views.sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),

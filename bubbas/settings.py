@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'flatpages',
 
     # Third Party
-    "debug_toolbar",
     'ckeditor',
     "sorl.thumbnail",
     "compressor",
@@ -68,7 +67,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 PICTURES = {
